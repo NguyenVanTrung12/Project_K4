@@ -1,0 +1,465 @@
+/* =========================================
+   DEVELOPMENT TIMELINE
+========================================= */
+
+.development-section {
+  width: 100%;
+  background: #f8fafc;
+
+  padding: 72px 0 70px;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.development-container {
+  width: min(1500px, calc(100% - 120px));
+
+  margin: 0 auto;
+
+  position: relative;
+
+  min-height: 300px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.development-header {
+  position: relative;
+
+  z-index: 3;
+
+  margin-bottom: 45px;
+}
+
+.development-label {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #b28a46;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.development-title {
+  margin: 0;
+
+  color: #09243f;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: clamp(38px, 3.2vw, 52px);
+
+  line-height: 1.15;
+
+  font-weight: 700;
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.timeline {
+  width: calc(100% - 220px);
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, 1fr);
+
+  position: relative;
+
+  z-index: 3;
+}
+
+
+/* =========================================
+   TIMELINE LINE
+========================================= */
+
+.timeline-line {
+  position: absolute;
+
+  left: 8px;
+  right: calc(20% - 8px);
+
+  top: 8px;
+
+  height: 2px;
+
+  background: #d9e0e7;
+
+  z-index: 0;
+}
+
+
+/* =========================================
+   TIMELINE ITEM
+========================================= */
+
+.timeline-item {
+  position: relative;
+
+  min-width: 0;
+
+  padding-right: 35px;
+}
+
+
+/* =========================================
+   DOT
+========================================= */
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+
+  background: #09243f;
+
+  border: 3px solid #09243f;
+
+  position: relative;
+
+  z-index: 2;
+
+  margin-bottom: 32px;
+}
+
+.timeline-current .timeline-dot {
+  width: 22px;
+  height: 22px;
+
+  margin-top: -3px;
+
+  background: #c7963e;
+
+  border: 5px solid #f5e9d1;
+}
+
+.timeline-dot-inner {
+  width: 7px;
+  height: 7px;
+
+  display: block;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+}
+
+
+/* =========================================
+   YEAR
+========================================= */
+
+.timeline-year {
+  color: #0a2744;
+
+  font-size: 27px;
+
+  line-height: 1;
+
+  font-weight: 700;
+
+  margin-bottom: 14px;
+}
+
+.timeline-current .timeline-year {
+  color: #a97c32;
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.timeline-text {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+
+  color: #677587;
+
+  font-size: 16px;
+
+  line-height: 1.55;
+}
+
+.timeline-text strong {
+  color: #647184;
+
+  font-size: 17px;
+
+  font-weight: 500;
+}
+
+.timeline-text span {
+  color: #7b8795;
+}
+
+
+/* =========================================
+   QUOTE
+========================================= */
+
+.development-quote {
+  position: absolute;
+
+  top: -72px;
+
+  right: -20px;
+
+  width: 300px;
+
+  height: calc(100% + 142px);
+
+  overflow: hidden;
+
+  z-index: 1;
+}
+
+
+/* =========================================
+   BACKGROUND LANDMARK
+========================================= */
+
+.quote-background-icon {
+  position: absolute;
+
+  right: -40px;
+
+  top: 25px;
+
+  font-size: 280px;
+
+  color: #e8edf2;
+
+  opacity: 0.75;
+
+  transform: scaleX(0.9);
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   QUOTE CONTENT
+========================================= */
+
+.quote-content {
+  position: absolute;
+
+  top: 105px;
+
+  right: 20px;
+
+  z-index: 2;
+
+  width: 250px;
+}
+
+.quote-icon {
+  color: #b68b48;
+
+  font-size: 18px;
+
+  margin-bottom: 10px;
+
+  opacity: 0.8;
+}
+
+.quote-content p {
+  margin: 0;
+
+  color: #26384c;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: 20px;
+
+  font-style: italic;
+
+  line-height: 1.5;
+}
+
+.quote-line {
+  width: 75px;
+
+  height: 2px;
+
+  background: #c59a51;
+
+  margin-top: 22px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1200px) {
+
+  .development-container {
+    width: min(1100px, calc(100% - 60px));
+  }
+
+  .timeline {
+    width: 100%;
+  }
+
+  .development-quote {
+    display: none;
+  }
+
+  .timeline-item {
+    padding-right: 25px;
+  }
+
+  .timeline-year {
+    font-size: 24px;
+  }
+}
+
+
+/* =========================================
+   TABLET SMALL
+========================================= */
+
+@media (max-width: 900px) {
+
+  .development-section {
+    padding: 60px 0;
+  }
+
+  .development-container {
+    width: calc(100% - 50px);
+  }
+
+  .development-header {
+    margin-bottom: 35px;
+  }
+
+  .timeline {
+    grid-template-columns:
+      repeat(5, minmax(160px, 1fr));
+
+    overflow-x: auto;
+
+    padding-bottom: 20px;
+
+    scrollbar-width: thin;
+  }
+
+  .timeline-item {
+    min-width: 160px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .development-section {
+    padding: 50px 0;
+  }
+
+  .development-container {
+    width: calc(100% - 32px);
+  }
+
+  .development-label {
+    font-size: 13px;
+
+    letter-spacing: 1.2px;
+  }
+
+  .development-title {
+    font-size: 34px;
+  }
+
+  .timeline {
+    display: flex;
+
+    gap: 0;
+
+    overflow-x: auto;
+
+    padding-bottom: 25px;
+
+    margin-right: -16px;
+  }
+
+  .timeline-line {
+    left: 0;
+
+    width: 800px;
+  }
+
+  .timeline-item {
+    flex: 0 0 170px;
+
+    padding-right: 25px;
+  }
+
+  .timeline-dot {
+    margin-bottom: 28px;
+  }
+
+  .timeline-year {
+    font-size: 23px;
+  }
+
+  .timeline-text {
+    font-size: 14px;
+  }
+
+  .timeline-text strong {
+    font-size: 15px;
+  }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .development-container {
+    width: calc(100% - 24px);
+  }
+
+  .development-title {
+    font-size: 30px;
+  }
+
+  .timeline-item {
+    flex-basis: 155px;
+  }
+
+  .timeline-year {
+    font-size: 21px;
+  }
+}

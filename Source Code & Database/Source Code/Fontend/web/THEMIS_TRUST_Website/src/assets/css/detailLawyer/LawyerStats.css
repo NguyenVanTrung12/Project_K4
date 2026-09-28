@@ -1,0 +1,417 @@
+/* =========================================================
+   LAWYER STATS
+========================================================= */
+
+.lawyer-stats {
+
+  height: 132px;
+
+  background: #ffffff;
+
+  border-top:
+    1px solid
+    #eeeeee;
+
+  border-bottom:
+    1px solid
+    #eeeeee;
+
+  color: #172b45;
+
+  font-family:
+    "Inter",
+    "Segoe UI",
+    Arial,
+    sans-serif;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.lawyer-stats__container {
+
+  max-width: 1516px;
+
+  height: 100%;
+
+  margin: 0 auto;
+
+  padding:
+    0 7%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+/* =========================================================
+   STAT
+========================================================= */
+
+.lawyer-stat {
+  flex: 1;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 22px;
+
+  min-width: 0;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.lawyer-stat__icon {
+  width: 62px;
+
+  min-width: 62px;
+
+  height: 62px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #b88224;
+
+  background:
+    #faf5e9;
+
+  font-size: 27px;
+
+  border:
+    1px solid
+    rgba(205, 159, 71, 0.08);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.lawyer-stat__content {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  min-width: 0;
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.lawyer-stat__number {
+  color: #132b48;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 30px;
+
+  line-height: 1.05;
+
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.lawyer-stat__label {
+  margin-top: 5px;
+
+  color: #65758a;
+
+  font-size: 15px;
+
+  line-height: 1.35;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.lawyer-stat__divider {
+  width: 1px;
+
+  height: 62px;
+
+  flex: 0 0 1px;
+
+  background:
+    #e9edf1;
+
+  margin:
+    0 32px;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.lawyer-stat {
+  transition:
+    transform 0.2s ease;
+}
+
+.lawyer-stat:hover {
+  transform:
+    translateY(-2px);
+}
+
+.lawyer-stat__icon {
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.lawyer-stat:hover
+.lawyer-stat__icon {
+  background:
+    #f7efdc;
+
+  transform:
+    scale(1.04);
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .lawyer-stats {
+    height: 120px;
+  }
+
+  .lawyer-stats__container {
+    padding:
+      0 4%;
+  }
+
+  .lawyer-stat {
+    gap: 14px;
+  }
+
+  .lawyer-stat__divider {
+    margin:
+      0 18px;
+  }
+
+  .lawyer-stat__icon {
+    width: 55px;
+
+    min-width: 55px;
+
+    height: 55px;
+
+    font-size: 23px;
+  }
+
+  .lawyer-stat__number {
+    font-size: 26px;
+  }
+
+  .lawyer-stat__label {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .lawyer-stats {
+    height: auto;
+
+    min-height: 120px;
+  }
+
+  .lawyer-stats__container {
+    padding:
+      20px 25px;
+  }
+
+  .lawyer-stat {
+    gap: 10px;
+  }
+
+  .lawyer-stat__icon {
+    width: 48px;
+
+    min-width: 48px;
+
+    height: 48px;
+
+    font-size: 20px;
+  }
+
+  .lawyer-stat__number {
+    font-size: 23px;
+  }
+
+  .lawyer-stat__label {
+    font-size: 11px;
+  }
+
+  .lawyer-stat__divider {
+    height: 50px;
+
+    margin:
+      0 12px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .lawyer-stats {
+    height: auto;
+  }
+
+  .lawyer-stats__container {
+    display: grid;
+
+    grid-template-columns:
+      1fr 1fr;
+
+    gap: 0;
+
+    padding: 10px 15px;
+  }
+
+  .lawyer-stat {
+    min-height: 90px;
+
+    justify-content:
+      flex-start;
+
+    gap: 10px;
+
+    padding:
+      12px 8px;
+  }
+
+  .lawyer-stat__icon {
+    width: 43px;
+
+    min-width: 43px;
+
+    height: 43px;
+
+    font-size: 18px;
+  }
+
+  .lawyer-stat__number {
+    font-size: 21px;
+  }
+
+  .lawyer-stat__label {
+    margin-top: 4px;
+
+    font-size: 10px;
+
+    white-space: normal;
+  }
+
+  /*
+     Ẩn divider cũ trên mobile
+  */
+
+  .lawyer-stat__divider {
+    display: none;
+  }
+
+  /*
+     Tạo đường chia bằng border
+  */
+
+  .lawyer-stat:nth-child(1),
+  .lawyer-stat:nth-child(2) {
+    border-bottom:
+      1px solid #edf0f3;
+  }
+
+  .lawyer-stat:nth-child(1),
+  .lawyer-stat:nth-child(2) {
+    border-right:
+      1px solid #edf0f3;
+  }
+
+  .lawyer-stat:nth-child(2) {
+    border-right: none;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .lawyer-stat {
+    gap: 7px;
+
+    padding:
+      10px 5px;
+  }
+
+  .lawyer-stat__icon {
+    width: 38px;
+
+    min-width: 38px;
+
+    height: 38px;
+
+    font-size: 16px;
+  }
+
+  .lawyer-stat__number {
+    font-size: 18px;
+  }
+
+  .lawyer-stat__label {
+    font-size: 9px;
+  }
+}

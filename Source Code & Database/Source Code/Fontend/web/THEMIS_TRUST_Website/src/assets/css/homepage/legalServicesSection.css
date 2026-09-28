@@ -1,0 +1,432 @@
+/* ==============================
+   LEGAL SERVICES SECTION
+================================ */
+
+.legal-services-section {
+
+  padding: 70px 8%;
+
+    background: #f8fafc;
+}
+
+
+/* CONTAINER */
+
+.legal-services-container {
+  width: 100%;
+}
+
+
+/* ==============================
+   HEADER
+================================ */
+
+.services-header {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  margin-bottom: 35px;
+
+  gap: 30px;
+}
+
+.services-header-left {
+  width: 100%;
+}
+
+.services-title-row {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 8px;
+}
+
+.services-label {
+  display: block;
+
+  color: #b8860b;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+
+  margin-bottom: 8px;
+}
+
+
+.services-header h2 {
+  margin: 0 0 12px;
+
+  color: #1e3550;
+
+  font-family:'Times New Roman', Times, serif;
+
+  font-size: 36px;
+
+  font-weight: 700;
+}
+
+.view-all-services {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #173b63;
+
+  text-decoration: none;
+
+  font-weight: 600;
+  white-space: nowrap;
+  
+  transition: 0.3s;
+}
+
+
+
+.view-all-services:hover {
+  color: #b8860b;
+}
+
+.view-all-services svg {
+  font-size: 20px;
+}
+
+.services-header p {
+  margin: 0;
+
+  max-width: 600px;
+
+  color: #64748b;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+}
+
+
+/* VIEW ALL */
+
+.view-all-services {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  white-space: nowrap;
+
+  color: #173b63;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+
+.view-all-services:hover {
+  color: #b8860b;
+
+  transform: translateX(3px);
+}
+
+
+/* ==============================
+   GRID
+================================ */
+
+.services-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 18px;
+}
+
+
+/* ==============================
+   SERVICE CARD
+================================ */
+
+.service-card {
+  min-height: 145px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 22px;
+
+  background: #ffffff;
+
+  border:
+    1px solid #e2e8f0;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 4px 15px
+    rgba(15, 23, 42, 0.04);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s,
+    border-color 0.3s;
+}
+
+
+.service-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #d4af37;
+
+  box-shadow:
+    0 15px 30px
+    rgba(15, 23, 42, 0.1);
+}
+
+
+/* ==============================
+   ICON
+================================ */
+
+.service-icon {
+  width: 56px;
+  height: 56px;
+
+  min-width: 56px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  font-size: 23px;
+}
+
+
+/* BLUE */
+
+.service-icon.blue {
+  color: #173b63;
+
+  background: #eaf2fb;
+}
+
+
+/* GOLD */
+
+.service-icon.gold {
+  color: #a97813;
+
+  background: #fff7df;
+}
+
+
+/* ORANGE */
+
+.service-icon.orange {
+  color: #b06a1d;
+
+  background: #fff0e4;
+}
+
+
+/* RED */
+
+.service-icon.red {
+  color: #b64747;
+
+  background: #fdecec;
+}
+
+
+/* YELLOW */
+
+.service-icon.yellow {
+  color: #9a7513;
+
+  background: #fff7dc;
+}
+
+
+/* PURPLE */
+
+.service-icon.purple {
+  color: #7754a8;
+
+  background: #f1eafd;
+}
+
+
+/* GREEN */
+
+.service-icon.green {
+  color: #27745d;
+
+  background: #e8f5ef;
+}
+
+
+/* ==============================
+   CONTENT
+================================ */
+
+.service-content {
+  flex: 1;
+
+  min-width: 0;
+}
+
+
+.service-content h3 {
+  margin: 0 0 8px;
+
+  color: #2b3d52;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+
+.service-content p {
+  margin: 0;
+
+  color: #7b8794;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  display: -webkit-box;
+
+
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+}
+
+
+/* ==============================
+   ARROW
+================================ */
+
+.service-arrow {
+  width: 30px;
+  height: 30px;
+
+  min-width: 30px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #6b7f93;
+
+  background: #f5f8fb;
+
+  font-size: 12px;
+
+  transition: 0.3s;
+}
+
+
+.service-card:hover .service-arrow {
+  background: #d4af37;
+
+  color: #ffffff;
+
+  transform: translateX(3px);
+}
+
+
+/* ==============================
+   TABLET
+================================ */
+
+@media (max-width: 1100px) {
+
+  .services-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+}
+
+
+/* ==============================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+  .legal-services-section {
+    padding: 50px 20px;
+  }
+
+
+  .services-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  .services-header h2 {
+    font-size: 28px;
+  }
+
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .view-all-services {
+    margin-top: 5px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .service-card {
+    padding: 18px;
+
+    min-height: 120px;
+  }
+
+
+  .service-icon {
+    width: 50px;
+    height: 50px;
+
+    min-width: 50px;
+
+    font-size: 20px;
+  }
+}

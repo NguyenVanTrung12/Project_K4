@@ -1,0 +1,1052 @@
+/* =========================================================
+   ADMIN ADD LAWYER
+   Prefix riêng:
+   admin-add-lawyer-
+========================================================= */
+
+.admin-add-lawyer-page {
+  width: 100%;
+  min-height: 100%;
+
+  box-sizing: border-box;
+
+  color: #173a60;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.admin-add-lawyer-form {
+  width: 100%;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.admin-add-lawyer-back {
+  height: 38px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 9px;
+
+  padding: 0 14px;
+
+  border: 1px solid #dce5ef;
+
+  border-radius: 6px;
+
+  color: #294b70;
+
+  background: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.admin-add-lawyer-back:hover {
+  border-color: #b9842d;
+
+  color: #9b681d;
+
+  background: #fffaf1;
+}
+
+
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+
+.admin-add-lawyer-layout {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) 360px;
+
+  gap: 10px;
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   LEFT
+========================================================= */
+
+.admin-add-lawyer-left {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+
+/* =========================================================
+   RIGHT
+========================================================= */
+
+.admin-add-lawyer-right {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.admin-add-lawyer-card,
+.admin-add-lawyer-side-card {
+  box-sizing: border-box;
+
+  border: 1px solid #e5ebf2;
+
+  border-radius: 7px;
+
+  background: #ffffff;
+
+  box-shadow: 0 2px 8px rgba(19, 57, 91, 0.025);
+}
+
+
+/* =========================================================
+   LEFT CARD
+========================================================= */
+
+.admin-add-lawyer-card {
+  padding: 13px 22px 17px;
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.admin-add-lawyer-card-title,
+.admin-add-lawyer-side-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 13px;
+}
+
+.admin-add-lawyer-card-title svg,
+.admin-add-lawyer-side-title svg {
+  width: 24px;
+
+  color: #173f73;
+
+  font-size: 20px;
+}
+
+.admin-add-lawyer-card-title h2,
+.admin-add-lawyer-side-title h2 {
+  margin: 0;
+
+  color: #173b61;
+
+  font-family: inherit;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   BASIC GRID
+========================================================= */
+
+.admin-add-lawyer-basic-grid {
+  display: grid;
+
+  grid-template-columns: 125px minmax(0, 1fr);
+
+  gap: 17px;
+}
+
+
+/* =========================================================
+   AVATAR
+========================================================= */
+
+.admin-add-lawyer-avatar-column {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.admin-add-lawyer-avatar {
+  width: 118px;
+  height: 118px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border-radius: 50%;
+
+  background: linear-gradient(145deg, #eef3f9, #e2e9f2);
+
+  cursor: pointer;
+}
+
+.admin-add-lawyer-avatar img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.admin-add-lawyer-avatar-placeholder {
+  color: #c4cfdd;
+
+  font-size: 52px;
+}
+
+.admin-add-lawyer-avatar input {
+  display: none;
+}
+
+.admin-add-lawyer-camera {
+  width: 27px;
+  height: 27px;
+
+  position: absolute;
+
+  right: 2px;
+  bottom: 4px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #ffffff;
+
+  border-radius: 50%;
+
+  color: #173e72;
+
+  background: #ffffff;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+
+  font-size: 12px;
+}
+
+.admin-add-lawyer-avatar-column p {
+  margin: 6px 0 1px;
+
+  color: #7b8da2;
+
+  font-size: 11px;
+}
+
+.admin-add-lawyer-avatar-column small {
+  color: #a2afbd;
+
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   FIELDS GRID
+========================================================= */
+
+.admin-add-lawyer-fields-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  column-gap: 28px;
+
+  row-gap: 9px;
+}
+
+
+/* =========================================================
+   PROFESSIONAL GRID
+========================================================= */
+
+.admin-add-lawyer-professional-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  column-gap: 28px;
+
+  row-gap: 9px;
+}
+
+
+/* =========================================================
+   FIELD
+========================================================= */
+
+.admin-add-lawyer-field {
+  min-width: 0;
+}
+
+.admin-add-lawyer-field > label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #345778;
+
+  font-size: 13px !important;
+
+  line-height: 1.3;
+}
+
+.admin-add-lawyer-field > label span {
+  margin-left: 3px;
+
+  color: #e04747;
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.admin-add-lawyer-input {
+  height: 35px;
+
+  display: flex;
+
+  align-items: center;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dbe5ef;
+
+  border-radius: 5px;
+
+  background: #ffffff;
+
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-add-lawyer-input:focus-within {
+  border-color: #b77c23;
+
+  box-shadow: 0 0 0 3px rgba(183, 124, 35, 0.06);
+}
+
+.admin-add-lawyer-input svg {
+  flex-shrink: 0;
+
+  margin-left: 10px;
+
+  color: #355d89;
+
+  font-size: 13px;
+}
+
+.admin-add-lawyer-input input {
+  width: 100%;
+  height: 100%;
+
+  min-width: 0;
+
+  padding: 0 10px;
+
+  box-sizing: border-box;
+
+  border: none;
+  outline: none;
+
+  color: #294b6d;
+
+  background: transparent;
+
+  font-family: inherit;
+
+  font-size: 13px !important;
+}
+
+.admin-add-lawyer-input input::placeholder {
+  color: #9aaabc;
+}
+
+
+/* =========================================================
+   SELECT
+========================================================= */
+
+.admin-add-lawyer-select {
+  height: 35px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dbe5ef;
+
+  border-radius: 5px;
+
+  background: #ffffff;
+}
+
+.admin-add-lawyer-select select {
+  width: 100%;
+  height: 100%;
+
+  padding: 0 32px 0 10px;
+
+  appearance: none;
+
+  border: none;
+
+  outline: none;
+
+  color: #536d89;
+
+  background: transparent;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  cursor: pointer;
+}
+
+.admin-add-lawyer-select svg {
+  position: absolute;
+
+  right: 10px;
+
+  pointer-events: none;
+
+  color: #173f70;
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   RADIO
+========================================================= */
+
+.admin-add-lawyer-radio-group {
+  height: 35px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 17px;
+}
+
+.admin-add-lawyer-radio-group label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  color: #5a718b;
+
+  font-size: 13px;
+
+  cursor: pointer;
+}
+
+.admin-add-lawyer-radio-group input {
+  width: 15px;
+  height: 15px;
+
+  accent-color: #1555bd;
+}
+
+
+/* =========================================================
+   TEXTAREA
+========================================================= */
+
+.admin-add-lawyer-textarea {
+  min-height: 66px;
+
+  position: relative;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dbe5ef;
+
+  border-radius: 5px;
+
+  background: #ffffff;
+}
+
+.admin-add-lawyer-textarea textarea {
+  width: 100%;
+
+  height: 66px;
+
+  padding: 8px 10px 18px;
+
+  resize: none;
+
+  box-sizing: border-box;
+
+  border: none;
+
+  outline: none;
+
+  color: #294b6d;
+
+  background: transparent;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+}
+
+.admin-add-lawyer-textarea textarea::placeholder {
+  color: #9aaabc;
+}
+
+.admin-add-lawyer-textarea small {
+  position: absolute;
+
+  right: 9px;
+  bottom: 5px;
+
+  color: #9caebe;
+
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   TAGS
+========================================================= */
+
+.admin-add-lawyer-tags {
+  min-height: 35px;
+
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 5px;
+}
+
+.admin-add-lawyer-tags > span {
+  height: 25px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 0 8px;
+
+  border-radius: 5px;
+
+  color: #315c89;
+
+  background: #edf4fc;
+
+  font-size: 11px;
+}
+
+.admin-add-lawyer-tags button {
+  padding: 0;
+
+  border: none;
+
+  color: #7690aa;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 13px;
+}
+
+.admin-add-lawyer-add-tag {
+  height: 25px;
+
+  padding: 0 9px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  color: #1d5da2;
+
+  background: #edf5ff;
+
+  font-family: inherit;
+
+  font-size: 11px;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   FILE UPLOAD
+========================================================= */
+
+.admin-add-lawyer-file-upload {
+  min-height: 62px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 8px 15px;
+
+  box-sizing: border-box;
+
+  border: 1px dashed #bcd2ed;
+
+  border-radius: 6px;
+
+  background: #f9fcff;
+
+  cursor: pointer;
+}
+
+.admin-add-lawyer-file-upload > svg {
+  color: #3675cf;
+
+  font-size: 23px;
+}
+
+.admin-add-lawyer-file-upload > div {
+  flex: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.admin-add-lawyer-file-upload strong {
+  color: #315d89;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+.admin-add-lawyer-file-upload span {
+  color: #8ba0b8;
+
+  font-size: 10px;
+}
+
+.admin-add-lawyer-file-button {
+  padding: 8px 15px;
+
+  border: 1px solid #d3e2f5;
+
+  border-radius: 5px;
+
+  color: #315f91;
+
+  background: #f1f6fd;
+
+  font-size: 11px !important;
+}
+
+.admin-add-lawyer-file-upload input {
+  display: none;
+}
+
+
+/* =========================================================
+   FILE LIST
+========================================================= */
+
+.admin-add-lawyer-file-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+
+  margin-top: 8px;
+}
+
+.admin-add-lawyer-file-item {
+  min-height: 32px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 0 10px;
+
+  border: 1px solid #e4ebf3;
+
+  border-radius: 5px;
+
+  color: #476784;
+
+  background: #fbfdff;
+
+  font-size: 11px;
+}
+
+.admin-add-lawyer-file-item > svg {
+  color: #d83c3c;
+}
+
+.admin-add-lawyer-file-item span {
+  flex: 1;
+}
+
+.admin-add-lawyer-file-item button {
+  border: none;
+
+  color: #9aabbc;
+
+  background: transparent;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   RIGHT SIDE CARD
+========================================================= */
+
+.admin-add-lawyer-side-card {
+  padding: 14px 17px;
+}
+
+.admin-add-lawyer-side-title {
+  margin-bottom: 15px;
+}
+
+.admin-add-lawyer-side-title svg {
+  font-size: 18px;
+}
+
+.admin-add-lawyer-status-label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #536f8d;
+
+  font-size: 12px;
+}
+
+.admin-add-lawyer-side-description {
+  margin: 8px 0 0;
+
+  color: #8da0b4;
+
+  font-size: 11px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   NOTE
+========================================================= */
+
+.admin-add-lawyer-note-card {
+  background: linear-gradient(180deg, #fffdf8, #fffaf0);
+}
+
+.admin-add-lawyer-note-card .admin-add-lawyer-side-title svg {
+  color: #a96c1c;
+}
+
+.admin-add-lawyer-note-card ul {
+  margin: 0;
+
+  padding-left: 18px;
+}
+
+.admin-add-lawyer-note-card li {
+  margin-bottom: 7px;
+
+  color: #715f4a;
+
+  font-size: 11px;
+
+  line-height: 1.4;
+}
+
+.admin-add-lawyer-note-card li:last-child {
+  margin-bottom: 0;
+}
+
+.admin-add-lawyer-note-card strong {
+  color: #d13e3e;
+}
+
+
+/* =========================================================
+   BENEFITS
+========================================================= */
+
+.admin-add-lawyer-benefits {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+
+  margin: 0;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.admin-add-lawyer-benefits li {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 8px;
+
+  color: #4e6b88;
+
+  font-size: 11px;
+
+  line-height: 1.4;
+}
+
+.admin-add-lawyer-benefits li svg {
+  flex-shrink: 0;
+
+  margin-top: 2px;
+
+  color: #12934b;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.admin-add-lawyer-actions {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 9px;
+
+  padding: 4px 0;
+}
+
+.admin-add-lawyer-actions button {
+  height: 40px;
+
+  border-radius: 6px;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  cursor: pointer;
+}
+
+.admin-add-lawyer-cancel {
+  border: 1px solid #d5a365;
+
+  color: #7b531e;
+
+  background: #ffffff;
+}
+
+.admin-add-lawyer-cancel:hover {
+  background: #fffaf3;
+}
+
+.admin-add-lawyer-save {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  border: 1px solid #a96b1c;
+
+  color: #ffffff;
+
+  background: linear-gradient(135deg, #bd7f26, #985d17);
+
+  box-shadow: 0 4px 10px rgba(153, 94, 22, 0.15);
+}
+
+.admin-add-lawyer-save:hover {
+  background: linear-gradient(135deg, #ce9033, #a86b1e);
+}
+
+
+/* =========================================================
+   LARGE SCREEN
+========================================================= */
+
+@media (min-width: 1500px) {
+
+  .admin-add-lawyer-layout {
+    grid-template-columns: minmax(0, 1fr) 390px;
+  }
+
+  .admin-add-lawyer-card {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .admin-add-lawyer-field > label {
+    font-size: 13px;
+  }
+
+  .admin-add-lawyer-input,
+  .admin-add-lawyer-select {
+    height: 38px;
+  }
+
+  .admin-add-lawyer-input input,
+  .admin-add-lawyer-select select {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .admin-add-lawyer-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-add-lawyer-right {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .admin-add-lawyer-actions {
+    grid-column: 1 / -1;
+  }
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 760px) {
+
+  .admin-add-lawyer-basic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-add-lawyer-avatar-column {
+    align-items: flex-start;
+  }
+
+  .admin-add-lawyer-fields-grid,
+  .admin-add-lawyer-professional-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-add-lawyer-right {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+
+  .admin-add-lawyer-card,
+  .admin-add-lawyer-side-card {
+    padding: 12px;
+  }
+
+  .admin-add-lawyer-basic-grid {
+    gap: 12px;
+  }
+
+  .admin-add-lawyer-file-upload {
+    flex-wrap: wrap;
+  }
+
+  .admin-add-lawyer-file-upload > div {
+    min-width: calc(100% - 50px);
+  }
+
+  .admin-add-lawyer-file-button {
+    margin-left: 37px;
+  }
+
+  .admin-add-lawyer-actions {
+    grid-template-columns: 1fr;
+  }
+
+}

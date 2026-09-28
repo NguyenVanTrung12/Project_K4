@@ -1,0 +1,423 @@
+/* =========================================================
+   CONTACT FEATURES
+========================================================= */
+
+.contact-features {
+  width: 100%;
+
+  background: #ffffff;
+
+  border-top: 1px solid #edf0f2;
+  border-bottom: 1px solid #edf0f2;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.contact-features-container {
+  width: 100%;
+
+  margin: 0 auto;
+
+  padding: 25px 44px;
+
+  box-sizing: border-box;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   FEATURE ITEM
+========================================================= */
+
+.contact-feature-item {
+  position: relative;
+
+  min-width: 0;
+
+  min-height: 85px;
+
+  padding: 0 38px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+/* =========================================================
+   FIRST ITEM
+========================================================= */
+
+.contact-feature-item:first-child {
+  padding-left: 45px;
+}
+
+
+/* =========================================================
+   LAST ITEM
+========================================================= */
+
+.contact-feature-item:last-child {
+  padding-right: 20px;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.contact-feature-divider::after {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+
+  right: 0;
+
+  transform: translateY(-50%);
+
+  width: 1px;
+
+  height: 82px;
+
+  background: #e8ebef;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.contact-feature-icon {
+  width: 58px;
+
+  height: 58px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #c79532;
+
+  font-size: 43px;
+
+  line-height: 1;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.contact-feature-content {
+  min-width: 0;
+}
+
+
+.contact-feature-content h3 {
+  margin: 0 0 8px;
+
+  color: #102a43;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  line-height: 1.25;
+}
+
+
+.contact-feature-content p {
+  max-width: 240px;
+
+  margin: 0;
+
+  color: #718096;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.contact-feature-item {
+  transition:
+    transform 0.25s ease;
+}
+
+.contact-feature-item:hover {
+  transform: translateY(-2px);
+}
+
+.contact-feature-item:hover
+.contact-feature-icon {
+  color: #b88320;
+}
+
+
+/* =========================================================
+   LARGE SCREEN
+========================================================= */
+
+@media (min-width: 1500px) {
+
+  .contact-features-container {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  .contact-feature-item {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .contact-feature-item:first-child {
+    padding-left: 55px;
+  }
+
+  .contact-feature-content h3 {
+    font-size: 20px;
+  }
+
+  .contact-feature-content p {
+    font-size: 16px;
+  }
+}
+
+
+/* =========================================================
+   TABLET - 1200px
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .contact-features-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .contact-feature-item {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    gap: 15px;
+  }
+
+  .contact-feature-item:first-child {
+    padding-left: 15px;
+  }
+
+  .contact-feature-icon {
+    width: 50px;
+    height: 50px;
+
+    font-size: 36px;
+  }
+
+  .contact-feature-content h3 {
+    font-size: 16px;
+  }
+
+  .contact-feature-content p {
+    font-size: 13px;
+  }
+
+  .contact-feature-divider::after {
+    height: 70px;
+  }
+}
+
+
+/* =========================================================
+   TABLET - 900px
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .contact-features-container {
+    min-height: auto;
+
+    padding:
+      25px 20px;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    row-gap: 25px;
+  }
+
+  .contact-feature-item {
+    min-height: 70px;
+
+    padding:
+      5px 20px;
+  }
+
+  .contact-feature-item:first-child {
+    padding-left: 10px;
+  }
+
+  .contact-feature-divider::after {
+    height: 60px;
+  }
+
+  /*
+     Divider cho item 2
+     để tạo bố cục 2 x 2
+  */
+  .contact-feature-item:nth-child(2)::after {
+    display: none;
+  }
+
+  .contact-feature-item:nth-child(3)::after {
+    display: none;
+  }
+
+  .contact-feature-icon {
+    width: 48px;
+    height: 48px;
+
+    font-size: 34px;
+  }
+
+  .contact-feature-content h3 {
+    font-size: 15px;
+  }
+
+  .contact-feature-content p {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE - 650px
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .contact-features-container {
+    padding:
+      20px;
+    
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 0;
+  }
+
+  .contact-feature-item,
+  .contact-feature-item:first-child,
+  .contact-feature-item:last-child {
+    width: 100%;
+
+    min-height: 80px;
+
+    padding:
+      15px 5px;
+  }
+
+  .contact-feature-item:not(:last-child) {
+    border-bottom: 1px solid #e8ebef;
+  }
+
+  .contact-feature-divider::after {
+    display: none;
+  }
+
+  .contact-feature-icon {
+    width: 50px;
+    height: 50px;
+
+    font-size: 35px;
+  }
+
+  .contact-feature-content h3 {
+    margin-bottom: 5px;
+
+    font-size: 17px;
+  }
+
+  .contact-feature-content p {
+    max-width: none;
+
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE - 400px
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .contact-features-container {
+    padding:
+      15px;
+  }
+
+  .contact-feature-item,
+  .contact-feature-item:first-child,
+  .contact-feature-item:last-child {
+    padding:
+      13px 0;
+  }
+
+  .contact-feature-item {
+    gap: 14px;
+  }
+
+  .contact-feature-icon {
+    width: 44px;
+    height: 44px;
+
+    font-size: 30px;
+  }
+
+  .contact-feature-content h3 {
+    font-size: 15px;
+  }
+
+  .contact-feature-content p {
+    font-size: 12px;
+  }
+}

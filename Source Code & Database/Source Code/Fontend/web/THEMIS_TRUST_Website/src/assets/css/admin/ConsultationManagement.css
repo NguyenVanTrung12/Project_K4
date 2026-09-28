@@ -1,0 +1,454 @@
+/* =========================================================
+   CONSULTATION MANAGEMENT MAIN CONTAINER
+========================================================= */
+.consultation-management {
+  padding: 24px;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   STATISTICS CARDS
+========================================================= */
+.consultation-statistics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.consultation-stat-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.consultation-stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.consultation-stat-icon.blue {
+  background-color: #eff6ff;
+  color: #2563eb;
+}
+
+.consultation-stat-icon.orange {
+  background-color: #fff7ed;
+  color: #ea580c;
+}
+
+.consultation-stat-icon.green {
+  background-color: #f0fdf4;
+  color: #16a34a;
+}
+
+.consultation-stat-icon.red {
+  background-color: #fef2f2;
+  color: #dc2626;
+}
+
+.consultation-stat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.consultation-stat-title {
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.consultation-stat-number-row strong {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* =========================================================
+   MAIN LIST CARD
+========================================================= */
+.consultation-list-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.consultation-list-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.consultation-list-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.consultation-list-title-icon {
+  width: 42px;
+  height: 42px;
+  background-color: #f1f5f9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e293b;
+  font-size: 18px;
+}
+
+.consultation-list-title h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 2px 0;
+}
+
+.consultation-list-title p {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0;
+}
+
+/* =========================================================
+   FILTER BAR
+========================================================= */
+.consultation-filter-bar {
+  padding: 16px 24px;
+  display: flex;
+  gap: 12px;
+  border-bottom: 1px solid #f1f5f9;
+  background-color: #fafafa;
+}
+
+.consultation-search {
+  position: relative;
+  flex: 1;
+  max-width: 360px;
+
+  svg {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    font-size: 14px;
+  }
+
+  input {
+    width: 100%;
+    padding: 9px 12px 9px 36px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+
+    &:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+    }
+  }
+}
+
+.consultation-select {
+  position: relative;
+  width: 180px;
+
+  select {
+    width: 100%;
+    padding: 9px 32px 9px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #ffffff;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+
+    &:focus {
+      border-color: #2563eb;
+    }
+  }
+
+  svg {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    font-size: 12px;
+    pointer-events: none;
+  }
+}
+
+/* =========================================================
+   TABLE
+========================================================= */
+.consultation-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.consultation-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+
+  th {
+    background-color: #f8fafc;
+    color: #475569;
+    font-weight: 600;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e2e8f0;
+    white-space: nowrap;
+  }
+
+  td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #334155;
+    vertical-align: middle;
+  }
+
+  tbody tr:hover {
+    background-color: #f8fafc;
+  }
+}
+
+/* User Info Cell */
+.consultation-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.consultation-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #e2e8f0;
+  color: #475569;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.consultation-user-info {
+  display: flex;
+  flex-direction: column;
+
+  strong {
+    color: #0f172a;
+    font-weight: 600;
+  }
+
+  span {
+    font-size: 12px;
+    color: #64748b;
+  }
+}
+
+/* Request Cell */
+.consultation-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 240px;
+
+  strong {
+    color: #1e293b;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  span {
+    font-size: 12px;
+    color: #64748b;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* Field / Tag */
+.consultation-field {
+  display: inline-block;
+  padding: 2px 8px;
+  background-color: #f1f5f9;
+  color: #475569;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.consultation-date-admin strong {
+  font-weight: 500;
+  color: #334155;
+}
+
+.consultation-lawyer {
+  color: #334155;
+
+  .not-assigned {
+    color: #94a3b8;
+    font-style: italic;
+  }
+}
+
+/* Status Badges */
+.consultation-status-admin {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+
+  &.new {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+  }
+
+  &.pending {
+    background-color: #fefce8;
+    color: #a16207;
+  }
+
+  &.processing {
+    background-color: #fff7ed;
+    color: #c2410c;
+  }
+
+  &.assigned {
+    background-color: #f0fdf4;
+    color: #15803d;
+  }
+
+  &.completed {
+    background-color: #f0fdf4;
+    color: #166534;
+  }
+
+  &.cancelled {
+    background-color: #fef2f2;
+    color: #b91c1c;
+  }
+}
+
+/* =========================================================
+   ACTIONS COLUMN (Sửa lỗi nút bị đè)
+========================================================= */
+.consultation-actions-admin {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+
+  button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border: 1px solid #cbd5e1;
+    background-color: #ffffff;
+    color: #475569;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: #f8fafc;
+      border-color: #94a3b8;
+      color: #0f172a;
+    }
+  }
+
+  /* Nút Tạo Hồ Sơ Nổi Bật */
+  .consultation-create-case-button {
+    background-color: #2563eb;
+    border-color: #2563eb;
+    color: #ffffff;
+
+    &:hover {
+      background-color: #1d4ed8;
+      border-color: #1d4ed8;
+      color: #ffffff;
+    }
+
+    &:disabled {
+      background-color: #93c5fd;
+      border-color: #93c5fd;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.consultation-empty {
+  padding: 32px;
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+.consultation-pagination {
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  border-top: 1px solid #f1f5f9;
+
+  span {
+    font-size: 13px;
+    color: #64748b;
+  }
+
+  button {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    background-color: #ffffff;
+    color: #334155;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover:not(:disabled) {
+      background-color: #f1f5f9;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+}

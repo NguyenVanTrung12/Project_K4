@@ -1,0 +1,563 @@
+/* =========================================
+   VISIT OFFICE
+   ========================================= */
+
+.visit-office {
+  width: 100%;
+  background: #ffffff;
+  padding: 0;
+  overflow: hidden;
+}
+
+.visit-office-container {
+  width: 100%;
+  max-width: 1600px;
+  min-height: 360px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 0.78fr 0.78fr;
+
+  border-radius: 0 12px 12px 0;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   MAP
+========================================================= */
+
+.visit-map {
+    position: relative;
+
+    width: 100%;
+    height: 420px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #e9edf1;
+
+    box-shadow:
+        0 8px 25px rgba(20, 40, 60, 0.08);
+}
+
+
+/* Google Maps iframe */
+
+.visit-map iframe {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+}
+
+
+/* =========================================
+   ROADS
+   ========================================= */
+
+.road {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 0 1px rgba(208, 214, 211, 0.35);
+}
+
+.road-1 {
+  width: 115%;
+  height: 25px;
+  top: 20%;
+  left: -8%;
+  transform: rotate(-18deg);
+}
+
+.road-2 {
+  width: 120%;
+  height: 18px;
+  top: 53%;
+  left: -10%;
+  transform: rotate(12deg);
+}
+
+.road-3 {
+  width: 100%;
+  height: 14px;
+  top: 73%;
+  left: 5%;
+  transform: rotate(-27deg);
+}
+
+.road-4 {
+  width: 14px;
+  height: 120%;
+  left: 37%;
+  top: -10%;
+  transform: rotate(14deg);
+}
+
+.road-5 {
+  width: 11px;
+  height: 110%;
+  left: 68%;
+  top: -5%;
+  transform: rotate(-28deg);
+}
+
+
+/* =========================================
+   MAP PLACES
+   ========================================= */
+
+.map-place {
+  position: absolute;
+
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+
+  color: #58615d;
+  white-space: nowrap;
+}
+
+.place-1 {
+  top: 10%;
+  left: 58%;
+}
+
+.place-2 {
+  top: 47%;
+  left: 58%;
+}
+
+.place-3 {
+  bottom: 25%;
+  left: 10%;
+}
+
+
+/* =========================================
+   OFFICE MARKER
+   ========================================= */
+
+.office-marker {
+  position: absolute;
+
+  top: 31%;
+  left: 48%;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  transform: translateX(-50%);
+
+  z-index: 5;
+}
+
+.marker-icon {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50% 50% 50% 0;
+
+  background: #0b2942;
+  color: #ffffff;
+
+  font-size: 21px;
+
+  transform: rotate(-45deg);
+
+  box-shadow: 0 5px 15px rgba(5, 28, 45, 0.3);
+}
+
+.marker-icon svg {
+  transform: rotate(45deg);
+}
+
+.marker-info {
+  min-width: 165px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 11px 14px;
+
+  background: #ffffff;
+  border-radius: 7px;
+
+  box-shadow: 0 5px 18px rgba(25, 45, 60, 0.15);
+
+  font-family: Arial, sans-serif;
+}
+
+.marker-info strong {
+  color: #122b42;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.marker-info span {
+  color: #707a82;
+  font-size: 12px;
+}
+
+
+/* =========================================
+   CONTENT
+   ========================================= */
+
+.visit-content {
+  position: relative;
+
+  background: #06243b;
+  color: #ffffff;
+
+  padding: 48px 48px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  z-index: 2;
+}
+
+.visit-label {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin-bottom: 15px;
+}
+
+.visit-label span {
+  font-family: Arial, sans-serif;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+  color: #d4a449;
+}
+
+.visit-label-line {
+  width: 70px;
+  height: 2px;
+  background: #c79a45;
+}
+
+
+/* =========================================
+   TITLE
+   ========================================= */
+
+.visit-content h2 {
+  margin: 0 0 20px;
+
+  color: #ffffff;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: clamp(30px, 2.4vw, 42px);
+  line-height: 1.15;
+
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+
+/* =========================================
+   DESCRIPTION
+   ========================================= */
+
+.visit-content p {
+  max-width: 470px;
+
+  margin: 0 0 28px;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-family: Arial, sans-serif;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   BUTTON
+   ========================================= */
+
+.visit-button {
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  padding: 13px 24px;
+
+  border: 1px solid #c99b4a;
+  border-radius: 8px;
+
+  background: transparent;
+  color: #ffffff;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.visit-button svg {
+  font-size: 13px;
+
+  transition: transform 0.25s ease;
+}
+
+.visit-button:hover {
+  background: #c99b4a;
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+.visit-button:hover svg {
+  transform: translateX(5px);
+}
+
+
+/* =========================================
+   OFFICE IMAGE
+   ========================================= */
+
+.visit-image {
+  position: relative;
+
+  min-height: 360px;
+
+  overflow: hidden;
+
+  background: #ddd;
+}
+
+.visit-image img {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  inset: 0;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  display: block;
+
+  transition: transform 0.5s ease;
+}
+
+.visit-image:hover img {
+  transform: scale(1.04);
+}
+
+.image-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(4, 25, 41, 0.15),
+      transparent 50%
+    );
+}
+
+
+/* =========================================
+   OFFICE LOGO
+   ========================================= */
+
+.office-logo {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  color: #102c43;
+
+  z-index: 3;
+}
+
+.logo-symbol {
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 7px;
+
+  font-size: 42px;
+
+  border-bottom: 2px solid #b68a43;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.logo-text strong {
+  font-size: 29px;
+  letter-spacing: 1px;
+}
+
+.logo-text small {
+  margin-top: 1px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+   ========================================= */
+
+@media (max-width: 1100px) {
+
+  .visit-office-container {
+    grid-template-columns: 1fr 0.9fr;
+  }
+
+  .visit-map {
+    min-height: 330px;
+  }
+
+  .visit-content {
+    padding: 40px 35px;
+  }
+
+  .visit-image {
+    display: none;
+  }
+
+  .visit-content h2 {
+    font-size: 32px;
+  }
+}
+
+
+/* =========================================
+   RESPONSIVE - MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  .visit-office-container {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 0;
+  }
+
+  .visit-map {
+    min-height: 300px;
+    order: 2;
+  }
+
+  .visit-content {
+    min-height: 330px;
+
+    padding: 40px 25px;
+
+    order: 1;
+  }
+
+  .visit-image {
+    display: block;
+
+    min-height: 300px;
+
+    order: 3;
+  }
+
+  .visit-content h2 {
+    font-size: 31px;
+  }
+
+  .visit-content p {
+    font-size: 14px;
+  }
+
+  .office-marker {
+    left: 50%;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+  .visit-content {
+    padding: 35px 20px;
+  }
+
+  .visit-label span {
+    font-size: 12px;
+  }
+
+  .visit-label-line {
+    width: 45px;
+  }
+
+  .visit-content h2 {
+    font-size: 28px;
+  }
+
+  .visit-content p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .visit-button {
+    padding: 12px 20px;
+  }
+
+  .office-marker {
+    transform: translateX(-50%) scale(0.85);
+  }
+}

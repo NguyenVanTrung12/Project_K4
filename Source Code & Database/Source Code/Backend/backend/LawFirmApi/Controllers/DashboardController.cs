@@ -1,0 +1,10 @@
+using LawFirmApi.Data; using LawFirmApi.DTOs; using Microsoft.AspNetCore.Authorization; using Microsoft.AspNetCore.Mvc; using Microsoft.EntityFrameworkCore;
+namespace LawFirmApi.Controllers;
+[ApiController][Route("api/dashboard")][Authorize(Roles= "admin,lawyer,staff")]
+public class DashboardController:ControllerBase
+{private readonly AppDbContext _db;public DashboardController(AppDbContext db)=>_db=db;
+ [HttpGet("public-stats")][Microsoft.AspNetCore.Authorization.AllowAnonymous]
+ public async Task<ActionResult<object>> PublicStats(){var lawyers=await _db.Lawyers.CountAsync();var clients=await _db.Clients.CountAsync();var cases=await _db.Cases.CountAsync();var reviews=await _db.Reviews.CountAsync();var rating=reviews==0?0:await _db.Reviews.AverageAsync(x=>(double)x.Rating);return Ok(new{lawyers,clients,cases,reviews,rating=Math.Round(rating,1)});}
+
+ [HttpGet("stats")] public async Task<ActionResult<DashboardStatsDto>> Stats(){var today=DateTime.UtcNow.Date;var start=today.AddDays(-6);var a=await _db.Appointments.Where(x=>x.ScheduledAt>=start).ToListAsync();var cases=await _db.Cases.Include(x=>x.PracticeArea).ToListAsync();var n=Guid.Parse(User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)!.Value);return Ok(new DashboardStatsDto{TotalUsers=await _db.Users.CountAsync(),TotalLawyers=await _db.Lawyers.CountAsync(),TotalClients=await _db.Clients.CountAsync(),TotalAppointments=await _db.Appointments.CountAsync(),TotalCases=await _db.Cases.CountAsync(),TotalRequests=await _db.ConsultationRequests.CountAsync(),PendingAppointments=await _db.Appointments.CountAsync(x=>x.Status=="pending"),UnreadNotifications=await _db.Notifications.CountAsync(x=>x.UserId==n&&!x.IsRead),AppointmentsByDay=Enumerable.Range(0,7).Select(i=>{var d=start.AddDays(i);return new DashboardPointDto{Label=d.ToString("dd/MM"),Value=a.Count(x=>x.ScheduledAt.Date==d)};}).ToList(),CasesByArea=cases.GroupBy(x=>x.PracticeArea?.Name??"Khác").Select(g=>new DashboardPointDto{Label=g.Key,Value=g.Count()}).OrderByDescending(x=>x.Value).ToList()});}
+}

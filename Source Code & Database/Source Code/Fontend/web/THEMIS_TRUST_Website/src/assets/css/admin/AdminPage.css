@@ -1,0 +1,874 @@
+/* =========================================================
+   1. ADMIN LAYOUT
+========================================================= */
+
+.admin-layout {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background: #f5f7f9;
+  overflow: hidden;
+}
+
+/* Khu vực bên phải Sidebar */
+.admin-layout__right {
+  width: calc(100% - 230px);
+  min-width: 0;
+  min-height: 100vh;
+  margin-left: 230px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Content Container */
+.admin-layout__content {
+  width: 100%;
+  min-width: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-top: 70px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #f5f7f9;
+}
+
+.admin-layout__content > * {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Scrollbar Layout Main */
+.admin-layout__content::-webkit-scrollbar {
+  width: 7px;
+}
+
+.admin-layout__content::-webkit-scrollbar-track {
+  background: #f1f3f5;
+}
+
+.admin-layout__content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #c6cdd4;
+}
+
+.admin-layout__content::-webkit-scrollbar-thumb:hover {
+  background: #aeb7c0;
+}
+
+
+/* =========================================================
+   2. CASE MANAGEMENT & ROLE INFO
+========================================================= */
+
+.case-role-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #eff6ff;
+  color: #475569;
+  font-size: 13px;
+}
+
+.case-role-info svg {
+  color: #2563eb;
+}
+
+.case-role-info strong {
+  color: #0f172a;
+}
+
+
+/* =========================================================
+   3. CASE DETAIL MODAL (OVERLAY & FRAME)
+========================================================= */
+
+.case-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.case-modal {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: modalFadeIn 0.25s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+
+/* =========================================================
+   4. MODAL HEADER & CONTROLS
+========================================================= */
+
+.case-modal-header {
+  flex: 0 0 auto;
+  padding: 20px 28px;
+  border-bottom: 1px solid #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+}
+
+.case-modal-title {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.case-modal-title > svg {
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.case-modal-title h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.case-modal-title span,
+.case-modal-title small {
+  display: block;
+  margin-top: 3px;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Nhóm chứa các nút thao tác ở Header (Close, Edit,...) */
+.case-modal-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Nút Chỉnh sửa thông tin (Header hoặc Body) */
+.case-modal-edit,
+.case-modal-body .btn-edit {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background-color: #f1f5f9;
+  color: #2563eb;
+  border: 1px solid #e2e8f0;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.case-modal-edit:hover,
+.case-modal-body .btn-edit:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+/* Nút Đóng Modal */
+.case-modal-close {
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 9px;
+  background: #f1f5f9;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s ease;
+}
+
+.case-modal-close:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.case-modal-close:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   5. MODAL BODY & CONTENT STRUCTURE
+========================================================= */
+
+.case-modal-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  padding: 28px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.case-modal-body::-webkit-scrollbar {
+  width: 7px;
+}
+
+.case-modal-body::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+.case-modal-body::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.case-modal-body p {
+  font-size: 14.5px;
+  color: #334155;
+  margin: 0;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   6. INFO GRID (LƯỚI THÔNG TIN CHI TIẾT)
+========================================================= */
+
+.case-detail-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  box-sizing: border-box;
+}
+
+.case-detail-item {
+  min-width: 0;
+  padding: 16px;
+  box-sizing: border-box;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.case-detail-item span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 6px;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.case-detail-item span svg {
+  width: 14px;
+  height: 14px;
+}
+
+.case-detail-item strong {
+  display: block;
+  color: #0f172a;
+  font-size: 14.5px;
+  font-weight: 600;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+
+/* =========================================================
+   7. SECTIONS & NEXT STEP
+========================================================= */
+
+.case-detail-section {
+  width: 100%;
+}
+
+.case-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.case-modal-body h3,
+.case-section-header h3,
+.case-modal-body .section-title {
+  margin: 0;
+  color: #0f172a;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.case-section-header span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.case-next-step {
+  min-height: 20px;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  color: #334155;
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   8. BUTTONS & ACTIONS
+========================================================= */
+
+.case-detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.case-primary-button,
+.case-secondary-button,
+.case-danger-button,
+.case-modal-body .btn-primary,
+.case-modal-body button:not(.case-event-actions button):not(.case-document-actions button) {
+  border: 0;
+  border-radius: 9px;
+  padding: 10px 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 13.5px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.case-primary-button,
+.case-modal-body .btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.case-primary-button:hover,
+.case-modal-body .btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.case-secondary-button {
+  background: #f1f5f9;
+  color: #0f172a;
+  border: 1px solid #e2e8f0;
+}
+
+.case-secondary-button:hover {
+  background: #e2e8f0;
+}
+
+.case-danger-button {
+  background: #dc2626;
+  color: #ffffff;
+}
+
+.case-danger-button:hover {
+  background: #b91c1c;
+}
+
+.case-primary-button:disabled,
+.case-secondary-button:disabled,
+.case-danger-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   9. FORMS
+========================================================= */
+
+.case-form {
+  margin-top: 12px;
+  padding: 20px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.case-form h3 {
+  margin: 0 0 14px;
+  color: #0f172a;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.case-form label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.case-form input,
+.case-form select,
+.case-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.case-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.case-form input:focus,
+.case-form select:focus,
+.case-form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.case-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.case-checkbox-label {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.case-checkbox-label input {
+  width: auto;
+}
+
+
+/* =========================================================
+   10. TIMELINE
+========================================================= */
+
+.case-timeline {
+  position: relative;
+  width: 100%;
+}
+
+.case-timeline-item {
+  position: relative;
+  display: flex;
+  gap: 14px;
+  padding-bottom: 18px;
+}
+
+.case-timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.case-timeline-icon {
+  position: relative;
+  z-index: 2;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.case-timeline-item:not(:last-child) .case-timeline-icon::after {
+  content: "";
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  width: 2px;
+  height: calc(100% + 18px);
+  transform: translateX(-50%);
+  background: #e2e8f0;
+  z-index: -1;
+}
+
+.case-timeline-item.done .case-timeline-icon {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.case-timeline-content {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.case-timeline-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.case-timeline-top strong {
+  color: #0f172a;
+  font-size: 14px;
+}
+
+.case-timeline-top span {
+  flex: 0 0 auto;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.case-timeline-content p {
+  margin: 6px 0 0;
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.case-event-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.case-event-actions button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #2563eb;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.case-event-actions button:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   11. DOCUMENTS
+========================================================= */
+
+.case-upload-button {
+  border: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.case-upload-button:hover {
+  background: #1d4ed8;
+}
+
+.case-upload-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.case-documents {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.case-document {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.case-document-icon {
+  flex: 0 0 38px;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: #eff6ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.case-document-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.case-document-info strong {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #0f172a;
+  font-size: 13.5px;
+}
+
+.case-document-info small {
+  display: block;
+  margin-top: 2px;
+  color: #64748b;
+  font-size: 11.5px;
+}
+
+.case-document-actions {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.case-document-actions button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.case-document-view {
+  color: #2563eb;
+}
+
+.case-document-view:hover {
+  color: #1d4ed8;
+}
+
+.case-document-delete {
+  color: #dc2626;
+}
+
+.case-document-delete:hover {
+  color: #b91c1c;
+}
+
+.case-document-delete:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   12. EMPTY STATE
+========================================================= */
+
+.case-empty {
+  padding: 24px;
+  text-align: center;
+  color: #64748b;
+}
+
+.case-empty svg {
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.case-empty p {
+  margin: 0;
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   13. RESPONSIVE BREAKPOINTS
+========================================================= */
+
+/* Desktop Màn hình lớn */
+@media (min-width: 1600px) {
+  .admin-layout__right {
+    width: calc(100% - 230px);
+    margin-left: 230px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1200px) {
+  .admin-layout__right {
+    width: calc(100% - 72px);
+    margin-left: 72px;
+  }
+}
+
+/* Màn hình vừa (Dưới 900px) */
+@media (max-width: 900px) {
+  .case-modal-overlay {
+    padding: 12px;
+  }
+
+  .case-modal {
+    max-height: 92vh;
+    border-radius: 14px;
+  }
+
+  .case-detail-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile (Dưới 650px) */
+@media (max-width: 650px) {
+  .admin-layout {
+    display: block;
+    overflow: visible;
+  }
+
+  .admin-layout__right {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .admin-layout__content {
+    padding-top: 64px;
+    min-height: calc(100vh - 64px);
+    overflow-y: auto;
+  }
+
+  .case-modal-overlay {
+    padding: 8px;
+  }
+
+  .case-modal {
+    width: 100%;
+    max-height: 96vh;
+    border-radius: 12px;
+  }
+
+  .case-modal-header {
+    padding: 16px;
+  }
+
+  .case-modal-body {
+    padding: 16px;
+    gap: 18px;
+  }
+
+  .case-detail-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .case-timeline-top {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .case-document {
+    align-items: flex-start;
+  }
+
+  .case-document-actions {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+}
+
+.lawyer-primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Khoảng cách giữa icon và chữ */
+  
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #2b6cb0; /* Màu xanh đồng bộ (hoặc đổi thành màu primary bạn muốn) */
+  
+  border: none;
+  border-radius: 6px; /* Bo góc mềm mại */
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hiệu ứng khi rê chuột vào */
+.lawyer-primary-button:hover {
+  background-color: #2c5282;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+/* Hiệu ứng khi nhấn giữ */
+.lawyer-primary-button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}

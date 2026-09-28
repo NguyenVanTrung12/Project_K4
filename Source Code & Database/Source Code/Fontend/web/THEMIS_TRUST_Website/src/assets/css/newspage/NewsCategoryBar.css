@@ -1,0 +1,397 @@
+/* =========================================
+   NEWS CATEGORY BAR
+========================================= */
+
+.news-category-section {
+  background: #ffffff;
+  border-top: 1px solid #eef1f5;
+  border-bottom: 1px solid #eef1f5;
+  box-sizing: border-box;
+}
+
+.news-category-container {
+  min-height: 96px;
+  margin: 0 auto;
+  padding: 0 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   CATEGORY LIST
+========================================= */
+
+.news-category-list {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+  min-width: 0;
+}
+
+
+/* =========================================
+   CATEGORY ITEM
+========================================= */
+
+.news-category-item {
+  position: relative;
+
+  height: 62px;
+  padding: 0 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border: none;
+  border-right: 1px solid #edf0f4;
+
+  background: transparent;
+
+  color: #142a45;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.news-category-item:first-child {
+  border-right: none;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.news-category-icon {
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #102a48;
+
+  font-size: 18px;
+
+  flex-shrink: 0;
+
+  transition: color 0.25s ease;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.news-category-label {
+  line-height: 1;
+}
+
+
+/* =========================================
+   ACTIVE
+========================================= */
+
+.news-category-item.active {
+  min-width: 164px;
+
+  margin-right: 18px;
+
+  border: none;
+  border-radius: 17px;
+
+  background: linear-gradient(
+    135deg,
+    #c99532,
+    #d9ad55
+  );
+
+  color: #ffffff;
+
+  box-shadow: 0 5px 14px rgba(174, 126, 36, 0.18);
+}
+
+.news-category-item.active .news-category-icon {
+  color: #ffffff;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.news-category-item:not(.active):hover {
+  color: #b7852e;
+}
+
+.news-category-item:not(.active):hover .news-category-icon {
+  color: #b7852e;
+}
+
+.news-category-item.active:hover {
+  transform: translateY(-1px);
+
+  background: linear-gradient(
+    135deg,
+    #bd8b29,
+    #d0a246
+  );
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.news-search-box {
+  width: 385px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #e0e6ed;
+  border-radius: 15px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 2px 8px rgba(15, 42, 70, 0.03);
+
+  flex-shrink: 0;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.news-search-box:focus-within {
+  border-color: #c99a3d;
+
+  box-shadow:
+    0 0 0 3px rgba(201, 154, 61, 0.08);
+}
+
+
+/* =========================================
+   SEARCH INPUT
+========================================= */
+
+.news-search-box input {
+  width: 100%;
+  height: 100%;
+
+  padding: 0 18px;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #162d48;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+
+  box-sizing: border-box;
+}
+
+.news-search-box input::placeholder {
+  color: #9ba8b8;
+}
+
+
+/* =========================================
+   SEARCH BUTTON
+========================================= */
+
+.news-search-button {
+  width: 58px;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: transparent;
+
+  color: #102a48;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  flex-shrink: 0;
+
+  transition: color 0.25s ease;
+}
+
+.news-search-button:hover {
+  color: #c39232;
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 1200px) {
+
+  .news-category-container {
+    padding: 0 28px;
+    gap: 20px;
+  }
+
+  .news-category-item {
+    padding: 0 18px;
+    gap: 10px;
+
+    font-size: 14px;
+  }
+
+  .news-category-item.active {
+    min-width: 140px;
+    margin-right: 8px;
+  }
+
+  .news-category-icon {
+    font-size: 19px;
+  }
+
+  .news-search-box {
+    width: 300px;
+    height: 58px;
+  }
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET SMALL
+========================================= */
+
+@media (max-width: 992px) {
+
+  .news-category-container {
+    min-height: auto;
+
+    padding: 18px 24px;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 18px;
+  }
+
+  .news-category-list {
+    width: 100%;
+
+    overflow-x: auto;
+
+    padding-bottom: 4px;
+
+    scrollbar-width: none;
+  }
+
+  .news-category-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .news-category-item {
+    height: 54px;
+
+    padding: 0 20px;
+
+    flex-shrink: 0;
+  }
+
+  .news-category-item.active {
+    min-width: 140px;
+  }
+
+  .news-search-box {
+    width: 100%;
+    height: 56px;
+  }
+}
+
+
+/* =========================================
+   RESPONSIVE - MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+  .news-category-container {
+    padding: 14px 16px;
+    gap: 14px;
+  }
+
+  .news-category-list {
+    gap: 8px;
+  }
+
+  .news-category-item {
+    height: 48px;
+
+    padding: 0 15px;
+
+    gap: 8px;
+
+    border: 1px solid #e8edf2;
+    border-radius: 12px;
+
+    font-size: 13px;
+  }
+
+  .news-category-item:first-child {
+    border: 1px solid #e8edf2;
+  }
+
+  .news-category-item.active {
+    min-width: 120px;
+
+    margin-right: 0;
+
+    border: none;
+    border-radius: 12px;
+  }
+
+  .news-category-icon {
+    font-size: 17px;
+  }
+
+  .news-search-box {
+    height: 50px;
+    border-radius: 12px;
+  }
+
+  .news-search-box input {
+    font-size: 14px;
+  }
+
+  .news-search-button {
+    width: 50px;
+    font-size: 17px;
+  }
+}

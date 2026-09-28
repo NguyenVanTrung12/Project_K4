@@ -1,0 +1,767 @@
+/* =========================================================
+   FEATURED ARTICLES
+========================================================= */
+
+.featured-section {
+  width: 100%;
+  background: #f7fafd;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.featured-container {
+  width: 100%;
+  max-width: 1440px;
+
+  margin: 0 auto;
+  padding: 42px 44px 48px;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 380px;
+
+  gap: 28px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LEFT
+========================================================= */
+
+.featured-main {
+  min-width: 0;
+}
+
+.featured-title {
+  margin: 0 0 28px;
+
+  color: #0a2540;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: 36px;
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+
+/* =========================================================
+   FEATURED CARD
+========================================================= */
+
+.featured-card {
+  width: 100%;
+  min-height: 410px;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  background: #ffffff;
+
+  border: 1px solid #e3eaf1;
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 5px 18px rgba(15, 43, 68, 0.04);
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.featured-image-wrapper {
+  width: 100%;
+  height: 100%;
+
+  min-height: 410px;
+
+  overflow: hidden;
+}
+
+.featured-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.featured-card:hover .featured-image {
+  transform: scale(1.03);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.featured-content {
+  padding: 38px 34px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CATEGORY
+========================================================= */
+
+.featured-category {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 7px 13px;
+
+  margin-bottom: 20px;
+
+  border-radius: 8px;
+
+  background: #092943;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   DATE
+========================================================= */
+
+.featured-date {
+  margin-bottom: 12px;
+
+  color: #6d7c8d;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   ARTICLE TITLE
+========================================================= */
+
+.featured-article-title {
+  margin: 0 0 18px;
+
+  color: #09253f;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: 30px;
+  font-weight: 700;
+
+  line-height: 1.18;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.featured-description {
+  margin: 0;
+
+  color: #718093;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 16px;
+  font-weight: 400;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   READ MORE
+========================================================= */
+
+.featured-read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: auto;
+  padding-top: 25px;
+
+  color: #0965aa;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    gap 0.25s ease;
+}
+
+.featured-read-more svg {
+  font-size: 13px;
+}
+
+.featured-read-more:hover {
+  color: #c49337;
+  gap: 16px;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.featured-sidebar {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+
+/* =========================================================
+   QUOTE CARD
+========================================================= */
+
+.legal-quote {
+  position: relative;
+
+  min-height: 205px;
+
+  padding: 34px 38px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f0f3f7 0%,
+      #f8f9fa 55%,
+      #eef2f5 100%
+    );
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* Decorative feather-like effect */
+
+.legal-quote::after {
+  content: "✦";
+
+  position: absolute;
+
+  right: 32px;
+  bottom: 18px;
+
+  color: rgba(184, 143, 67, 0.12);
+
+  font-family: Georgia, serif;
+
+  font-size: 90px;
+
+  transform: rotate(-15deg);
+}
+
+
+/* =========================================================
+   QUOTE TEXT
+========================================================= */
+
+.legal-quote p {
+  position: relative;
+  z-index: 1;
+
+  max-width: 330px;
+
+  margin: 0;
+
+  color: #31465c;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: 22px;
+  font-style: italic;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   QUOTE LINE
+========================================================= */
+
+.quote-line {
+  position: relative;
+  z-index: 2;
+
+  width: 76px;
+  height: 3px;
+
+  margin-top: 22px;
+
+  background: #c5963b;
+}
+
+
+/* =========================================================
+   NEWSLETTER
+========================================================= */
+
+.newsletter-card {
+  position: relative;
+
+  min-height: 258px;
+
+  padding: 32px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #05233b 0%,
+      #092d49 55%,
+      #061f34 100%
+    );
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* Background decoration */
+
+.newsletter-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 230px;
+  height: 230px;
+
+  right: -80px;
+  bottom: -100px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.newsletter-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 170px;
+  height: 170px;
+
+  right: -50px;
+  bottom: -75px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+
+/* =========================================================
+   NEWSLETTER CONTENT
+========================================================= */
+
+.newsletter-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+}
+
+.newsletter-content h3 {
+  margin: 0 0 10px;
+
+  color: #ffffff;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: 27px;
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+.newsletter-content p {
+  max-width: 310px;
+
+  margin: 0 0 22px;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 15px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   NEWSLETTER FORM
+========================================================= */
+
+.newsletter-form {
+  width: 100%;
+
+  display: flex;
+  align-items: stretch;
+
+  background: #ffffff;
+
+  border-radius: 11px;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.newsletter-input {
+  flex: 1;
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 15px;
+
+  color: #9aa6b4;
+}
+
+.newsletter-input svg {
+  display: none;
+}
+
+.newsletter-input input {
+  width: 100%;
+  height: 58px;
+
+  padding: 0 12px;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #152d46;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 14px;
+}
+
+.newsletter-input input::placeholder {
+  color: #a7b0ba;
+}
+
+
+/* =========================================================
+   REGISTER BUTTON
+========================================================= */
+
+.newsletter-form button {
+  min-width: 145px;
+  height: 58px;
+
+  padding: 0 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  border: none;
+
+  background: linear-gradient(
+    135deg,
+    #c18e2e,
+    #d4a64d
+  );
+
+  color: #ffffff;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease;
+}
+
+.newsletter-form button:hover {
+  background: linear-gradient(
+    135deg,
+    #b68126,
+    #c7973b
+  );
+}
+
+.newsletter-form button svg {
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   LARGE SCREEN
+========================================================= */
+
+@media (min-width: 1600px) {
+
+  .featured-container {
+    max-width: 1500px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .featured-title {
+    font-size: 40px;
+  }
+
+  .featured-card {
+    min-height: 440px;
+  }
+
+  .featured-image-wrapper {
+    min-height: 440px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .featured-container {
+    padding: 38px 28px;
+    grid-template-columns: minmax(0, 1fr) 330px;
+    gap: 20px;
+  }
+
+  .featured-card {
+    grid-template-columns: 48% 52%;
+  }
+
+  .featured-content {
+    padding: 28px 25px;
+  }
+
+  .featured-article-title {
+    font-size: 25px;
+  }
+
+  .featured-description {
+    font-size: 14px;
+  }
+
+  .legal-quote {
+    padding: 28px;
+  }
+
+  .legal-quote p {
+    font-size: 19px;
+  }
+
+  .newsletter-card {
+    padding: 26px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    background: transparent;
+    gap: 8px;
+  }
+
+  .newsletter-input {
+    background: #ffffff;
+    border-radius: 9px;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+    border-radius: 9px;
+  }
+}
+
+
+/* =========================================================
+   TABLET SMALL
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .featured-container {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .legal-quote,
+  .newsletter-card {
+    min-height: 250px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .featured-container {
+    padding: 32px 16px 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+  }
+
+  .featured-title {
+    margin-bottom: 20px;
+
+    font-size: 29px;
+  }
+
+  .featured-card {
+    display: flex;
+    flex-direction: column;
+
+    min-height: auto;
+  }
+
+  .featured-image-wrapper {
+    height: 250px;
+    min-height: 250px;
+  }
+
+  .featured-content {
+    padding: 25px 22px;
+  }
+
+  .featured-category {
+    margin-bottom: 15px;
+
+    font-size: 13px;
+  }
+
+  .featured-date {
+    font-size: 13px;
+  }
+
+  .featured-article-title {
+    margin-bottom: 15px;
+
+    font-size: 24px;
+
+    line-height: 1.25;
+  }
+
+  .featured-article-title br {
+    display: none;
+  }
+
+  .featured-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .featured-read-more {
+    margin-top: 22px;
+    padding-top: 0;
+  }
+
+  .featured-sidebar {
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+  }
+
+  .legal-quote {
+    min-height: 210px;
+
+    padding: 28px 25px;
+  }
+
+  .legal-quote p {
+    font-size: 20px;
+  }
+
+  .newsletter-card {
+    min-height: 250px;
+
+    padding: 26px 22px;
+  }
+
+  .newsletter-content h3 {
+    font-size: 24px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-input {
+    border-radius: 9px;
+  }
+
+  .newsletter-form button {
+    height: 52px;
+    min-width: 100%;
+    border-radius: 9px;
+  }
+}

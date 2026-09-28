@@ -1,0 +1,1344 @@
+/* =========================================================
+   NOTIFICATION PAGE
+========================================================= */
+
+.notification-page {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  padding: 10px 11px 18px;
+
+  background: #f7f8fa;
+
+  color: #18334e;
+
+  font-family:'Times New Roman', Times, serif;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.notification-hero {
+  position: relative;
+
+  width: 100%;
+  height: 175px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  padding:
+    0 43px;
+
+  border-radius: 8px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(51, 39, 29, 0.43) 0%,
+      rgba(52, 39, 29, 0.18) 45%,
+      rgba(4, 19, 31, 0.78) 100%
+    ),
+    url("../../src/assets/images/banner/banner6.png");
+
+  background-size: cover;
+
+  background-position: center;
+
+  box-shadow:
+    0 2px 7px
+    rgba(18, 35, 50, 0.08);
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.notification-hero__content {
+  position: relative;
+
+  z-index: 2;
+}
+
+
+.notification-hero__content h1 {
+  margin:
+    0 0 6px;
+
+  color: #ffffff;
+
+  font-size: 38px;
+  line-height: 1.12;
+
+  font-weight: 700;
+
+  text-shadow:
+    0 2px 5px
+    rgba(0, 0, 0, 0.45);
+}
+
+
+.notification-hero__content p {
+  margin: 0;
+
+  color:
+    rgba(255, 255, 255, 0.94);
+
+  font-size: 15px;
+  line-height: 1.5;
+
+  text-shadow:
+    0 2px 5px
+    rgba(0, 0, 0, 0.4);
+}
+
+
+/* =========================================================
+   HERO QUOTE
+========================================================= */
+
+.notification-hero__quote {
+  position: relative;
+
+  z-index: 2;
+
+  width: 225px;
+
+  padding-left: 17px;
+}
+
+
+.notification-quote-mark {
+  position: absolute;
+
+  left: -4px;
+  top: -13px;
+
+  color: #d9a54b;
+
+  font-size: 42px;
+
+  line-height: 1;
+}
+
+
+.notification-hero__quote p {
+  margin: 0;
+
+  color:
+    rgba(255, 255, 255, 0.93);
+
+  font-size: 15px;
+
+  line-height: 1.48;
+
+  font-style: italic;
+
+  text-shadow:
+    0 2px 5px
+    rgba(0, 0, 0, 0.45);
+}
+
+
+.notification-quote-line {
+  width: 35px;
+  height: 2px;
+
+  margin:
+    12px 0 8px;
+
+  background: #d19a3c;
+}
+
+
+.notification-quote-brand {
+  color:
+    rgba(255, 255, 255, 0.68);
+
+  font-family:
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  font-size: 9px;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   TOOLBAR
+========================================================= */
+
+.notification-toolbar {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 18px;
+
+  margin-top: 19px;
+}
+
+
+/* =========================================================
+   FILTER LIST
+========================================================= */
+
+.notification-filter-list {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  min-width: 0;
+}
+
+
+.notification-filter {
+  position: relative;
+
+  height: 43px;
+
+  min-width: 128px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding:
+    0 17px;
+
+  box-sizing: border-box;
+
+  border:
+    1px solid #e2e7ec;
+
+  border-radius: 6px;
+
+  color: #314b66;
+
+  background: #ffffff;
+
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 13px;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    all 0.2s ease;
+}
+
+
+.notification-filter svg {
+  font-size: 14px;
+}
+
+
+.notification-filter:hover {
+  border-color: #cfa052;
+
+  color: #a66f20;
+
+  background: #fffdf9;
+}
+
+
+.notification-filter.active {
+  border-color: #c18a30;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #c8953d,
+      #b77b20
+    );
+
+  box-shadow:
+    0 4px 10px
+    rgba(177, 122, 31, 0.16);
+}
+
+
+.filter-badge {
+  position: absolute;
+
+  top: -7px;
+  right: -5px;
+
+  width: 19px;
+  height: 19px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  background: #ed4141;
+
+  font-family:
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.notification-search {
+  width: 274px;
+  height: 43px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  padding:
+    0 13px;
+
+  border:
+    1px solid #e0e5ea;
+
+  border-radius: 6px;
+
+  background: #ffffff;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.notification-search:focus-within {
+  border-color: #c28a30;
+
+  box-shadow:
+    0 0 0 2px
+    rgba(194, 138, 48, 0.08);
+}
+
+
+.notification-search svg {
+  color: #526b84;
+
+  font-size: 14px;
+}
+
+
+.notification-search input {
+  width: 100%;
+
+  height: 100%;
+
+  padding:
+    0 0 0 10px;
+
+  border: none;
+
+  outline: none;
+
+  color: #304963;
+
+  background: transparent;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: 12px;
+}
+
+
+.notification-search input::placeholder {
+  color: #9aa7b4;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.notification-content {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 2fr)
+    minmax(340px, 1fr);
+
+  gap: 13px;
+
+  margin-top: 12px;
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   LIST CARD
+========================================================= */
+
+.notification-list-card {
+  width: 100%;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  border:
+    1px solid #e7ebef;
+
+  border-radius: 7px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 2px 6px
+    rgba(18, 35, 50, 0.025);
+}
+
+
+/* =========================================================
+   NOTIFICATION ITEM
+========================================================= */
+
+.notification-item {
+  position: relative;
+
+  min-height: 92px;
+
+  display: grid;
+
+  grid-template-columns:
+    78px
+    minmax(0, 1fr)
+    100px;
+
+  align-items: center;
+
+  gap: 12px;
+
+  box-sizing: border-box;
+
+  padding:
+    11px 24px 11px 18px;
+
+  border-bottom:
+    1px solid #edf0f3;
+
+  background: #ffffff;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease;
+}
+
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+
+.notification-item:hover {
+  background:
+    #fcfaf6;
+}
+
+
+.notification-item.unread {
+  background:
+    linear-gradient(
+      90deg,
+      #fffaf2 0%,
+      #ffffff 80%
+    );
+}
+
+
+.notification-item__icon {
+  width: 56px;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  font-size: 20px;
+}
+
+
+.notification-item__icon.gold {
+  color: #ad7521;
+
+  background:
+    #fcf0dc;
+}
+
+
+.notification-item__icon.red {
+  color: #a55367;
+
+  background:
+    #faeef2;
+}
+
+
+.notification-item__icon.blue {
+  color: #254b71;
+
+  background:
+    #eaf2fa;
+}
+
+
+/* =========================================================
+   ITEM CONTENT
+========================================================= */
+
+.notification-item__content {
+  min-width: 0;
+}
+
+
+.notification-item__content h3 {
+  margin:
+    0 0 5px;
+
+  color: #1d3853;
+
+  font-size: 15px;
+  line-height: 1.25;
+
+  font-weight: 700;
+}
+
+
+.notification-item__content p {
+  max-width: 720px;
+
+  margin: 0;
+
+  color: #657a90;
+
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+
+/* =========================================================
+   ITEM RIGHT
+========================================================= */
+
+.notification-item__right {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 13px;
+
+  align-self: center;
+}
+
+
+.notification-time {
+  color: #9a7a45;
+
+  font-size: 11px;
+
+  white-space: nowrap;
+}
+
+
+.notification-arrow {
+  color: #9aabb9;
+
+  font-size: 10px;
+}
+
+
+.notification-unread-dot {
+  position: absolute;
+
+  top: 27px;
+  left: 96px;
+
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: #ee3d3d;
+
+  box-shadow:
+    0 0 0 2px #ffffff;
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.notification-empty {
+  min-height: 350px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  color: #8b99a7;
+}
+
+
+.notification-empty svg {
+  margin-bottom: 12px;
+
+  font-size: 30px;
+
+  color: #c28b31;
+}
+
+
+.notification-empty h3 {
+  margin: 0 0 5px;
+
+  color: #334d66;
+
+  font-size: 17px;
+}
+
+
+.notification-empty p {
+  margin: 0;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.notification-sidebar {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+
+/* =========================================================
+   IMPORTANT CARD
+========================================================= */
+
+.notification-important-card {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding:
+    17px 16px 15px;
+
+  border:
+    1px solid #e7e9eb;
+
+  border-radius: 7px;
+
+  background: #ffffff;
+}
+
+
+.notification-sidebar-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 15px;
+}
+
+
+.notification-sidebar-title__icon {
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  color: #ae7621;
+
+  background:
+    #faedd7;
+
+  font-size: 17px;
+}
+
+
+.notification-sidebar-title h2 {
+  margin: 0;
+
+  color: #1d3852;
+
+  font-size: 17px;
+
+  line-height: 1.2;
+}
+
+
+.important-count {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 3px;
+
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  background: #ec3f3f;
+
+  font-family:
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   IMPORTANT ITEM
+========================================================= */
+
+.important-notification {
+  position: relative;
+
+  min-height: 91px;
+
+  display: grid;
+
+  grid-template-columns:
+    46px
+    minmax(0, 1fr)
+    15px;
+
+  align-items: center;
+
+  gap: 11px;
+
+  box-sizing: border-box;
+
+  padding:
+    11px 12px;
+
+  border-radius: 7px;
+
+  background:
+    #fff0f1;
+}
+
+
+.important-notification__icon {
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #e24545;
+
+  background:
+    #ffffff;
+
+  font-size: 18px;
+}
+
+
+.important-notification__content h3 {
+  margin:
+    0 0 4px;
+
+  color: #b74444;
+
+  font-size: 13px;
+
+  line-height: 1.25;
+}
+
+
+.important-notification__content p {
+  margin: 0;
+
+  color: #7c6b6e;
+
+  font-size: 10px;
+
+  line-height: 1.45;
+}
+
+
+.important-arrow {
+  color: #e04d4d;
+
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   UNREAD CARD
+========================================================= */
+
+.unread-card {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    50px
+    minmax(0, 1fr);
+
+  gap: 11px;
+
+  box-sizing: border-box;
+
+  padding:
+    16px;
+
+  border:
+    1px solid #e7ebef;
+
+  border-radius: 7px;
+
+  background: #ffffff;
+}
+
+
+.unread-card__icon {
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #ad7521;
+
+  background:
+    #f9ecd8;
+
+  font-size: 17px;
+}
+
+
+.unread-card__content h3 {
+  margin:
+    0 0 5px;
+
+  color: #28435e;
+
+  font-size: 15px;
+
+  line-height: 1.2;
+}
+
+
+.unread-card__content p {
+  margin:
+    0 0 10px;
+
+  color: #76889b;
+
+  font-size: 10px;
+
+  line-height: 1.4;
+}
+
+
+.unread-card__content button {
+  height: 37px;
+
+  padding:
+    0 17px;
+
+  border:
+    1px solid #d7b47b;
+
+  border-radius: 5px;
+
+  color: #b27927;
+
+  background: #ffffff;
+
+  font-family:'Times New Roman', Times, serif;
+
+  font-size: 11px;
+
+  cursor: pointer;
+
+  transition:
+    all 0.2s ease;
+}
+
+
+.unread-card__content button:hover {
+  color: #ffffff;
+
+  border-color: #b77c25;
+
+  background: #b77c25;
+}
+
+
+/* =========================================================
+   SIDEBAR QUOTE
+========================================================= */
+
+.notification-sidebar-quote {
+  position: relative;
+
+  width: 100%;
+  height: 224px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  border-radius: 7px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(248, 239, 225, 0.96) 0%,
+      rgba(248, 239, 225, 0.72) 48%,
+      rgba(248, 239, 225, 0.20) 100%
+    ),
+    url("../../assets/images/banner/notification-side-banner.png");
+
+  background-size: cover;
+
+  background-position: center;
+}
+
+
+.sidebar-quote-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(248, 240, 228, 0.72),
+      transparent 75%
+    );
+}
+
+
+.sidebar-quote-content {
+  position: relative;
+
+  z-index: 2;
+
+  padding:
+    28px 20px;
+}
+
+
+.sidebar-quote-content p {
+  margin: 0;
+
+  color: #213c57;
+
+  font-size: 17px;
+
+  line-height: 1.48;
+
+  font-style: italic;
+
+  font-weight: 600;
+}
+
+
+.sidebar-quote-line {
+  width: 32px;
+  height: 2px;
+
+  margin:
+    18px 0 9px;
+
+  background: #c58a2e;
+}
+
+
+.sidebar-quote-content span {
+  color: #8a8e92;
+
+  font-family:
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  font-size: 9px;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1400px) {
+
+  .notification-page {
+    padding:
+      10px 16px 20px;
+  }
+
+  .notification-hero {
+    height: 180px;
+  }
+
+  .notification-hero__content h1 {
+    font-size: 40px;
+  }
+
+  .notification-hero__content p {
+    font-size: 16px;
+  }
+
+  .notification-item {
+    min-height: 96px;
+  }
+
+  .notification-item__content h3 {
+    font-size: 16px;
+  }
+
+  .notification-item__content p {
+    font-size: 13px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .notification-content {
+    grid-template-columns:
+      minmax(0, 1.7fr)
+      minmax(290px, 1fr);
+  }
+
+  .notification-filter {
+    min-width: auto;
+
+    padding:
+      0 12px;
+  }
+
+  .notification-filter span:not(.filter-badge) {
+    display: none;
+  }
+
+  .notification-filter svg {
+    font-size: 15px;
+  }
+
+  .notification-search {
+    width: 220px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET NHỎ
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .notification-content {
+    grid-template-columns: 1fr;
+  }
+
+  .notification-sidebar {
+    display: grid;
+
+    grid-template-columns:
+      1fr
+      1fr;
+  }
+
+  .notification-important-card {
+    grid-column: 1 / -1;
+  }
+
+  .notification-sidebar-quote {
+    height: 190px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .notification-page {
+    padding: 8px;
+  }
+
+
+  .notification-hero {
+    height: 190px;
+
+    padding:
+      0 22px;
+  }
+
+
+  .notification-hero__content h1 {
+    font-size: 31px;
+  }
+
+
+  .notification-hero__content p {
+    font-size: 13px;
+  }
+
+
+  .notification-hero__quote {
+    display: none;
+  }
+
+
+  .notification-toolbar {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    margin-top: 12px;
+  }
+
+
+  .notification-filter-list {
+    width: 100%;
+
+    overflow-x: auto;
+
+    padding-bottom: 3px;
+  }
+
+
+  .notification-filter {
+    flex-shrink: 0;
+
+    min-width: 105px;
+  }
+
+
+  .notification-filter span:not(.filter-badge) {
+    display: inline;
+  }
+
+
+  .notification-search {
+    width: 100%;
+  }
+
+
+  .notification-sidebar {
+    display: flex;
+  }
+
+
+  .notification-item {
+    grid-template-columns:
+      54px
+      minmax(0, 1fr);
+
+    min-height: 104px;
+
+    padding:
+      12px 14px;
+  }
+
+
+  .notification-item__icon {
+    width: 45px;
+    height: 45px;
+
+    font-size: 17px;
+  }
+
+
+  .notification-item__right {
+    grid-column: 2;
+
+    justify-content: flex-start;
+
+    margin-top: 4px;
+  }
+
+
+  .notification-time {
+    font-size: 10px;
+  }
+
+
+  .notification-unread-dot {
+    left: 49px;
+
+    top: 22px;
+
+    width: 8px;
+    height: 8px;
+  }
+
+
+  .notification-item__content h3 {
+    font-size: 14px;
+  }
+
+
+  .notification-item__content p {
+    font-size: 11px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .notification-hero {
+    height: 175px;
+  }
+
+
+  .notification-hero__content h1 {
+    font-size: 28px;
+  }
+
+
+  .notification-hero__content p {
+    font-size: 12px;
+  }
+
+
+  .notification-filter {
+    min-width: 92px;
+
+    padding:
+      0 9px;
+
+    gap: 6px;
+
+    font-size: 11px;
+  }
+
+
+  .notification-sidebar-title h2 {
+    font-size: 15px;
+  }
+
+
+  .notification-item {
+    grid-template-columns:
+      48px
+      minmax(0, 1fr);
+  }
+
+
+  .notification-item__icon {
+    width: 41px;
+    height: 41px;
+  }
+
+
+  .notification-unread-dot {
+    left: 43px;
+  }
+
+
+  .notification-item__content h3 {
+    font-size: 13px;
+  }
+
+
+  .notification-item__content p {
+    font-size: 10px;
+  }
+
+}

@@ -1,0 +1,1109 @@
+/* =========================================================
+   ADMIN CONSULTATION DETAIL
+   Chi tiết yêu cầu / tư vấn - Admin
+========================================================= */
+
+.admin-consultation-detail-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 12px;
+    box-sizing: border-box;
+
+    color: #17385f;
+
+    background:
+        linear-gradient(135deg,
+            #f7f9fc 0%,
+            #ffffff 50%,
+            #f7f9fc 100%);
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* =========================================================
+   BACK
+========================================================= */
+
+.admin-consultation-detail-back {
+    height: 38px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-bottom: 8px;
+    padding: 0 15px;
+
+    border: 1px solid #dce5ef;
+    border-radius: 7px;
+
+    color: #173d70;
+    background: #ffffff;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition:
+        all 0.2s ease;
+}
+
+.admin-consultation-detail-back:hover {
+    background: #f4f7fb;
+    border-color: #bdcddd;
+    transform: translateX(-2px);
+}
+
+
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+
+.admin-consultation-detail-layout {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 3.1fr) minmax(280px, 1.08fr);
+
+    gap: 9px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   LEFT / RIGHT
+========================================================= */
+
+.admin-consultation-detail-main,
+.admin-consultation-detail-sidebar {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.admin-consultation-detail-card {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #e3eaf2;
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 2px 9px rgba(18, 53, 87, 0.035);
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.admin-consultation-detail-card-title {
+    min-height: 30px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+
+    margin-bottom: 12px;
+
+    color: #123b73;
+}
+
+
+.admin-consultation-detail-card-title svg {
+    width: 19px;
+
+    color: #17458a;
+
+    font-size: 18px;
+}
+
+
+.admin-consultation-detail-card-title h2 {
+    margin: 0;
+
+    color: #17395f;
+
+    font-family: 'Times New Roman', Times, serif;
+
+    font-size: 17px;
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   CUSTOMER
+========================================================= */
+
+.admin-consultation-detail-customer {
+    display: flex;
+    align-items: center;
+
+    gap: 19px;
+}
+
+
+.admin-consultation-detail-customer-avatar {
+    width: 118px;
+    min-width: 118px;
+    height: 118px;
+}
+
+
+.admin-consultation-detail-customer-avatar img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 1px solid #e2e7ed;
+
+    background: #eef2f6;
+}
+
+
+.admin-consultation-detail-customer-info {
+    flex: 1;
+    min-width: 0;
+}
+
+
+.admin-consultation-detail-customer-name {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 9px;
+}
+
+
+.admin-consultation-detail-customer-name h1 {
+    margin: 0;
+
+    color: #133d70;
+
+    font-size: 21px;
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+
+.admin-consultation-detail-customer-name span {
+    padding: 5px 10px;
+
+    border-radius: 5px;
+
+    color: #2874c5;
+    background: #e7f1ff;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+.admin-consultation-detail-customer-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(220px, 1fr));
+
+    column-gap: 45px;
+    row-gap: 7px;
+}
+
+
+.admin-consultation-detail-customer-grid div {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    color: #35567d;
+
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+
+.admin-consultation-detail-customer-grid svg {
+    width: 15px;
+    min-width: 15px;
+
+    color: #173f76;
+}
+
+
+/* =========================================================
+   REQUEST
+========================================================= */
+
+.admin-consultation-detail-request-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(280px, 1fr));
+
+    column-gap: 50px;
+    row-gap: 8px;
+}
+
+
+.admin-consultation-detail-request-row {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    min-height: 25px;
+}
+
+
+.admin-consultation-detail-request-row>span:first-child {
+    width: 115px;
+    min-width: 115px;
+
+    color: #5c7390;
+
+    font-size: 13px;
+}
+
+
+.admin-consultation-detail-request-row strong {
+    color: #254b77;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.admin-consultation-detail-code {
+    padding: 4px 10px;
+
+    border-radius: 5px;
+
+    color: #2867bd !important;
+    background: #eaf2ff;
+}
+
+
+.admin-consultation-detail-tag {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 4px 10px;
+
+    border-radius: 5px;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    font-size: 11px !important;
+}
+
+
+.admin-consultation-detail-tag-blue {
+    color: #2670c3 !important;
+    background: #e8f2ff;
+}
+
+
+.admin-consultation-detail-tag-green {
+    color: #188b4d !important;
+    background: #e6f8ed;
+}
+
+
+.admin-consultation-detail-tag-orange {
+    color: #b66b19 !important;
+    background: #fff0dc;
+}
+
+
+.admin-consultation-detail-status-dot {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #13a657;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.admin-consultation-detail-content {
+    padding: 14px;
+
+    border-radius: 5px;
+
+    background:
+        linear-gradient(135deg,
+            #f5f8fc,
+            #f8fafc);
+}
+
+
+.admin-consultation-detail-content-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 20px;
+
+    margin-bottom: 9px;
+}
+
+
+.admin-consultation-detail-content-heading strong {
+    color: #193d69;
+
+    font-size: 14px;
+}
+
+
+.admin-consultation-detail-content-heading span {
+    white-space: nowrap;
+
+    color: #71849c;
+
+    font-size: 11px;
+}
+
+
+.admin-consultation-detail-content p {
+    margin: 0;
+
+    color: #506987;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   DOCUMENTS
+========================================================= */
+
+.admin-consultation-detail-card-title {
+    position: relative;
+}
+
+
+.admin-consultation-detail-all-documents {
+    margin-left: auto;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 7px;
+
+    border: none;
+
+    color: #2367bd;
+    background: transparent;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+.admin-consultation-detail-documents {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 10px;
+}
+
+
+.admin-consultation-detail-document {
+    min-width: 0;
+
+    min-height: 50px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 7px 9px;
+
+    border: 1px solid #e1e9f2;
+    border-radius: 6px;
+
+    background: #ffffff;
+}
+
+
+.admin-consultation-detail-document-icon {
+    width: 34px;
+    min-width: 34px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 4px;
+
+    color: #ffffff;
+    background: #f32635;
+
+    font-size: 16px;
+}
+
+
+.admin-consultation-detail-document-info {
+    flex: 1;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.admin-consultation-detail-document-info strong {
+    overflow: hidden;
+
+    color: #36577e;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.admin-consultation-detail-document-info span {
+    color: #7990a9;
+
+    font-size: 10px;
+}
+
+
+.admin-consultation-detail-download {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    color: #17468b;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   HISTORY
+========================================================= */
+
+.admin-consultation-detail-history {
+    position: relative;
+
+    padding-top: 2px;
+}
+
+
+.admin-consultation-detail-history::before {
+    content: "";
+
+    position: absolute;
+
+    top: 10px;
+    bottom: 10px;
+
+    left: 145px;
+
+    width: 2px;
+
+    background: #dbe4ef;
+}
+
+
+.admin-consultation-detail-history-item {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        125px 40px minmax(0, 1fr);
+
+    min-height: 44px;
+}
+
+
+.admin-consultation-detail-history-time {
+    padding-top: 3px;
+
+    color: #6d84a1;
+
+    font-size: 11px;
+
+    text-align: right;
+}
+
+
+.admin-consultation-detail-history-marker {
+    position: relative;
+
+    z-index: 2;
+
+    width: 11px;
+    height: 11px;
+
+    margin: 5px auto 0;
+
+    border-radius: 50%;
+
+    border: 2px solid #ffffff;
+
+    box-shadow:
+        0 0 0 1px #dce5ef;
+
+    background: #8c9bae;
+}
+
+
+.admin-consultation-detail-history-marker.customer {
+    background: #19a856;
+}
+
+
+.admin-consultation-detail-history-marker.system {
+    background: #1796dd;
+}
+
+
+.admin-consultation-detail-history-marker.lawyer {
+    background: #f6a20d;
+}
+
+
+.admin-consultation-detail-history-marker.reply {
+    background: #8998aa;
+}
+
+
+.admin-consultation-detail-history-content {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+
+    padding-bottom: 8px;
+}
+
+
+.admin-consultation-detail-history-content strong {
+    color: #254873;
+
+    font-size: 12px;
+}
+
+
+.admin-consultation-detail-history-content span {
+    color: #71869f;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   LAWYER
+========================================================= */
+
+.admin-consultation-detail-lawyer {
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+}
+
+
+.admin-consultation-detail-lawyer img {
+    width: 76px;
+    height: 76px;
+
+    object-fit: cover;
+
+    border-radius: 7px;
+
+    background: #edf1f5;
+
+    border: 1px solid #e0e7ef;
+}
+
+
+.admin-consultation-detail-lawyer>div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+
+.admin-consultation-detail-lawyer strong {
+    color: #173d70;
+
+    font-size: 15px;
+}
+
+
+.admin-consultation-detail-lawyer span {
+    color: #657c97;
+
+    font-size: 11px;
+}
+
+
+.admin-consultation-detail-lawyer-contact {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+
+    margin-top: 10px;
+    padding-top: 9px;
+
+    border-top: 1px solid #e7edf3;
+}
+
+
+.admin-consultation-detail-lawyer-contact div {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    color: #5b7390;
+
+    font-size: 11px;
+}
+
+
+.admin-consultation-detail-lawyer-contact svg {
+    width: 14px;
+
+    color: #173f76;
+}
+
+
+.admin-consultation-detail-profile-button {
+    width: 100%;
+    height: 34px;
+
+    margin-top: 11px;
+    text-decoration: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    border: 1px solid #cfddec;
+    border-radius: 5px;
+
+    color: #214b80;
+    background: #f4f8fd;
+
+    font-family: 'Times New Roman', Times, serif;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+.admin-consultation-detail-profile-button svg {
+    transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   ADMIN ACTIONS
+========================================================= */
+
+.admin-consultation-detail-actions {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.admin-consultation-detail-action {
+    width: 100%;
+    min-height: 37px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    border: none;
+    border-radius: 5px;
+
+    font-family: 'Times New Roman', Times, serif;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease;
+}
+
+
+.admin-consultation-detail-action:hover {
+    transform: translateY(-1px);
+    filter: brightness(0.98);
+}
+
+
+.admin-consultation-detail-action-blue {
+    color: #17448a;
+    background: #eaf3ff;
+}
+
+
+.admin-consultation-detail-action-purple {
+    color: #7045a2;
+    background: #f3eaff;
+}
+
+
+.admin-consultation-detail-action-danger {
+    color: #ef2e37;
+    background: #ffe8e9;
+}
+
+
+/* =========================================================
+   NOTE
+========================================================= */
+
+.admin-consultation-detail-note-input {
+    width: 100%;
+    min-height: 72px;
+
+    resize: vertical;
+
+    box-sizing: border-box;
+
+    padding: 10px;
+
+    border: 1px solid #dce5ee;
+    border-radius: 6px;
+
+    outline: none;
+
+    color: #385879;
+    background: #ffffff;
+
+    font-family: 'Times New Roman', Times, serif;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+.admin-consultation-detail-note-input:focus {
+    border-color: #9bb9d9;
+
+    box-shadow:
+        0 0 0 2px rgba(45, 102, 166, 0.07);
+}
+
+
+.admin-consultation-detail-note-footer {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+
+    margin-top: 6px;
+}
+
+
+.admin-consultation-detail-note-footer>span {
+    align-self: flex-end;
+
+    color: #8a9bb0;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    font-size: 9px;
+}
+
+
+.admin-consultation-detail-save-note {
+    width: 100%;
+    height: 37px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    border: none;
+    border-radius: 5px;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(135deg,
+            #bd7d22,
+            #a96816);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 10px rgba(160, 102, 23, 0.12);
+}
+
+
+.admin-consultation-detail-save-note:hover {
+    background:
+        linear-gradient(135deg,
+            #c98a2b,
+            #b8731c);
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1500px) {
+
+    .admin-consultation-detail-page {
+        padding: 15px 18px;
+    }
+
+
+    .admin-consultation-detail-layout {
+        grid-template-columns:
+            minmax(0, 3.15fr) minmax(310px, 1.08fr);
+    }
+
+
+    .admin-consultation-detail-card {
+        padding: 16px 19px;
+    }
+
+
+    .admin-consultation-detail-card-title h2 {
+        font-size: 18px;
+    }
+
+
+    .admin-consultation-detail-customer-name h1 {
+        font-size: 23px;
+    }
+
+
+    .admin-consultation-detail-customer-grid div,
+    .admin-consultation-detail-request-row strong {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .admin-consultation-detail-layout {
+        grid-template-columns: 1fr;
+    }
+
+
+    .admin-consultation-detail-sidebar {
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        align-items: start;
+    }
+
+
+    .admin-consultation-detail-sidebar .admin-consultation-detail-card:last-child {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 760px) {
+
+    .admin-consultation-detail-customer {
+        align-items: flex-start;
+    }
+
+
+    .admin-consultation-detail-customer-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .admin-consultation-detail-request-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .admin-consultation-detail-documents {
+        grid-template-columns: 1fr;
+    }
+
+
+    .admin-consultation-detail-sidebar {
+        grid-template-columns: 1fr;
+    }
+
+
+    .admin-consultation-detail-sidebar .admin-consultation-detail-card:last-child {
+        grid-column: auto;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 560px) {
+
+    .admin-consultation-detail-page {
+        padding: 8px;
+    }
+
+
+    .admin-consultation-detail-card {
+        padding: 12px;
+    }
+
+
+    .admin-consultation-detail-customer {
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    .admin-consultation-detail-customer-info {
+        width: 100%;
+    }
+
+
+    .admin-consultation-detail-customer-name {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    .admin-consultation-detail-customer-grid {
+        text-align: left;
+    }
+
+
+    .admin-consultation-detail-content-heading {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+
+    .admin-consultation-detail-history::before {
+        left: 95px;
+    }
+
+
+    .admin-consultation-detail-history-item {
+        grid-template-columns:
+            80px 30px minmax(0, 1fr);
+    }
+
+
+    .admin-consultation-detail-history-time {
+        font-size: 9px;
+    }
+
+
+    .admin-consultation-detail-history-content strong {
+        font-size: 11px;
+    }
+}

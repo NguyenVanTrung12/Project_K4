@@ -1,0 +1,311 @@
+/* =========================================
+   LAWYERS HERO
+========================================= */
+
+.lawyers-hero {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  overflow: hidden;
+  background-image: url("../../images/banner/banner1.png");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+
+/* =========================================
+   OVERLAY
+========================================= */
+
+.lawyers-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 25, 45, 0.96) 0%,
+    rgba(7, 32, 56, 0.90) 40%,
+    rgba(7, 32, 56, 0.40) 68%,
+    rgba(7, 32, 56, 0.12) 100%
+  );
+  z-index: 1;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.lawyers-hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  padding: 22px 8% 28px;
+}
+
+
+/* =========================================
+   BREADCRUMB
+========================================= */
+
+.lawyers-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 16px;
+}
+
+.breadcrumb-arrow {
+  color: #d4a72c;
+  font-size: 17px;
+  line-height: 1;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.lawyers-hero-content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+
+/* =========================================
+   LEFT
+========================================= */
+
+.lawyers-hero-left {
+  max-width: 670px;
+}
+
+/* Gold line */
+
+.hero-line {
+  display: block;
+  width: 18px;
+  height: 3px;
+  margin-bottom: 10px;
+  background: #d4a72c;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.lawyers-hero-left h1 {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.lawyers-hero-left > p {
+  max-width: 610px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.lawyers-hero-features {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+.hero-feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+/* =========================================
+   FEATURE ICON
+========================================= */
+
+.hero-feature-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #ffffff;
+  background: rgba(212, 167, 44, 0.95);
+  font-size: 20px;
+}
+
+
+/* =========================================
+   FEATURE TEXT
+========================================= */
+
+.hero-feature h3 {
+  margin: 0 0 2px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.hero-feature span {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 15px;
+}
+
+
+/* =========================================
+   QUOTE
+========================================= */
+
+.lawyers-hero-quote {
+  width: 220px;
+  flex-shrink: 0;
+  margin-right: 2%;
+  padding: 8px 0 5px 20px;
+  border-left: 1px solid rgba(212, 167, 44, 0.7);
+}
+
+.quote-mark {
+  display: block;
+  height: 15px;
+  color: #d4a72c;
+  font-family: Georgia, serif;
+  font-size: 30px;
+  line-height: 20px;
+}
+
+.lawyers-hero-quote p {
+  margin: 5px 0 10px;
+  color: rgba(255, 255, 255, 0.88);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.quote-line {
+  display: block;
+  width: 18px;
+  height: 3px;
+  background: #d4a72c;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+  .lawyers-hero-content {
+    align-items: flex-start;
+  }
+
+  .lawyers-hero-quote {
+    display: none;
+  }
+
+  .lawyers-hero-left {
+    max-width: 750px;
+  }
+
+  .lawyers-hero-features {
+    gap: 28px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  .lawyers-hero {
+    min-height: auto;
+    background-position: 65% center;
+  }
+
+  .lawyers-hero-container {
+    padding: 18px 20px 28px;
+  }
+
+  .lawyers-breadcrumb {
+    margin-bottom: 12px;
+    font-size: 11px;
+  }
+
+  .lawyers-hero-left h1 {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+
+  .lawyers-hero-left > p {
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .lawyers-hero-features {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 22px;
+  }
+
+  .hero-feature {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .hero-feature h3 {
+    font-size: 11px;
+  }
+
+  .hero-feature span {
+    font-size: 9px;
+    line-height: 1.4;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .lawyers-hero-left h1 {
+    font-size: 25px;
+  }
+
+  .lawyers-hero-features {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  .hero-feature {
+    flex-direction: row;
+    align-items: center;
+  }
+}

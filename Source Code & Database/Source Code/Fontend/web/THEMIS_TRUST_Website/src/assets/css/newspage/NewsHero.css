@@ -1,0 +1,326 @@
+/* ================================
+   NEWS HERO
+================================ */
+
+.news-hero {
+  position: relative;
+  width: 100%;
+  min-height: 360px;
+
+  background-image: url("../../images/banner/banner6.png");
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+}
+
+/* Lớp phủ giúp chữ nổi bật hơn */
+.news-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(7, 22, 42, 0.98) 0%,
+    rgba(7, 22, 42, 0.85) 25%,
+    rgba(7, 22, 42, 0.25) 50%,
+    rgba(7, 22, 42, 0.10) 65%,
+    rgba(7, 22, 42, 0.35) 75%,
+    rgba(7, 22, 42, 0.65) 100%
+  );
+
+  z-index: 1;
+}
+
+
+/* ================================
+   CONTAINER
+================================ */
+
+.news-hero-container {
+  position: relative;
+  z-index: 2;
+
+  width: min(1320px, calc(100% - 80px));
+  min-height: 360px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 55px 0;
+}
+
+
+/* ================================
+   CONTENT LEFT
+================================ */
+
+.news-hero-content {
+  width: 65%;
+  max-width: 780px;
+}
+
+
+/* Label */
+
+.news-hero-label {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin-bottom: 22px;
+}
+
+.news-hero-label span {
+  color: #d5a443;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.news-hero-label-line {
+  width: 100px;
+  height: 2px;
+
+  background: #c99b3b;
+}
+
+
+/* ================================
+   TITLE
+================================ */
+
+.news-hero-title {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: clamp(38px, 4vw, 58px);
+  font-weight: 700;
+
+  line-height: 1.08;
+  letter-spacing: -1px;
+}
+
+
+/* ================================
+   DESCRIPTION
+================================ */
+
+.news-hero-description {
+  width: 650px;
+  max-width: 100%;
+
+  margin: 25px 0 0;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+
+/* ================================
+   QUOTE RIGHT
+================================ */
+
+.news-hero-quote {
+  width: 250px;
+
+  margin-right: 25px;
+
+  align-self: center;
+
+  color: #ffffff;
+}
+
+.news-hero-quote p {
+  margin: 0;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: 25px;
+  font-style: italic;
+
+  line-height: 1.5;
+
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* đường vàng dưới quote */
+
+.quote-line {
+  display: block;
+
+  width: 60px;
+  height: 2px;
+
+  margin-top: 24px;
+
+  background: #fff;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 1024px) {
+
+  .news-hero {
+    min-height: 340px;
+  }
+
+  .news-hero-container {
+    width: min(92%, 900px);
+
+    padding: 50px 0;
+  }
+
+  .news-hero-content {
+    width: 70%;
+  }
+
+  .news-hero-title {
+    font-size: 42px;
+  }
+
+  .news-hero-description {
+    font-size: 16px;
+  }
+
+  .news-hero-quote {
+    width: 190px;
+    margin-right: 0;
+  }
+
+  .news-hero-quote p {
+    font-size: 21px;
+  }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+  .news-hero {
+    min-height: 480px;
+
+    background-position: 65% center;
+  }
+
+  .news-hero-overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(3, 23, 43, 0.94) 0%,
+        rgba(3, 23, 43, 0.88) 55%,
+        rgba(3, 23, 43, 0.72) 100%
+      );
+  }
+
+  .news-hero-container {
+    width: calc(100% - 40px);
+
+    min-height: 480px;
+
+    padding: 55px 0;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .news-hero-content {
+    width: 100%;
+  }
+
+  .news-hero-label {
+    gap: 12px;
+
+    margin-bottom: 18px;
+  }
+
+  .news-hero-label span {
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  .news-hero-label-line {
+    width: 60px;
+  }
+
+  .news-hero-title {
+    font-size: 36px;
+    line-height: 1.15;
+
+    letter-spacing: -0.5px;
+  }
+
+  .news-hero-description {
+    margin-top: 20px;
+
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .news-hero-quote {
+    width: auto;
+
+    margin-top: 30px;
+    margin-right: 0;
+  }
+
+  .news-hero-quote p {
+    font-size: 19px;
+  }
+
+  .quote-line {
+    margin-top: 15px;
+  }
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+  .news-hero {
+    min-height: 500px;
+  }
+
+  .news-hero-container {
+    width: calc(100% - 30px);
+    min-height: 500px;
+
+    padding: 40px 0;
+  }
+
+  .news-hero-title {
+    font-size: 31px;
+  }
+
+  .news-hero-description {
+    font-size: 15px;
+  }
+
+  .news-hero-quote p {
+    font-size: 18px;
+  }
+}

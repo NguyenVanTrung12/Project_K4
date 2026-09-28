@@ -1,0 +1,1085 @@
+/* =========================================================
+   USER MANAGEMENT - FULL WIDTH
+========================================================= */
+
+.user-management {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+
+  box-sizing: border-box;
+
+  padding: 12px 16px 20px;
+
+  display: block;
+
+  color: #183958;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  background: #f5f7f9;
+}
+
+
+/* =========================================================
+   MAIN - FULL WIDTH
+========================================================= */
+
+.user-management__main {
+  width: 100%;
+  min-width: 0;
+
+  box-sizing: border-box;
+
+  border: 1px solid #e6ebef;
+
+  border-radius: 7px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  box-shadow:
+    0 2px 10px
+    rgba(20, 53, 80, 0.035);
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.user-management__header {
+  min-height: 76px;
+
+  box-sizing: border-box;
+
+  padding: 10px 16px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  border-bottom: 1px solid #e8edf1;
+}
+
+
+.user-management__title-wrap {
+  min-width: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+
+.user-management__title-icon {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #b77e20;
+
+  background: #fff4df;
+
+  font-size: 19px;
+}
+
+
+.user-management__title-wrap h1 {
+  margin: 0;
+
+  color: #153957;
+
+  font-size: 20px;
+
+  line-height: 1.2;
+
+  font-weight: 700;
+}
+
+
+.user-management__title-wrap p {
+  margin: 4px 0 0;
+
+  color: #73879a;
+
+  font-size: 11px;
+
+  line-height: 1.35;
+}
+
+
+/* =========================================================
+   ADD BUTTON
+========================================================= */
+
+.user-management__add-btn {
+  height: 39px;
+
+  flex-shrink: 0;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 0 18px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #bf8629,
+      #a66c18
+    );
+
+  box-shadow:
+    0 4px 10px
+    rgba(166, 108, 24, 0.16);
+
+  font-family: Georgia, serif;
+
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.user-management__add-btn:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 6px 14px
+    rgba(166, 108, 24, 0.24);
+}
+
+
+/* =========================================================
+   FILTER BAR
+========================================================= */
+
+.user-management__filter-bar {
+  min-height: 56px;
+
+  box-sizing: border-box;
+
+  padding: 9px 12px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(300px, 1.8fr)
+    160px
+    170px
+    175px
+    80px;
+
+  gap: 9px;
+
+  border-bottom: 1px solid #edf0f3;
+
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.user-management__search {
+  height: 34px;
+
+  min-width: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 0 11px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dce4ea;
+
+  border-radius: 6px;
+
+  color: #23486a;
+
+  background: #ffffff;
+}
+
+
+.user-management__search svg {
+  flex-shrink: 0;
+
+  font-size: 13px;
+}
+
+
+.user-management__search input {
+  width: 100%;
+
+  min-width: 0;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #294b6a;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: 11px;
+}
+
+
+.user-management__search input::placeholder {
+  color: #899aaa;
+}
+
+
+/* =========================================================
+   SELECT
+========================================================= */
+
+.user-management__select {
+  position: relative;
+
+  height: 34px;
+
+  min-width: 0;
+}
+
+
+.user-management__select select {
+  width: 100%;
+  height: 100%;
+
+  appearance: none;
+
+  box-sizing: border-box;
+
+  padding: 0 28px 0 11px;
+
+  border: 1px solid #dce4ea;
+
+  border-radius: 6px;
+
+  outline: none;
+
+  color: #38546e;
+
+  background: #ffffff;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: 11px;
+
+  cursor: pointer;
+}
+
+
+.user-management__select > svg {
+  position: absolute;
+
+  top: 50%;
+  right: 10px;
+
+  transform: translateY(-50%);
+
+  pointer-events: none;
+
+  color: #54718b;
+
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   FILTER BUTTON
+========================================================= */
+
+.user-management__filter-btn {
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  border: 1px solid #dcb979;
+
+  border-radius: 6px;
+
+  color: #ae761f;
+
+  background: #ffffff;
+
+  font-family: Georgia, serif;
+
+  font-size: 11px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.user-management__filter-btn:hover,
+.user-management__filter-btn.active {
+  color: #ffffff;
+
+  border-color: #bb8429;
+
+  background: #bb8429;
+}
+
+
+/* =========================================================
+   EXTRA FILTER
+========================================================= */
+
+.user-management__extra-filter {
+  padding: 9px 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  color: #536d83;
+
+  background: #fffaf1;
+
+  border-bottom: 1px solid #f0e4cf;
+
+  font-size: 11px;
+}
+
+
+.user-management__extra-filter button {
+  border: none;
+
+  color: #b57c24;
+
+  background: transparent;
+
+  font-family: Georgia, serif;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   TABLE WRAP
+========================================================= */
+
+.user-management__table-wrap {
+  width: 100%;
+
+  overflow-x: auto;
+
+  overflow-y: hidden;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.user-management__table {
+  width: 100%;
+
+  min-width: 1100px;
+
+  border-collapse: collapse;
+
+  table-layout: auto;
+}
+
+
+.user-management__table thead {
+  background: #f7f9fb;
+}
+
+
+.user-management__table th {
+  height: 39px;
+
+  padding: 0 10px;
+
+  border-bottom: 1px solid #e3e9ee;
+
+  color: #274966;
+
+  text-align: left;
+
+  vertical-align: middle;
+
+  white-space: nowrap;
+
+  font-size: 15px;
+
+  font-weight: 700;
+}
+
+
+.user-management__table td {
+  height: 49px;
+
+  padding: 5px 10px;
+
+  border-bottom: 1px solid #edf1f4;
+
+  color: #536d83;
+
+  white-space: nowrap;
+
+  font-size: 13px;
+
+  vertical-align: middle;
+}
+
+
+.user-management__table tbody tr {
+  transition: background 0.15s ease;
+}
+
+
+.user-management__table tbody tr:hover {
+  background: #fbfcfd;
+}
+
+
+/* =========================================================
+   COLUMN
+========================================================= */
+
+.checkbox-col {
+  width: 42px;
+
+  text-align: center !important;
+}
+
+
+.number-col {
+  width: 45px;
+
+  text-align: center !important;
+
+  color: #526f88 !important;
+}
+
+
+.user-management__table input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+
+  margin: 0;
+
+  accent-color: #b77c21;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   USER
+========================================================= */
+
+.user-management__user {
+  min-width: 220px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+.user-management__avatar {
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border-radius: 50%;
+
+  color: #31536e;
+
+  background: #eaf0f5;
+
+  font-size: 12px;
+}
+
+
+.user-management__avatar img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+.user-management__user-text {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+
+.user-management__user-text strong {
+  color: #24435e;
+
+  font-size: 15px;
+
+  font-weight: 700;
+}
+
+
+.user-management__user-text span {
+  color: #8294a4;
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   PHONE
+========================================================= */
+
+.user-management__phone {
+  color: #5c7489;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   ROLE
+========================================================= */
+
+.user-management__role {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 69px;
+  height: 24px;
+
+  padding: 0 8px;
+
+  border-radius: 10px;
+
+  font-size: 12px;
+}
+
+
+.user-management__role.user {
+  color: #b47c26;
+
+  background: #fff2dd;
+}
+
+
+.user-management__role.lawyer {
+  color: #3674b5;
+
+  background: #e5f0ff;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.user-management__status {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 64px;
+  height: 24px;
+
+  padding: 0 8px;
+
+  border-radius: 10px;
+
+  font-size: 12px;
+}
+
+
+.user-management__status.active {
+  color: #2b9855;
+
+  background: #e5f7eb;
+}
+
+
+.user-management__status.pending {
+  color: #bd7520;
+
+  background: #fff0d9;
+}
+
+
+.user-management__status.locked {
+  color: #dc4949;
+
+  background: #ffe5e5;
+}
+
+
+/* =========================================================
+   DATE / ACTIVITY
+========================================================= */
+
+.user-management__date,
+.user-management__activity {
+  color: #617b91;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.user-management__actions {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 6px;
+
+  white-space: nowrap;
+}
+
+
+.user-management__actions button {
+  width: 28px;
+  height: 28px;
+
+  flex-shrink: 0;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 1px solid #e0e7ed;
+
+  border-radius: 50%;
+
+  color: #315473;
+
+  background: #ffffff;
+
+  font-size: 10px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.user-management__actions button:hover {
+  color: #b47a22;
+
+  border-color: #d9b36f;
+
+  background: #fffaf1;
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.user-management__empty {
+  min-height: 240px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #8192a1;
+
+  text-align: center;
+}
+
+
+.user-management__empty svg {
+  margin-bottom: 10px;
+
+  color: #c18b31;
+
+  font-size: 28px;
+}
+
+
+.user-management__empty h3 {
+  margin: 0;
+
+  color: #294a65;
+
+  font-size: 15px;
+}
+
+
+.user-management__empty p {
+  margin: 6px 0;
+
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   TABLE FOOTER
+========================================================= */
+
+.user-management__table-footer {
+  min-height: 57px;
+
+  box-sizing: border-box;
+
+  padding: 8px 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  color: #7890a4;
+
+  font-size: 11px;
+}
+
+
+.user-management__table-footer strong {
+  color: #38556e;
+}
+
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.user-management__pagination {
+  display: flex;
+
+  align-items: center;
+
+  gap: 4px;
+}
+
+
+.user-management__pagination button {
+  width: 27px;
+  height: 27px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 1px solid #e0e7ed;
+
+  border-radius: 5px;
+
+  color: #54718a;
+
+  background: #ffffff;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.user-management__pagination button:hover:not(:disabled) {
+  color: #ffffff;
+
+  border-color: #b67d23;
+
+  background: #b67d23;
+}
+
+
+.user-management__pagination button.active {
+  color: #ffffff;
+
+  border-color: #b67d23;
+
+  background: #b67d23;
+}
+
+
+.user-management__pagination button:disabled {
+  opacity: 0.4;
+
+  cursor: not-allowed;
+}
+
+
+.user-management__pagination > span {
+  padding: 0 3px;
+
+  color: #8596a4;
+}
+
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+@media (min-width: 1500px) {
+
+  .user-management {
+    padding: 14px 20px 22px;
+  }
+
+
+  .user-management__title-wrap h1 {
+    font-size: 21px;
+  }
+
+
+  .user-management__table th {
+    font-size: 15px;
+  }
+
+
+  .user-management__table td {
+    font-size: 13px;
+  }
+
+}
+
+
+/* =========================================================
+   MEDIUM DESKTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .user-management__filter-bar {
+    grid-template-columns:
+      minmax(240px, 1fr)
+      135px
+      145px
+      150px
+      75px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+  .user-management {
+    padding: 10px;
+  }
+
+
+  .user-management__filter-bar {
+    grid-template-columns:
+      minmax(200px, 1fr)
+      130px
+      140px;
+
+    height: auto;
+  }
+
+
+  .user-management__search {
+    grid-column: 1 / -1;
+  }
+
+
+  .user-management__filter-btn {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .user-management {
+    min-height: calc(100vh - 60px);
+
+    padding: 8px;
+  }
+
+
+  .user-management__header {
+    min-height: auto;
+
+    padding: 12px;
+
+    align-items: flex-start;
+  }
+
+
+  .user-management__title-wrap {
+    gap: 9px;
+  }
+
+
+  .user-management__title-icon {
+    width: 34px;
+    height: 34px;
+
+    font-size: 16px;
+  }
+
+
+  .user-management__title-wrap h1 {
+    font-size: 16px;
+  }
+
+
+  .user-management__title-wrap p {
+    font-size: 9px;
+  }
+
+
+  .user-management__add-btn {
+    width: 39px;
+
+    padding: 0;
+  }
+
+
+  .user-management__add-btn span {
+    display: none;
+  }
+
+
+  .user-management__filter-bar {
+    grid-template-columns: 1fr 1fr;
+
+    padding: 9px;
+
+    gap: 7px;
+  }
+
+
+  .user-management__search {
+    grid-column: 1 / -1;
+  }
+
+
+  .user-management__table-footer {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 10px;
+  }
+
+
+  .user-management__pagination {
+    width: 100%;
+
+    justify-content: flex-start;
+
+    overflow-x: auto;
+
+    padding-bottom: 2px;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+  .user-management__filter-bar {
+    grid-template-columns: 1fr;
+  }
+
+
+  .user-management__search {
+    grid-column: auto;
+  }
+
+}

@@ -1,0 +1,732 @@
+/* =========================================================
+   ABOUT STORY
+   THEMIS TRUST
+========================================================= */
+
+.about-story {
+  width: 100%;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.about-story-container {
+  width: 100%;
+  max-width: 1320px;
+
+  margin: 0 auto;
+
+  padding: 55px 30px 40px;
+
+  box-sizing: border-box;
+
+  display: grid;
+
+  grid-template-columns:
+    1.05fr
+    1.45fr;
+
+  gap: 55px;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   LEFT INTRO
+========================================================= */
+
+.about-story-intro {
+  max-width: 610px;
+}
+
+
+/* LABEL */
+
+.about-story-label {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #b98a32;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+/* TITLE */
+
+.about-story-intro h2 {
+  margin: 0 0 17px;
+
+  color: #09243d;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: 60px;
+
+  font-weight: 700;
+
+  line-height: 1.18;
+
+  letter-spacing: -0.7px;
+}
+
+
+/* DESCRIPTION */
+
+.about-story-intro p {
+  margin: 0;
+
+  color: #657487;
+
+  font-size: 16px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.about-story-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 13px;
+
+  margin-top: 24px;
+
+  padding: 13px 25px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #c99632;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.about-story-button svg {
+  font-size: 13px;
+
+  transition:
+    transform 0.25s ease;
+}
+
+
+.about-story-button:hover {
+  background: #b78527;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(185, 138, 50, 0.22);
+}
+
+
+.about-story-button:hover svg {
+  transform: translateX(4px);
+}
+
+
+/* =========================================================
+   VALUES
+========================================================= */
+
+.about-story-values {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+
+/* =========================================================
+   VALUE CARD
+========================================================= */
+
+.about-value-card {
+  min-height: 270px;
+
+  padding: 25px 24px;
+
+  box-sizing: border-box;
+
+  border-radius: 9px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #fffdf8 0%,
+      #faf7ef 100%
+    );
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.about-value-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 12px 30px rgba(10, 38, 62, 0.09);
+}
+
+
+/* =========================================================
+   VALUE ICON
+========================================================= */
+
+.about-value-icon {
+  width: 82px;
+  height: 82px;
+
+  margin: 0 auto 17px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    #f8ecd6;
+
+  color: #a97927;
+
+  font-size: 32px;
+}
+
+
+/* =========================================================
+   VALUE TITLE
+========================================================= */
+
+.about-value-card h3 {
+  margin: 0 0 12px;
+
+  color: #102b45;
+
+  text-align: center;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: 23px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   VALUE DESCRIPTION
+========================================================= */
+
+.about-value-card p {
+  margin: 0;
+
+  color: #748091;
+
+  font-size: 15px;
+
+  line-height: 1.65;
+
+  text-align: left;
+}
+
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.about-statistics {
+  width: 100%;
+
+  background:
+    linear-gradient(
+      110deg,
+      #061d32 0%,
+      #082b47 50%,
+      #062139 100%
+    );
+}
+
+
+/* =========================================================
+   STATISTICS CONTAINER
+========================================================= */
+
+.about-statistics-container {
+  width: 100%;
+
+  max-width: 1320px;
+
+  min-height: 145px;
+
+  margin: 0 auto;
+
+  padding: 25px 30px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+/* =========================================================
+   STAT ITEM
+========================================================= */
+
+.about-stat-item {
+  flex: 1;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  min-width: 0;
+}
+
+
+/* =========================================================
+   STAT ICON
+========================================================= */
+
+.about-stat-icon {
+  flex-shrink: 0;
+
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #e0b75e;
+
+  font-size: 38px;
+}
+
+
+/* =========================================================
+   STAT CONTENT
+========================================================= */
+
+.about-stat-content {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+
+.about-stat-content strong {
+  color: #ffffff;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 38px;
+
+  font-weight: 700;
+
+  line-height: 1;
+}
+
+
+.about-stat-content span {
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 15px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.about-stat-divider {
+  width: 1px;
+
+  height: 70px;
+
+  margin: 0 28px;
+
+  flex-shrink: 0;
+
+  background:
+    rgba(255, 255, 255, 0.20);
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1500px) {
+
+  .about-story-container {
+    max-width: 1450px;
+
+    padding:
+      65px 40px 50px;
+
+    gap: 70px;
+  }
+
+
+  .about-story-intro h2 {
+    font-size: 48px;
+  }
+
+
+  .about-story-intro p {
+    font-size: 17px;
+  }
+
+
+  .about-value-card {
+    min-height: 285px;
+
+    padding: 28px;
+  }
+
+
+  .about-statistics-container {
+    max-width: 1450px;
+
+    min-height: 160px;
+  }
+
+
+  .about-stat-content strong {
+    font-size: 42px;
+  }
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .about-story-container {
+    grid-template-columns:
+      1fr
+      1.5fr;
+
+    gap: 35px;
+
+    padding:
+      50px 25px 35px;
+  }
+
+
+  .about-story-intro h2 {
+    font-size: 36px;
+  }
+
+
+  .about-value-card {
+    min-height: 255px;
+
+    padding: 22px 18px;
+  }
+
+
+  .about-value-icon {
+    width: 68px;
+    height: 68px;
+
+    font-size: 27px;
+  }
+
+
+  .about-value-card h3 {
+    font-size: 20px;
+  }
+
+
+  .about-value-card p {
+    font-size: 14px;
+  }
+
+
+  .about-statistics-container {
+    padding:
+      22px 25px;
+  }
+
+
+  .about-stat-item {
+    gap: 12px;
+  }
+
+
+  .about-stat-icon {
+    width: 50px;
+    height: 50px;
+
+    font-size: 30px;
+  }
+
+
+  .about-stat-content strong {
+    font-size: 31px;
+  }
+
+
+  .about-stat-content span {
+    font-size: 13px;
+  }
+
+
+  .about-stat-divider {
+    margin: 0 18px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .about-story-container {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+
+    padding:
+      45px 25px 35px;
+  }
+
+
+  .about-story-intro {
+    max-width: 700px;
+  }
+
+
+  .about-story-intro h2 {
+    font-size: 38px;
+  }
+
+
+  .about-story-values {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+
+  .about-value-card {
+    min-height: 240px;
+  }
+
+
+  .about-statistics-container {
+    min-height: auto;
+
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 25px;
+  }
+
+
+  .about-stat-divider {
+    display: none;
+  }
+
+
+  .about-stat-item {
+    padding:
+      10px 5px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .about-story-container {
+    padding:
+      40px 18px 30px;
+
+    gap: 30px;
+  }
+
+
+  .about-story-label {
+    font-size: 13px;
+
+    letter-spacing: 0.8px;
+  }
+
+
+  .about-story-intro h2 {
+    font-size: 32px;
+
+    line-height: 1.2;
+  }
+
+
+  .about-story-intro p {
+    font-size: 14px;
+
+    line-height: 1.65;
+  }
+
+
+  .about-story-button {
+    width: auto;
+
+    padding:
+      12px 21px;
+
+    font-size: 14px;
+  }
+
+
+  .about-story-values {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+
+  .about-value-card {
+    min-height: auto;
+
+    padding: 24px 20px;
+  }
+
+
+  .about-value-icon {
+    width: 70px;
+    height: 70px;
+
+    margin-bottom: 14px;
+  }
+
+
+  .about-value-card h3 {
+    font-size: 21px;
+  }
+
+
+  .about-value-card p {
+    text-align: center;
+
+    font-size: 14px;
+  }
+
+
+  /* STATISTICS */
+
+  .about-statistics-container {
+    grid-template-columns: 1fr 1fr;
+
+    padding:
+      25px 18px;
+
+    gap: 20px 10px;
+  }
+
+
+  .about-stat-item {
+    gap: 8px;
+
+    justify-content: flex-start;
+  }
+
+
+  .about-stat-icon {
+    width: 40px;
+    height: 40px;
+
+    font-size: 25px;
+  }
+
+
+  .about-stat-content strong {
+    font-size: 25px;
+  }
+
+
+  .about-stat-content span {
+    font-size: 11px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .about-story-intro h2 {
+    font-size: 29px;
+  }
+
+
+  .about-statistics-container {
+    grid-template-columns: 1fr;
+  }
+
+
+  .about-stat-item {
+    justify-content: center;
+  }
+}

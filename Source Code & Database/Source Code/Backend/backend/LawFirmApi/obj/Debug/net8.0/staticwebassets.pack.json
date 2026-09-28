@@ -1,0 +1,105 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\wwwroot\\uploads\\.gitkeep",
+      "PackagePath": "staticwebassets\\uploads\\.gitkeep"
+    },
+    {
+      "Id": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\wwwroot\\uploads\\avatars\\03ea7ca2-9dca-4e3f-97a4-1b442d9a40ea.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\03ea7ca2-9dca-4e3f-97a4-1b442d9a40ea.jpg"
+    },
+    {
+      "Id": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\wwwroot\\uploads\\avatars\\314c23ab-2d2c-4565-8331-ce481c42039b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\314c23ab-2d2c-4565-8331-ce481c42039b.jpg"
+    },
+    {
+      "Id": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\wwwroot\\uploads\\avatars\\35f497d9-1119-4cbe-a87d-8c8ca947e4c5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\35f497d9-1119-4cbe-a87d-8c8ca947e4c5.jpg"
+    },
+    {
+      "Id": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\wwwroot\\uploads\\avatars\\3954c67b-95f6-4329-9f3f-fcb0caae908e.png",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\3954c67b-95f6-4329-9f3f-fcb0caae908e.png"
+    },
+    {
+      "Id": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\wwwroot\\uploads\\avatars\\39cc7dca-b890-42ed-8606-c18a5dfca580.png",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\39cc7dca-b890-42ed-8606-c18a5dfca580.png"
+    },
+    {
+      "Id": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\wwwroot\\uploads\\avatars\\7bdcd9ac-5025-4733-97f0-42572a80c7ea.png",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\7bdcd9ac-5025-4733-97f0-42572a80c7ea.png"
+    },
+    {
+      "Id": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\wwwroot\\uploads\\avatars\\9249e684-62d3-4c09-a63f-e68b208c6665.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\9249e684-62d3-4c09-a63f-e68b208c6665.jpg"
+    },
+    {
+      "Id": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\wwwroot\\uploads\\avatars\\b7550864-4905-41d5-9f9f-db22c7d42c50.png",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\b7550864-4905-41d5-9f9f-db22c7d42c50.png"
+    },
+    {
+      "Id": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\wwwroot\\uploads\\avatars\\c5c1e69b-1cf8-4374-b343-c029d4ea2fea.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\c5c1e69b-1cf8-4374-b343-c029d4ea2fea.jpg"
+    },
+    {
+      "Id": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\wwwroot\\uploads\\avatars\\cc8a3663-0fe4-47d3-9607-73a887397a77.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\cc8a3663-0fe4-47d3-9607-73a887397a77.jpg"
+    },
+    {
+      "Id": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\wwwroot\\uploads\\avatars\\ce959745-b2fc-480d-8280-ffb88d602e5d.png",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\ce959745-b2fc-480d-8280-ffb88d602e5d.png"
+    },
+    {
+      "Id": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\wwwroot\\uploads\\avatars\\d404f948-f155-4b2b-8958-a81464024f71.png",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\d404f948-f155-4b2b-8958-a81464024f71.png"
+    },
+    {
+      "Id": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\wwwroot\\uploads\\avatars\\ed9f24be-b2eb-4b66-8584-34dc16e98d91.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\ed9f24be-b2eb-4b66-8584-34dc16e98d91.jpg"
+    },
+    {
+      "Id": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\wwwroot\\uploads\\avatars\\fda1ee36-5888-4405-9eac-81d63bbd805f.png",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\fda1ee36-5888-4405-9eac-81d63bbd805f.png"
+    },
+    {
+      "Id": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\wwwroot\\uploads\\cases\\2ac38ece-a114-48da-b7f4-67bca4f6d924\\b8068bfb-8d60-4825-aa5d-a4774395c8d9.pdf",
+      "PackagePath": "staticwebassets\\uploads\\cases\\2ac38ece-a114-48da-b7f4-67bca4f6d924\\b8068bfb-8d60-4825-aa5d-a4774395c8d9.pdf"
+    },
+    {
+      "Id": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\wwwroot\\uploads\\cases\\2ac38ece-a114-48da-b7f4-67bca4f6d924\\e3429cea4c694451bd27982e00a87d82.pdf",
+      "PackagePath": "staticwebassets\\uploads\\cases\\2ac38ece-a114-48da-b7f4-67bca4f6d924\\e3429cea4c694451bd27982e00a87d82.pdf"
+    },
+    {
+      "Id": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\wwwroot\\uploads\\cases\\748ecf4d-31a2-4576-8a01-cc494e847711\\93bab2d7b96b497787a37ea3a4fe4e19.pdf",
+      "PackagePath": "staticwebassets\\uploads\\cases\\748ecf4d-31a2-4576-8a01-cc494e847711\\93bab2d7b96b497787a37ea3a4fe4e19.pdf"
+    },
+    {
+      "Id": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\wwwroot\\uploads\\cases\\8f4e0a11-2b91-4f35-9a01-300000000010\\3ac8b48a17d048c58a7220ecc3830e79.pdf",
+      "PackagePath": "staticwebassets\\uploads\\cases\\8f4e0a11-2b91-4f35-9a01-300000000010\\3ac8b48a17d048c58a7220ecc3830e79.pdf"
+    },
+    {
+      "Id": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\wwwroot\\uploads\\cases\\b6cf1300-3ee3-4349-aff1-4d24d455d154\\50096d31-7c3e-4ba8-afde-b0f121a0b4be.pdf",
+      "PackagePath": "staticwebassets\\uploads\\cases\\b6cf1300-3ee3-4349-aff1-4d24d455d154\\50096d31-7c3e-4ba8-afde-b0f121a0b4be.pdf"
+    },
+    {
+      "Id": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\wwwroot\\uploads\\cases\\d3893cb3-5dec-4b97-8f8d-016e6d73b050\\a3e066a0d4174ba99e78e771ae24a99a.pdf",
+      "PackagePath": "staticwebassets\\uploads\\cases\\d3893cb3-5dec-4b97-8f8d-016e6d73b050\\a3e066a0d4174ba99e78e771ae24a99a.pdf"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LawFirmApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.LawFirmApi.props",
+      "PackagePath": "build\\LawFirmApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.LawFirmApi.props",
+      "PackagePath": "buildMultiTargeting\\LawFirmApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.LawFirmApi.props",
+      "PackagePath": "buildTransitive\\LawFirmApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

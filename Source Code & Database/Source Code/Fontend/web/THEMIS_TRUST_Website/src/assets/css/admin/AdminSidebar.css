@@ -1,0 +1,635 @@
+/* =========================================================
+   ADMIN SIDEBAR
+========================================================= */
+
+.admin-sidebar {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  z-index: 1000;
+
+  width: 218px;
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      180deg,
+      #06223a 0%,
+      #061f35 45%,
+      #041b30 72%,
+      #03182a 100%
+    );
+
+  box-shadow:
+    5px 0 20px
+    rgba(4, 24, 42, 0.22);
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.admin-sidebar__logo {
+  flex-shrink: 0;
+
+  height: 76px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding-top: 5px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LOGO SYMBOL
+========================================================= */
+
+.admin-sidebar__logo-symbol {
+  width: 39px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #d8a64e;
+
+  font-size: 35px;
+
+  line-height: 1;
+
+
+  text-shadow:
+    0 2px 7px
+    rgba(0, 0, 0, 0.25);
+}
+
+
+.admin-sidebar__logo-symbol span {
+  display: block;
+}
+
+
+/* =========================================================
+   LOGO TEXT
+========================================================= */
+
+.admin-sidebar__logo-text {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+
+.admin-sidebar__logo-text strong {
+  color: #ffffff;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 21px;
+
+  line-height: 1;
+
+  font-weight: 500;
+
+  letter-spacing: 1.3px;
+}
+
+
+.admin-sidebar__logo-text span {
+  margin-top: 5px;
+
+  color:
+    rgba(255, 255, 255, 0.72);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 7px;
+
+  line-height: 1;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   MENU
+========================================================= */
+
+.admin-sidebar__menu {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+
+  padding:
+    3px 9px 0;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MENU ITEM
+========================================================= */
+
+.admin-sidebar__item {
+  position: relative;
+
+  width: 100%;
+
+  height: 46px;
+
+  display: flex;
+
+  align-items: center;
+
+  box-sizing: border-box;
+
+  padding:
+    0 14px;
+
+  gap: 15px;
+
+  border-radius: 6px;
+
+  color:
+    rgba(255, 255, 255, 0.86);
+
+  background: transparent;
+
+  text-decoration: none;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.admin-sidebar__item:hover {
+  color: #ffffff;
+
+  background:
+    rgba(255, 255, 255, 0.07);
+
+  transform: translateX(1px);
+}
+
+
+/* =========================================================
+   ACTIVE
+========================================================= */
+
+.admin-sidebar__item--active {
+  color: #ffffff !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #a9824c 0%,
+      #80633f 100%
+    );
+
+  box-shadow:
+    0 5px 14px
+    rgba(0, 0, 0, 0.17);
+}
+
+
+.admin-sidebar__item--active:hover {
+  background:
+    linear-gradient(
+      135deg,
+      #b38b52 0%,
+      #8c6d45 100%
+    );
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.admin-sidebar__icon {
+  width: 25px;
+
+  min-width: 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color:
+    rgba(255, 255, 255, 0.9);
+
+  font-size: 17px;
+}
+
+
+.admin-sidebar__item--active
+.admin-sidebar__icon {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.admin-sidebar__label {
+  white-space: nowrap;
+
+  line-height: 1.2;
+}
+
+
+/* =========================================================
+   DECORATION
+========================================================= */
+
+.admin-sidebar__decoration {
+  position: relative;
+
+  flex: 1;
+
+  min-height: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-end;
+
+  overflow: hidden;
+
+  margin-top: 5px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5, 26, 43, 0) 0%,
+      rgba(4, 24, 40, 0.15) 25%,
+      rgba(2, 16, 29, 0.45) 100%
+    );
+}
+
+
+/* =========================================================
+   DECORATIVE LIGHT
+========================================================= */
+
+.admin-sidebar__decoration::before {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  top: 0;
+
+  height: 120px;
+
+  content: "";
+
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(205, 157, 78, 0.08) 0%,
+      rgba(205, 157, 78, 0) 70%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   LADY JUSTICE
+========================================================= */
+
+.admin-sidebar__scales {
+  position: absolute;
+
+  left: 50%;
+
+  bottom: 124px;
+
+  width: 145px;
+
+  height: 190px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  transform:
+    translateX(-50%);
+
+  opacity: 0.92;
+
+  pointer-events: none;
+}
+
+
+/*
+  Có thể thay phần này bằng ảnh Lady Justice thật:
+
+  background-image:
+    url("/images/admin/lady-justice.png");
+
+  Nếu bạn có ảnh riêng thì nên dùng cách này.
+*/
+
+.admin-sidebar__scales::before {
+  position: absolute;
+
+  content: "";
+
+  width: 145px;
+
+  height: 190px;
+
+  bottom: 0;
+
+  left: 0;
+
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(203, 153, 72, 0.23) 0%,
+      rgba(203, 153, 72, 0) 66%
+    );
+
+  filter: blur(8px);
+}
+
+
+.scale-body {
+  position: relative;
+
+  z-index: 2;
+
+  color: #bb8032;
+
+  font-size: 122px;
+
+  line-height: 1;
+
+  text-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.5),
+    0 0 12px rgba(207, 157, 72, 0.15);
+
+  transform:
+    scaleX(0.7);
+}
+
+
+/* =========================================================
+   QUOTE
+========================================================= */
+
+.admin-sidebar__quote {
+  position: relative;
+
+  z-index: 5;
+
+  flex-shrink: 0;
+
+  padding:
+    0 15px 20px;
+
+  text-align: center;
+}
+
+
+.admin-sidebar__quote p {
+  margin: 0;
+
+  color:
+    rgba(255, 255, 255, 0.88);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 14px;
+
+  line-height: 1.55;
+
+  font-style: italic;
+
+  text-shadow:
+    0 2px 5px
+    rgba(0, 0, 0, 0.5);
+}
+
+
+.admin-sidebar__quote-line {
+  width: 38px;
+
+  height: 2px;
+
+  margin:
+    12px auto 9px;
+
+  background:
+    #c99a4b;
+
+  box-shadow:
+    0 0 7px
+    rgba(201, 154, 75, 0.3);
+}
+
+
+.admin-sidebar__quote span {
+  color: #ffffff;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 13px;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+.admin-sidebar__menu {
+  scrollbar-width: thin;
+
+  scrollbar-color:
+    rgba(255, 255, 255, 0.15)
+    transparent;
+}
+
+
+.admin-sidebar__menu::-webkit-scrollbar {
+  width: 4px;
+}
+
+
+.admin-sidebar__menu::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+
+  background:
+    rgba(255, 255, 255, 0.15);
+}
+
+
+/* =========================================================
+   LARGE SCREEN
+========================================================= */
+
+@media (min-width: 1600px) {
+
+  .admin-sidebar {
+    width: 230px;
+  }
+
+
+  .admin-sidebar__item {
+    height: 48px;
+
+    font-size: 15px;
+  }
+
+
+  .admin-sidebar__logo-text strong {
+    font-size: 22px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .admin-sidebar {
+    width: 74px;
+  }
+
+
+  .admin-sidebar__logo {
+    height: 70px;
+  }
+
+
+  .admin-sidebar__logo-text {
+    display: none;
+  }
+
+
+  .admin-sidebar__logo-symbol {
+    width: auto;
+  }
+
+
+  .admin-sidebar__menu {
+    padding:
+      4px 8px;
+  }
+
+
+  .admin-sidebar__item {
+    justify-content: center;
+
+    padding: 0;
+
+    gap: 0;
+  }
+
+
+  .admin-sidebar__label {
+    display: none;
+  }
+
+
+  .admin-sidebar__icon {
+    width: auto;
+
+    min-width: 0;
+
+    font-size: 19px;
+  }
+
+
+  .admin-sidebar__decoration {
+    display: none;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .admin-sidebar {
+    display: none;
+  }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.admin-sidebar__item:focus-visible {
+  outline:
+    2px solid #e2b965;
+
+  outline-offset: 2px;
+}

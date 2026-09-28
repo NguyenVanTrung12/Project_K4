@@ -1,0 +1,811 @@
+/* =========================================================
+   THEMIS TRUST - LAWYER LIST SECTION
+   Tất cả class dùng tiền tố "lls-" để KHÔNG trùng với CSS của
+   trang admin (LawyerManagement.css) và trang chủ
+   (featuredLawyersSection.css).
+========================================================= */
+
+/* ---------- 1. SECTION ---------- */
+
+.lls-section {
+  width: 100%;
+  padding: 50px 0 65px;
+  background: #f7f9fc;
+  overflow: hidden;
+}
+
+/* ---------- 2. CONTAINER (sidebar + kết quả) ---------- */
+
+.lls-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+/* ---------- 3. SIDEBAR ---------- */
+
+.lls-filter {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  align-self: start;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e4eaf1;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(15, 35, 55, 0.06);
+  box-sizing: border-box;
+}
+
+/* ---------- 4. SEARCH ---------- */
+
+.lls-search {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 0 13px;
+  border: 1px solid #dce4ed;
+  border-radius: 8px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.lls-search input {
+  width: 100%;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #263d54;
+  font-size: 13px;
+  font-family: inherit;
+}
+
+.lls-search input::placeholder {
+  color: #9baaba;
+}
+
+.lls-search svg {
+  flex-shrink: 0;
+  color: #57718d;
+  font-size: 15px;
+}
+
+/* ---------- 5. FILTER GROUP ---------- */
+
+.lls-filter-group {
+  margin-top: 27px;
+}
+
+.lls-filter-group h3 {
+  margin: 0 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #183550;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.lls-filter-group h3 svg {
+  flex-shrink: 0;
+  color: #193d61;
+  font-size: 16px;
+}
+
+/* ---------- 6. CHECKBOX / RADIO LIST ---------- */
+
+.lls-checkbox-list,
+.lls-radio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.lls-checkbox-item,
+.lls-radio-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #718096;
+  font-size: 13px;
+  line-height: 1.4;
+  cursor: pointer;
+  user-select: none;
+}
+
+.lls-checkbox-item input,
+.lls-radio-item input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ---------- 7. CUSTOM CHECKBOX ---------- */
+
+.lls-custom-checkbox {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  border: 1px solid #bdcad8;
+  border-radius: 4px;
+  background: #ffffff;
+  box-sizing: border-box;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.lls-checkbox-item input:checked + .lls-custom-checkbox {
+  border-color: #d29b19;
+  background: #d29b19;
+}
+
+.lls-checkbox-item input:checked + .lls-custom-checkbox::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 9px;
+  left: 4px;
+  top: 1px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* ---------- 8. CUSTOM RADIO ---------- */
+
+.lls-custom-radio {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  border: 1px solid #bdcad8;
+  border-radius: 50%;
+  background: #ffffff;
+  box-sizing: border-box;
+  transition: border 0.2s;
+}
+
+.lls-radio-item input:checked + .lls-custom-radio {
+  border: 4px solid #d29b19;
+}
+
+/* ---------- 9. RESET BUTTON ---------- */
+
+.lls-reset-button {
+  width: 100%;
+  height: 43px;
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: none;
+  border-radius: 8px;
+  background: #d39a18;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.25s, transform 0.25s, box-shadow 0.25s;
+}
+
+.lls-reset-button:hover {
+  background: #b9820c;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 12px rgba(211, 154, 24, 0.2);
+}
+
+.lls-reset-button svg {
+  font-size: 13px;
+}
+
+/* ---------- 10. RESULTS ---------- */
+
+.lls-results {
+  min-width: 0;
+}
+
+.lls-results-header {
+  min-height: 35px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.lls-count {
+  color: #587088;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.lls-count strong {
+  color: #334b63;
+  font-weight: 700;
+}
+
+.lls-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ---------- 11. SORT BUTTON ---------- */
+
+.lls-sort {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 13px;
+  border: 1px solid #dfe6ee;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #7a8999;
+  font-size: 11px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.lls-sort:hover {
+  border-color: #b9c8d7;
+  box-shadow: 0 3px 8px rgba(19, 43, 67, 0.05);
+}
+
+.lls-sort strong {
+  color: #4d637a;
+  font-weight: 600;
+}
+
+.lls-sort svg {
+  font-size: 9px;
+}
+
+/* ---------- 12. MOBILE FILTER BUTTON ---------- */
+
+.lls-mobile-filter {
+  width: 36px;
+  height: 36px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dfe6ee;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #48627b;
+  cursor: pointer;
+}
+
+.lls-mobile-filter svg {
+  font-size: 13px;
+}
+
+/* ---------- 13. GRID ---------- */
+
+.lls-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+/* ---------- 14. CARD ---------- */
+
+.lls-card {
+  position: relative;
+  display: block;
+  min-width: 0;
+  min-height: 300px;
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid #e5ebf2;
+  border-radius: 12px;
+  box-shadow: 0 5px 16px rgba(19, 43, 67, 0.06);
+  box-sizing: border-box;
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.lls-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(19, 43, 67, 0.11);
+}
+
+.lls-card--featured {
+  border-color: #e1aa32;
+  box-shadow: 0 5px 18px rgba(211, 154, 24, 0.12);
+}
+
+.lls-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 10px;
+  border-radius: 11px 0 8px 0;
+  background: #d39a18;
+  color: #ffffff;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* ---------- 15. CARD TOP ---------- */
+
+.lls-card-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.lls-card--featured .lls-card-top {
+  padding-top: 3px;
+}
+
+/* ---------- 16. AVATAR ---------- */
+
+.lls-avatar-box {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 11px;
+  background: #e9eef3;
+}
+
+.lls-avatar {
+  position: static;
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* ---------- 17. BASIC INFO ---------- */
+
+.lls-info {
+  min-width: 0;
+  padding-right: 2px;
+}
+
+.lls-info h3 {
+  margin: 0 0 6px;
+  color: #203b56;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lls-info > p {
+  margin: 0 0 9px;
+  color: #8291a0;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* ---------- 18. RATING + EXPERIENCE ---------- */
+
+.lls-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.lls-rating svg {
+  flex-shrink: 0;
+  color: #e1a01b;
+  font-size: 13px;
+}
+
+.lls-rating strong {
+  color: #d08f0c;
+  font-weight: 700;
+}
+
+.lls-experience {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  color: #61778d;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.lls-experience svg {
+  flex-shrink: 0;
+  color: #4f6d89;
+  font-size: 13px;
+}
+
+/* ---------- 19. STATUS ---------- */
+
+.lls-status {
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 8px;
+  border: 1px solid #bde9db;
+  border-radius: 20px;
+  background: #f5fffb;
+  color: #19a579;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.lls-status-dot {
+  width: 6px;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #14a276;
+}
+
+/* ---------- 20. TAGS ---------- */
+
+.lls-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 6px;
+  margin-top: 13px;
+}
+
+.lls-tag {
+  display: inline-block;
+  padding: 6px 9px;
+  border-radius: 14px;
+  background: #edf5fc;
+  color: #47729a;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+/* ---------- 21. CARD ACTIONS ---------- */
+
+.lls-card-actions {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.lls-btn {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 0 8px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.lls-btn:hover {
+  transform: translateY(-1px);
+}
+
+.lls-btn svg {
+  font-size: 11px;
+}
+
+.lls-btn--outline {
+  border: 1px solid #8fa8bd;
+  background: #ffffff;
+  color: #496681;
+}
+
+.lls-btn--outline:hover {
+  border-color: #1d456c;
+  background: #f7fafc;
+  color: #1d456c;
+}
+
+.lls-btn--primary {
+  border: 1px solid #d39a18;
+  background: #d39a18;
+  color: #ffffff;
+}
+
+.lls-btn--primary:hover {
+  border-color: #b9810d;
+  background: #b9810d;
+}
+
+/* ---------- 22. PAGINATION ---------- */
+
+.lls-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 25px;
+}
+
+.lls-pagination button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e1e7ee;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #60758a;
+  font-size: 11px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.lls-pagination button:hover:not(:disabled) {
+  border-color: #d39a18;
+  color: #b9820c;
+}
+
+.lls-pagination button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.lls-pagination .lls-page-number.is-active {
+  border-color: #d39a18;
+  background: #d39a18;
+  color: #ffffff;
+}
+
+.lls-pagination .lls-page-number.is-active:hover {
+  border-color: #b9820c;
+  background: #b9820c;
+  color: #ffffff;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1200px) {
+  .lls-container {
+    max-width: 1180px;
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 22px;
+    padding: 0 24px;
+  }
+
+  .lls-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  .lls-container {
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 18px;
+    padding: 0 20px;
+  }
+
+  .lls-filter {
+    padding: 16px;
+  }
+
+  .lls-avatar-box {
+    width: 78px;
+    height: 78px;
+  }
+
+  .lls-info h3 {
+    font-size: 14px;
+  }
+
+  .lls-status {
+    font-size: 8px;
+    padding: 4px 7px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lls-section {
+    padding: 35px 0 50px;
+  }
+
+  .lls-container {
+    display: block;
+    max-width: 100%;
+    padding: 0 16px;
+  }
+
+  /* Sidebar ẩn mặc định trên mobile, bật bằng nút bộ lọc */
+  .lls-filter {
+    display: none;
+    margin-bottom: 18px;
+  }
+
+  .lls-results {
+    width: 100%;
+  }
+
+  .lls-results-header {
+    min-height: 40px;
+    margin-bottom: 18px;
+  }
+
+  .lls-actions {
+    gap: 6px;
+  }
+
+  .lls-mobile-filter {
+    display: flex;
+  }
+
+  .lls-sort {
+    padding: 0 10px;
+    font-size: 10px;
+  }
+
+  .lls-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .lls-card {
+    min-height: auto;
+  }
+
+  .lls-avatar-box {
+    width: 90px;
+    height: 90px;
+  }
+
+  .lls-info h3 {
+    font-size: 16px;
+  }
+
+  .lls-btn {
+    height: 42px;
+    font-size: 12px;
+  }
+
+  .lls-pagination {
+    margin-top: 22px;
+  }
+
+  .lls-pagination button {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lls-section {
+    padding: 28px 0 40px;
+  }
+
+  .lls-container {
+    padding: 0 12px;
+  }
+
+  .lls-sort span {
+    display: none;
+  }
+
+  .lls-card {
+    padding: 16px;
+    border-radius: 11px;
+  }
+
+  .lls-avatar-box {
+    width: 82px;
+    height: 82px;
+  }
+
+  .lls-info h3 {
+    font-size: 15px;
+  }
+
+  .lls-info > p,
+  .lls-rating,
+  .lls-experience {
+    font-size: 11px;
+  }
+
+  .lls-status {
+    top: 14px;
+    right: 12px;
+    padding: 4px 6px;
+  }
+
+  .lls-tags {
+    gap: 5px;
+    margin-top: 12px;
+  }
+
+  .lls-tag {
+    padding: 5px 8px;
+    font-size: 9px;
+  }
+
+  .lls-card-actions {
+    gap: 8px;
+    margin-top: 13px;
+  }
+
+  .lls-btn {
+    height: 40px;
+    font-size: 10px;
+  }
+
+  .lls-pagination {
+    gap: 5px;
+  }
+
+  .lls-pagination button {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .lls-container {
+    padding: 0 10px;
+  }
+
+  .lls-card {
+    padding: 14px;
+  }
+
+  .lls-avatar-box {
+    width: 72px;
+    height: 72px;
+  }
+
+  .lls-info h3 {
+    font-size: 14px;
+  }
+
+  .lls-status {
+    display: none;
+  }
+
+  .lls-btn {
+    font-size: 9px;
+  }
+}

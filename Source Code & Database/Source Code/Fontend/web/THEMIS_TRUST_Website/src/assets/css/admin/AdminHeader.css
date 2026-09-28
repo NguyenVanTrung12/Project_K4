@@ -1,0 +1,463 @@
+/* =========================================================
+   ADMIN HEADER
+========================================================= */
+
+.admin-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 218px;
+  z-index: 900;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 16px;
+  border-bottom: 1px solid #e6ebef;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 2px 10px rgba(20, 43, 63, 0.05);
+  transition: left 0.25s ease;
+  
+  /* Cấu hình Font chữ hệ thống chuẩn UI Modern */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* =========================================================
+   WHEN SIDEBAR COLLAPSED
+========================================================= */
+
+.admin-header--collapsed {
+  left: 74px;
+}
+
+
+/* =========================================================
+   LEFT
+========================================================= */
+
+.admin-header__left {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+
+/* =========================================================
+   MENU BUTTON
+========================================================= */
+
+.admin-header__menu-button {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  color: #153653;
+  background: transparent;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.admin-header__menu-button:hover {
+  color: #a87426;
+  background: #f5f7f9;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.admin-header__search {
+  width: 430px;
+  max-width: 100%;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 12px;
+  border: 1px solid #e1e6eb;
+  border-radius: 6px;
+  background: #f6f8fa;
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-header__search:focus-within {
+  border-color: #c3924c;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(195, 146, 76, 0.08);
+}
+
+.admin-header__search-icon {
+  flex-shrink: 0;
+  color: #173b5b;
+  font-size: 14px;
+}
+
+.admin-header__search input {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  padding: 0 0 0 10px;
+  border: none;
+  outline: none;
+  color: #324c65;
+  background: transparent;
+  
+  /* Đã sửa: Sử dụng font Sans-serif sắc nét, dễ đọc */
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.admin-header__search input::placeholder {
+  color: #8b99a7;
+  opacity: 1;
+}
+
+
+/* =========================================================
+   RIGHT
+========================================================= */
+
+.admin-header__right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-left: 20px;
+}
+
+
+/* =========================================================
+   NOTIFICATION
+========================================================= */
+
+.admin-header__notification {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  color: #173b5b;
+  background: transparent;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.admin-header__notification:hover {
+  color: #a87324;
+  background: #f7f5f0;
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.admin-header__notification-badge {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  min-width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3px;
+  box-sizing: border-box;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #ef3838;
+  font-family: inherit;
+  font-size: 9px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   PROFILE CONTAINER
+========================================================= */
+
+.admin-header__profile-container {
+  position: relative;
+}
+
+
+/* =========================================================
+   PROFILE
+========================================================= */
+
+.admin-header__profile {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 3px 0;
+  border: none;
+  color: #183650;
+  background: transparent;
+  cursor: pointer;
+}
+
+.admin-header__profile:hover .admin-header__profile-info strong {
+  color: #a87324;
+}
+
+
+/* =========================================================
+   AVATAR
+========================================================= */
+
+.admin-header__avatar {
+  width: 39px;
+  height: 39px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #e3e7eb;
+  background: #edf1f4;
+}
+
+.admin-header__avatar img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   PROFILE INFO
+========================================================= */
+
+.admin-header__profile-info {
+  min-width: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.admin-header__profile-info strong {
+  color: #193752;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.admin-header__profile-info span {
+  margin-top: 3px;
+  color: #718296;
+  font-family: inherit;
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+
+/* =========================================================
+   PROFILE ARROW
+========================================================= */
+
+.admin-header__profile-arrow {
+  margin-left: 3px;
+  color: #173a58;
+  font-size: 11px;
+  transition: transform 0.2s ease;
+}
+
+.admin-header__profile-arrow.rotate {
+  transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   DROPDOWN
+========================================================= */
+
+.admin-header__dropdown {
+  position: absolute;
+  top: calc(100% + 9px);
+  right: 0;
+  width: 190px;
+  padding: 7px;
+  box-sizing: border-box;
+  border: 1px solid #e4e8ec;
+  border-radius: 7px;
+  background: #ffffff;
+  box-shadow: 0 8px 25px rgba(17, 42, 61, 0.14);
+}
+
+.admin-header__dropdown button {
+  width: 100%;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  padding: 0 11px;
+  border: none;
+  border-radius: 5px;
+  color: #3f566d;
+  background: transparent;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.admin-header__dropdown button:hover {
+  color: #a87324;
+  background: #faf7f1;
+}
+
+.admin-header__dropdown button.logout {
+  color: #c94040;
+}
+
+.admin-header__dropdown button.logout:hover {
+  color: #ffffff;
+  background: #c94040;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.admin-header__dropdown-divider {
+  height: 1px;
+  margin: 5px 0;
+  background: #edf0f3;
+}
+
+
+/* =========================================================
+   LARGE SCREEN
+========================================================= */
+
+@media (min-width: 1600px) {
+  .admin-header {
+    left: 230px;
+    height: 68px;
+    padding: 0 22px;
+  }
+
+  .admin-header--collapsed {
+    left: 74px;
+  }
+
+  .admin-header__search {
+    width: 500px;
+    height: 40px;
+  }
+
+  .admin-header__search input {
+    font-size: 13.5px;
+  }
+
+  .admin-header__profile-info strong {
+    font-size: 14px;
+  }
+
+  .admin-header__profile-info span {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .admin-header {
+    left: 74px;
+  }
+
+  .admin-header--collapsed {
+    left: 74px;
+  }
+
+  .admin-header__search {
+    width: 330px;
+  }
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 700px) {
+  .admin-header {
+    left: 0;
+    height: 60px;
+    padding: 0 10px;
+  }
+
+  .admin-header--collapsed {
+    left: 0;
+  }
+
+  .admin-header__left {
+    gap: 8px;
+  }
+
+  .admin-header__search {
+    width: auto;
+    flex: 1;
+    height: 36px;
+  }
+
+  .admin-header__right {
+    gap: 5px;
+    margin-left: 8px;
+  }
+
+  .admin-header__profile-info,
+  .admin-header__profile-arrow {
+    display: none;
+  }
+
+  .admin-header__avatar {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+  .admin-header__search {
+    max-width: 190px;
+  }
+
+  .admin-header__search input {
+    font-size: 12px;
+  }
+
+  .admin-header__notification {
+    width: 32px;
+    height: 32px;
+  }
+}

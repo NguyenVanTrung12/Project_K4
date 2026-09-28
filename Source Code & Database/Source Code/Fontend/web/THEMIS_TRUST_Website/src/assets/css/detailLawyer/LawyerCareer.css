@@ -1,0 +1,1428 @@
+/* =========================================================
+   LAWYER CAREER
+========================================================= */
+
+.lawyer-career {
+  --navy: #102b49;
+  --navy-dark: #0b223c;
+  --gold: #bd872b;
+  --gold-light: #d5a34c;
+  --text: #52657a;
+  --text-dark: #293f57;
+  --muted: #8290a0;
+  --border: #e5ebf1;
+  --line: #dce4eb;
+  --background: #ffffff;
+  --cream: #fcfaf6;
+
+  width: 100%;
+
+  background: #ffffff;
+
+  color: var(--text);
+
+  font-family:
+    "Inter",
+    "Segoe UI",
+    Arial,
+    sans-serif;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.lawyer-career__container {
+  max-width: 1516px;
+
+  margin: 0 auto;
+
+  padding:
+    0 3.6%;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    390px;
+
+  gap: 42px;
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.lawyer-career__main {
+  min-width: 0;
+
+  border-right:
+    1px solid
+    #edf0f3;
+
+  padding-right: 40px;
+}
+
+
+/* =========================================================
+   TABS
+========================================================= */
+
+.lawyer-career__tabs {
+  width: 100%;
+
+  height: 48px;
+
+  display: flex;
+
+  align-items: stretch;
+
+  background:
+    #f6f8fa;
+
+  border-radius: 7px;
+
+  overflow: hidden;
+
+  margin-bottom: 25px;
+}
+
+
+.lawyer-career__tab {
+  position: relative;
+
+  flex: 1;
+
+  height: 48px;
+
+  padding:
+    0 18px;
+
+  border: none;
+
+  background:
+    transparent;
+
+  color: #53667b;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    0.2s ease;
+}
+
+
+.lawyer-career__tab:hover {
+  color: var(--navy);
+
+  background:
+    rgba(255, 255, 255, 0.65);
+}
+
+
+.lawyer-career__tab--active {
+  color: var(--gold);
+
+  background:
+    #fffaf1;
+
+  font-weight: 700;
+}
+
+
+.lawyer-career__tab--active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  right: 0;
+
+  bottom: 0;
+
+  height: 2px;
+
+  background:
+    var(--gold);
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.lawyer-career__section {
+  width: 100%;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.lawyer-section-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  margin-bottom: 17px;
+}
+
+
+.lawyer-section-title__icon {
+  width: 30px;
+
+  min-width: 30px;
+
+  color: var(--gold);
+
+  font-size: 24px;
+
+  text-align: center;
+}
+
+
+.lawyer-section-title h2 {
+  margin: 0;
+
+  color: var(--navy);
+
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: 19px;
+
+  line-height: 1.3;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+.lawyer-timeline {
+  position: relative;
+
+  padding-left: 0;
+}
+
+
+.lawyer-timeline::before {
+  content: "";
+
+  position: absolute;
+
+  left: 13px;
+
+  top: 7px;
+
+  bottom: 8px;
+
+  width: 1px;
+
+  background:
+    var(--line);
+}
+
+
+/* =========================================================
+   TIMELINE ITEM
+========================================================= */
+
+.lawyer-timeline__item {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    105px
+    minmax(0, 1fr);
+
+  gap: 20px;
+
+  min-height: 81px;
+
+  padding-bottom: 16px;
+}
+
+
+.lawyer-timeline__item:last-child {
+  padding-bottom: 0;
+}
+
+
+/* =========================================================
+   DOT
+========================================================= */
+
+.lawyer-timeline__dot {
+  position: absolute;
+
+  left: 8px;
+
+  top: 5px;
+
+  width: 11px;
+
+  height: 11px;
+
+  border-radius: 50%;
+
+  background:
+    #c9953a;
+
+  border:
+    2px solid
+    #ffffff;
+
+  box-shadow:
+    0 0 0 1px
+    #c9953a;
+
+  z-index: 2;
+}
+
+
+.lawyer-timeline__dot--active {
+  background:
+    #1675bc;
+
+  box-shadow:
+    0 0 0 1px
+    #1675bc;
+}
+
+
+/* =========================================================
+   PERIOD
+========================================================= */
+
+.lawyer-timeline__period {
+  padding-left: 35px;
+
+  color: #30475f;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   TIMELINE CONTENT
+========================================================= */
+
+.lawyer-timeline__content {
+  min-width: 0;
+}
+
+
+.lawyer-timeline__content h3 {
+  margin: 0 0 2px;
+
+  color: #2d435a;
+
+  font-size: 13px;
+
+  line-height: 1.35;
+
+  font-weight: 700;
+}
+
+
+.lawyer-timeline__content span {
+  display: block;
+
+  margin-bottom: 2px;
+
+  color: #49708f;
+
+  font-size: 12px;
+
+  line-height: 1.3;
+
+  font-weight: 500;
+}
+
+
+.lawyer-timeline__content p {
+  margin: 0;
+
+  color: #6c7d90;
+
+  font-size: 12px;
+
+  line-height: 1.45;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   EDUCATION
+========================================================= */
+
+.lawyer-education {
+  position: relative;
+
+  margin-left: 0;
+}
+
+
+.lawyer-education__item {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    105px
+    1fr;
+
+  gap: 20px;
+
+  min-height: 48px;
+
+  padding-left: 35px;
+
+  margin-bottom: 8px;
+}
+
+
+.lawyer-education__item::before {
+  content: "";
+
+  position: absolute;
+
+  left: 8px;
+
+  top: 4px;
+
+  width: 11px;
+
+  height: 11px;
+
+  border-radius: 50%;
+
+  background:
+    #c9953a;
+
+  box-shadow:
+    0 0 0 1px #c9953a,
+    0 0 0 3px #ffffff;
+}
+
+
+.lawyer-education__period {
+  color: #30475f;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+
+.lawyer-education__content h3 {
+  margin: 0 0 2px;
+
+  color: #2d435a;
+
+  font-size: 13px;
+
+  line-height: 1.35;
+
+  font-weight: 700;
+}
+
+
+.lawyer-education__content p {
+  margin: 0;
+
+  color: #728195;
+
+  font-size: 12px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   AWARDS
+========================================================= */
+
+.lawyer-awards {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap: 25px;
+
+  padding-top: 3px;
+}
+
+
+.lawyer-award {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 11px;
+}
+
+
+.lawyer-award__icon {
+  width: 25px;
+
+  min-width: 25px;
+
+  height: 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: var(--gold);
+
+  font-size: 18px;
+}
+
+
+.lawyer-award__content h3 {
+  margin: 0 0 3px;
+
+  color: #344a62;
+
+  font-size: 12px;
+
+  line-height: 1.4;
+
+  font-weight: 700;
+}
+
+
+.lawyer-award__content p {
+  margin: 0;
+
+  color: #7a8999;
+
+  font-size: 11px;
+
+  line-height: 1.35;
+}
+
+
+/* =========================================================
+   EMPTY ARTICLES
+========================================================= */
+
+.lawyer-empty {
+  min-height: 260px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  color: #7c8998;
+}
+
+
+.lawyer-empty > svg {
+  margin-bottom: 12px;
+
+  color: var(--gold);
+
+  font-size: 30px;
+}
+
+
+.lawyer-empty h3 {
+  margin:
+    0 0
+    5px;
+
+  color: var(--navy);
+
+  font-size: 17px;
+}
+
+
+.lawyer-empty p {
+  margin: 0;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   SPECIALTY GRID
+========================================================= */
+
+.lawyer-specialty-grid {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap: 10px;
+}
+
+
+.lawyer-specialty-item {
+  min-height: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding:
+    12px 15px;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius: 7px;
+
+  color: #4e6277;
+
+  background: #ffffff;
+}
+
+
+.lawyer-specialty-item svg {
+  color: var(--gold);
+
+  font-size: 17px;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.lawyer-career__sidebar {
+  min-width: 0;
+}
+
+
+/* =========================================================
+   SIDEBAR SECTION
+========================================================= */
+
+.lawyer-sidebar-section {
+  width: 100%;
+
+  margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   SIDEBAR TITLE
+========================================================= */
+
+.lawyer-sidebar-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 9px;
+}
+
+
+.lawyer-sidebar-title > svg {
+  color: var(--gold);
+
+  font-size: 15px;
+}
+
+
+.lawyer-sidebar-title h2 {
+  margin: 0;
+
+  color: var(--navy);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 16px;
+
+  line-height: 1.3;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   SPECIALTY LIST
+========================================================= */
+
+.lawyer-sidebar-specialties {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+
+.lawyer-sidebar-specialty {
+  min-height: 38px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding:
+    7px 10px;
+
+  border:
+    1px solid
+    #e8edf2;
+
+  border-radius: 7px;
+
+  background:
+    #ffffff;
+
+  color: #617286;
+
+  font-size: 12px;
+
+  line-height: 1.3;
+
+  transition:
+    0.2s ease;
+}
+
+
+.lawyer-sidebar-specialty:hover {
+  border-color:
+    #e0d2b4;
+
+  background:
+    #fffdf9;
+
+  transform:
+    translateX(2px);
+}
+
+
+/* =========================================================
+   SPECIALTY ICON
+========================================================= */
+
+.lawyer-sidebar-specialty__icon {
+  width: 25px;
+
+  min-width: 25px;
+
+  height: 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: var(--gold);
+
+  background:
+    #fffaf0;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   OTHER LAWYERS TITLE
+========================================================= */
+
+.lawyer-sidebar-title--lawyers {
+  justify-content: space-between;
+
+  margin-top: 25px;
+}
+
+
+.lawyer-sidebar-title--lawyers button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #3785c4;
+
+  font-size: 11px;
+
+  cursor: pointer;
+}
+
+
+.lawyer-sidebar-title--lawyers button:hover {
+  text-decoration:
+    underline;
+}
+
+
+/* =========================================================
+   OTHER LAWYERS GRID
+========================================================= */
+
+.lawyer-other-grid {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap: 8px;
+}
+
+
+/* =========================================================
+   OTHER LAWYER CARD
+========================================================= */
+
+.lawyer-other-card {
+  width: 100%;
+
+  min-width: 0;
+
+  padding:
+    0 7px
+    10px;
+
+  border:
+    1px solid
+    #e5ebf0;
+
+  border-radius: 8px;
+
+  background:
+    #ffffff;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    0.2s ease;
+}
+
+
+.lawyer-other-card:hover {
+  border-color:
+    #d9c28f;
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 5px 16px
+    rgba(20, 43, 67, 0.08);
+}
+
+
+/* =========================================================
+   LAWYER IMAGE
+========================================================= */
+
+.lawyer-other-card__image {
+  width: 100%;
+
+  height: 80px;
+
+  overflow: hidden;
+
+  border-radius:
+    6px;
+
+  margin-bottom: 8px;
+
+  background:
+    #edf1f4;
+}
+
+
+.lawyer-other-card__image img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center top;
+}
+
+
+/* =========================================================
+   LAWYER NAME
+========================================================= */
+
+.lawyer-other-card h3 {
+  margin:
+    0 0
+    3px;
+
+  color: #263e58;
+
+  font-size: 12px;
+
+  line-height: 1.3;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   POSITION
+========================================================= */
+
+.lawyer-other-card__position {
+  margin:
+    0 0
+    8px;
+
+  color: #6f7f91;
+
+  font-size: 10px;
+
+  line-height: 1.3;
+}
+
+
+/* =========================================================
+   META
+========================================================= */
+
+.lawyer-other-card__meta {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 5px;
+
+  margin-top: 5px;
+
+  color: #6c7c8e;
+
+  font-size: 9px;
+
+  line-height: 1.35;
+}
+
+
+.lawyer-other-card__meta svg {
+  color: var(--gold);
+
+  margin-top: 1px;
+
+  font-size: 9px;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .lawyer-career__container {
+    grid-template-columns:
+      minmax(0, 1fr)
+      330px;
+
+    gap: 25px;
+  }
+
+  .lawyer-career__main {
+    padding-right: 25px;
+  }
+
+  .lawyer-career__tab {
+    padding:
+      0 10px;
+
+    font-size: 11px;
+  }
+
+  .lawyer-timeline__item {
+    grid-template-columns:
+      90px
+      minmax(0, 1fr);
+
+    gap: 15px;
+  }
+
+  .lawyer-timeline__period {
+    padding-left: 28px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .lawyer-career__container {
+    grid-template-columns:
+      1fr;
+
+    gap: 35px;
+  }
+
+  .lawyer-career__main {
+    padding-right: 0;
+
+    border-right: none;
+  }
+
+  .lawyer-career__sidebar {
+    display: grid;
+
+    grid-template-columns:
+      1fr
+      1fr;
+
+    gap: 25px;
+  }
+
+  .lawyer-sidebar-section {
+    margin-bottom: 0;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .lawyer-career__container {
+    padding:
+      0 18px;
+
+    gap: 30px;
+  }
+
+
+  /* TABS */
+
+  .lawyer-career__tabs {
+    height: auto;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+  }
+
+  .lawyer-career__tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .lawyer-career__tab {
+    flex:
+      0 0 auto;
+
+    min-width: 125px;
+
+    padding:
+      0 15px;
+  }
+
+
+  /* TIMELINE */
+
+  .lawyer-timeline__item {
+    grid-template-columns:
+      85px
+      minmax(0, 1fr);
+
+    gap: 10px;
+  }
+
+  .lawyer-timeline__period {
+    padding-left: 25px;
+
+    font-size: 11px;
+  }
+
+  .lawyer-timeline__content h3 {
+    font-size: 12px;
+  }
+
+  .lawyer-timeline__content span {
+    font-size: 11px;
+  }
+
+  .lawyer-timeline__content p {
+    font-size: 10px;
+  }
+
+
+  /* AWARDS */
+
+  .lawyer-awards {
+    grid-template-columns:
+      1fr;
+
+    gap: 15px;
+  }
+
+
+  /* SPECIALTY */
+
+  .lawyer-specialty-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  /* SIDEBAR */
+
+  .lawyer-career__sidebar {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+
+  /* OTHER LAWYERS */
+
+  .lawyer-other-grid {
+    grid-template-columns:
+      1fr
+      1fr;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .lawyer-career__container {
+    padding:
+      0 14px;
+  }
+
+  .lawyer-section-title h2 {
+    font-size: 17px;
+  }
+
+  .lawyer-timeline__item {
+    grid-template-columns:
+      76px
+      minmax(0, 1fr);
+  }
+
+  .lawyer-timeline__period {
+    padding-left: 23px;
+
+    font-size: 10px;
+  }
+
+  .lawyer-timeline__content p {
+    font-size: 9px;
+  }
+
+  .lawyer-other-card__image {
+    height: 75px;
+  }
+
+}
+/* =========================================================
+   TAB CONTENT ANIMATION
+========================================================= */
+
+.lawyer-career__section {
+  animation: lawyerTabFadeIn 0.25s ease;
+}
+
+
+@keyframes lawyerTabFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* =========================================================
+   CÁC LUẬT SƯ KHÁC - CHỈNH LẠI ẢNH
+   ========================================================= */
+
+.lawyer-other-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+}
+
+
+/* Card */
+
+.lawyer-other-card {
+  width: 100%;
+  min-width: 0;
+
+  padding: 0 0 12px;
+
+  border: 1px solid #dfe5ec;
+  border-radius: 9px;
+
+  background: #fff;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+.lawyer-other-card:hover {
+  transform: translateY(-2px);
+
+  border-color: #cbd5e1;
+
+  box-shadow:
+    0 5px 14px rgba(15, 23, 42, 0.10);
+}
+
+
+/* =========================================================
+   KHUNG ẢNH
+   ========================================================= */
+
+.lawyer-other-card__image {
+  width: 100%;
+  height: 108px;
+
+  overflow: hidden;
+
+  background: #eef2f6;
+
+  position: relative;
+}
+
+
+/* Ảnh */
+
+.lawyer-other-card__image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  /*
+   * Đưa trọng tâm ảnh lên trên một chút
+   * để không bị mất phần đầu/mặt.
+   */
+  object-position: center 30%;
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+/* Hover ảnh */
+
+.lawyer-other-card:hover
+.lawyer-other-card__image img {
+  transform: scale(1.04);
+}
+
+
+/* =========================================================
+   TÊN
+   ========================================================= */
+
+.lawyer-other-card h3 {
+  margin: 9px 8px 2px;
+
+  font-size: 13px;
+
+  line-height: 1.3;
+
+  font-weight: 700;
+
+  color: #26354a;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   CHỨC DANH
+   ========================================================= */
+
+.lawyer-other-card__position {
+  margin: 0 8px 7px;
+
+  font-size: 11px;
+
+  line-height: 1.3;
+
+  color: #667085;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   THÔNG TIN
+   ========================================================= */
+
+.lawyer-other-card__meta {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 6px;
+
+  margin: 4px 8px 0;
+
+  font-size: 10px;
+
+  line-height: 1.35;
+
+  color: #667085;
+}
+
+
+.lawyer-other-card__meta svg {
+  flex-shrink: 0;
+
+  margin-top: 1px;
+
+  font-size: 10px;
+
+  color: #c58b2a;
+}
+
+
+.lawyer-other-card__meta span {
+  min-width: 0;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .lawyer-other-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+  }
+
+
+  .lawyer-other-card__image {
+    height: 105px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .lawyer-other-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .lawyer-other-card__image {
+    height: 150px;
+  }
+
+}

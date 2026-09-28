@@ -1,0 +1,505 @@
+/* =========================================================
+   USER PROFILE VARIABLES & BASE
+========================================================= */
+.user-profile {
+  --navy: #09263f;
+  --navy-dark: #061c2e;
+  --navy-light: #163e5d;
+
+  --gold: #c99818;
+  --gold-dark: #a97813;
+  --gold-light: #f3e5ab;
+
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+
+  --border-color: #e2e8f0;
+  --bg-main: #f8fafc;
+  --card-bg: #ffffff;
+
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+.profile-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   PROFILE HERO BANNER
+========================================================= */
+.profile-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 200px;
+  padding: 28px 32px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--navy-dark);
+  box-shadow: 0 4px 20px rgba(9, 38, 63, 0.08);
+  margin-bottom: 24px;
+}
+
+.profile-hero__background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.profile-hero__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(
+    90deg,
+    rgba(6, 28, 46, 0.95) 0%,
+    rgba(9, 38, 63, 0.85) 50%,
+    rgba(9, 38, 63, 0.6) 100%
+  );
+}
+
+/* --- AVATAR --- */
+.profile-avatar {
+  position: relative;
+  z-index: 5;
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  margin-right: 28px;
+}
+
+.profile-avatar img, 
+.profile-avatar div[role="img"] {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.profile-avatar__camera {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background: #ffffff;
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+}
+
+.profile-avatar__camera:hover {
+  background: var(--gold);
+  color: #ffffff;
+  transform: scale(1.08);
+}
+
+/* --- HERO INFO --- */
+.profile-hero__info {
+  position: relative;
+  z-index: 5;
+  color: #ffffff;
+  flex-grow: 1;
+}
+
+.profile-hero__name-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.profile-hero__name-row h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+}
+
+.profile-role {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  background: rgba(201, 152, 24, 0.2);
+  color: #fce788;
+  border: 1px solid rgba(201, 152, 24, 0.4);
+}
+
+.profile-hero__description {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.4;
+}
+
+.profile-contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.profile-contact-list div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.profile-contact-list svg {
+  color: var(--gold-light);
+}
+
+/* --- NÚT CHỈNH SỬA HỒ SƠ TRÊN BANNER --- */
+.profile-edit-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: all 0.2s ease;
+}
+
+.profile-edit-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   GRID CONTENT LAYOUT
+========================================================= */
+.profile-content {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 992px) {
+  .profile-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   CARDS COMMON STYLES
+========================================================= */
+.profile-card,
+.profile-card-consultation-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+  margin-bottom: 24px;
+}
+
+.profile-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.profile-card__header h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-card__header h2 svg {
+  color: var(--gold);
+}
+
+.profile-card__edit,
+.profile-view-all {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  color: var(--navy-light);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.profile-card__edit:hover,
+.profile-view-all:hover {
+  color: var(--gold);
+}
+
+/* =========================================================
+   THÔNG TIN CÁ NHÂN (LEFT COLUMN)
+========================================================= */
+.personal-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.personal-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13.5px;
+}
+
+.personal-info-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-muted);
+}
+
+.personal-info-label svg {
+  width: 14px;
+  color: #94a3b8;
+}
+
+.personal-info-row strong {
+  color: var(--text-main);
+  font-weight: 600;
+  text-align: right;
+}
+
+/* SECURITY BOX */
+.profile-security {
+  margin-top: 20px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #fdfbf4;
+  border: 1px solid #f5e8c7;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.profile-security__icon {
+  color: var(--gold);
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.profile-security strong {
+  display: block;
+  font-size: 13px;
+  color: #785809;
+  margin-bottom: 2px;
+}
+
+.profile-security p {
+  margin: 0;
+  font-size: 12px;
+  color: #8c6d1f;
+  line-height: 1.4;
+}
+
+/* =========================================================
+   LỊCH HẸN & YÊU CẦU TƯ VẤN (RIGHT COLUMN)
+========================================================= */
+.consultation-list,
+.request-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ITEM LỊCH HẸN */
+.consultation-item {
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  border-radius: 10px;
+  background: #f8fafc;
+  border: 1px solid #edf2f7;
+  gap: 16px;
+  transition: all 0.2s ease;
+}
+
+.consultation-item:hover {
+  border-color: #cbd5e1;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.consultation-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 54px;
+  height: 54px;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.consultation-date strong {
+  font-size: 18px;
+  color: var(--navy);
+  line-height: 1;
+}
+
+.consultation-date span {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.consultation-info {
+  flex-grow: 1;
+}
+
+.consultation-info h3 {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 1.3;
+}
+
+.consultation-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.consultation-meta span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.consultation-detail,
+.request-detail {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background: #ffffff;
+  color: var(--navy);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.consultation-detail:hover,
+.request-detail:hover {
+  background: var(--navy);
+  color: #ffffff;
+  border-color: var(--navy);
+}
+
+/* ITEM YÊU CẦU TƯ VẤN */
+.request-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #f8fafc;
+  border: 1px solid #edf2f7;
+  gap: 14px;
+}
+
+.request-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #e2e8f0;
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.request-info {
+  flex-grow: 1;
+}
+
+.request-info h3 {
+  margin: 0 0 2px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.request-info span {
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+
+/* BADGE TRẠNG THÁI YÊU CẦU */
+.request-status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+.request-status--success {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.request-status--warning {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.request-status--closed {
+  background: #f1f5f9;
+  color: #64748b;
+}

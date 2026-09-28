@@ -1,0 +1,452 @@
+/* =========================================================
+   ABOUT HERO
+   THEMIS TRUST
+========================================================= */
+
+.about-hero {
+    position: relative;
+
+    width: 100%;
+    min-height: 465px;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    background-image: url("../../images/banner/banner3.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.about-hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(90deg,
+            rgba(3, 24, 43, 0.96) 0%,
+            rgba(4, 28, 48, 0.86) 30%,
+            rgba(4, 27, 45, 0.55) 52%,
+            rgba(3, 20, 35, 0.18) 75%,
+            rgba(3, 20, 35, 0.32) 100%);
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.about-hero-container {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1320px;
+
+    min-height: 465px;
+
+    margin: 0 auto;
+
+    padding:
+        50px 30px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.about-hero-content {
+    width: 60%;
+
+    max-width: 720px;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.about-hero-label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.2px;
+}
+
+
+.about-hero-line {
+    display: block;
+
+    width: 96px;
+    height: 2px;
+
+    background: #c99a3d;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.about-hero-content h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: 'Times New Roman', Times, serif;
+
+    font-size: clamp(42px,
+            4vw,
+            58px);
+
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.about-hero-content p {
+    max-width: 650px;
+
+    margin: 24px 0 0;
+
+    color: rgba(255, 255, 255, 0.90);
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   QUOTE
+========================================================= */
+
+.about-hero-quote {
+    width: 210px;
+
+    margin-right: 25px;
+
+    align-self: center;
+}
+
+
+.quote-text {
+    color: #fff;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 24px;
+
+    font-weight: 600;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.5px;
+}
+
+.quote-source p {
+    color: #fff;
+    font-style: italic;
+}
+
+.quote-line {
+    width: 70px;
+    height: 2px;
+
+    margin-top: 25px;
+
+    background: #fff;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1500px) {
+
+    .about-hero {
+        min-height: 500px;
+    }
+
+
+    .about-hero-container {
+        max-width: 1450px;
+
+        min-height: 500px;
+
+        padding:
+            60px 40px;
+    }
+
+
+    .about-hero-content {
+        max-width: 780px;
+    }
+
+
+    .about-hero-content h1 {
+        font-size: 62px;
+    }
+
+
+    .about-hero-content p {
+        font-size: 18px;
+    }
+
+
+    .quote-text {
+        font-size: 26px;
+    }
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .about-hero {
+        min-height: 430px;
+    }
+
+
+    .about-hero-container {
+        min-height: 430px;
+
+        padding:
+            45px 25px;
+    }
+
+
+    .about-hero-content {
+        width: 65%;
+    }
+
+
+    .about-hero-content h1 {
+        font-size: 46px;
+    }
+
+
+    .about-hero-content p {
+        font-size: 15px;
+
+        max-width: 580px;
+    }
+
+
+    .about-hero-quote {
+        width: 170px;
+
+        margin-right: 10px;
+    }
+
+
+    .quote-text {
+        font-size: 20px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .about-hero {
+        min-height: 420px;
+
+        background-position:
+            62% center;
+    }
+
+
+    .about-hero-container {
+        min-height: 420px;
+
+        padding:
+            40px 25px;
+    }
+
+
+    .about-hero-content {
+        width: 75%;
+
+        max-width: 650px;
+    }
+
+
+    .about-hero-content h1 {
+        font-size: 42px;
+    }
+
+
+    .about-hero-content p {
+        font-size: 15px;
+
+        line-height: 1.6;
+    }
+
+
+    .about-hero-quote {
+        display: none;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .about-hero {
+        min-height: 480px;
+
+        background-position:
+            67% center;
+    }
+
+
+    .about-hero-overlay {
+        background:
+            linear-gradient(90deg,
+                rgba(3, 24, 43, 0.95) 0%,
+                rgba(3, 24, 43, 0.78) 60%,
+                rgba(3, 24, 43, 0.45) 100%);
+    }
+
+
+    .about-hero-container {
+        min-height: 480px;
+
+        padding:
+            45px 20px;
+
+        align-items: center;
+    }
+
+
+    .about-hero-content {
+        width: 100%;
+
+        max-width: 100%;
+    }
+
+
+    .about-hero-label {
+        gap: 12px;
+
+        margin-bottom: 20px;
+
+        font-size: 13px;
+    }
+
+
+    .about-hero-line {
+        width: 65px;
+    }
+
+
+    .about-hero-content h1 {
+        font-size: 35px;
+
+        line-height: 1.2;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .about-hero-content p {
+        margin-top: 20px;
+
+        font-size: 14px;
+
+        line-height: 1.65;
+
+        max-width: 100%;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .about-hero {
+        min-height: 450px;
+    }
+
+
+    .about-hero-container {
+        min-height: 450px;
+
+        padding:
+            35px 16px;
+    }
+
+
+    .about-hero-content h1 {
+        font-size: 30px;
+    }
+
+
+    .about-hero-content p {
+        font-size: 13px;
+    }
+
+
+    .about-hero-label {
+        font-size: 12px;
+    }
+}

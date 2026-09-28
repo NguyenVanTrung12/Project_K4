@@ -1,0 +1,661 @@
+/* =========================================================
+   LAWYER HERO
+========================================================= */
+
+.lawyer-hero {
+  position: relative;
+
+  width: 100%;
+  height: 520px;
+
+  overflow: hidden;
+
+  background: #111923;
+
+  color: #fff;
+}
+
+
+/* =========================================================
+   BACKGROUND
+========================================================= */
+
+.lawyer-hero__background {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  overflow: hidden;
+}
+
+
+.lawyer-hero__background img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transform: scale(1.02);
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.lawyer-hero__overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 2;
+
+  background:
+    linear-gradient(
+      90deg,
+
+      rgba(8, 20, 32, 0.92) 0%,
+
+      rgba(10, 21, 31, 0.78) 30%,
+
+      rgba(10, 18, 27, 0.48) 58%,
+
+      rgba(7, 13, 20, 0.72) 100%
+    );
+}
+
+
+/* =========================================================
+   LAWYER IMAGE
+   ẢNH LUẬT SƯ NẰM TRÊN BACKGROUND
+========================================================= */
+
+.lawyer-hero__lawyer {
+  position: absolute;
+
+  z-index: 5;
+
+  left: 14%;
+
+  bottom: 0;
+
+  width: 400px;
+
+  height: 600px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: center;
+
+  pointer-events: none;
+}
+
+
+/* Ánh sáng nhẹ phía sau luật sư */
+
+.lawyer-hero__lawyer::before {
+  content: "";
+
+  position: absolute;
+
+  width: 360px;
+  height: 500px;
+
+  left: 50%;
+  bottom: 10px;
+
+  transform: translateX(-50%);
+
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(214, 169, 82, 0.18) 0%,
+      rgba(214, 169, 82, 0.07) 40%,
+      transparent 72%
+    );
+
+  filter: blur(30px);
+
+  z-index: -1;
+}
+
+
+/* Ảnh PNG luật sư */
+
+.lawyer-hero__lawyer img {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+
+  object-position: bottom center;
+
+  filter:
+    drop-shadow(
+      0 18px 25px rgba(0, 0, 0, 0.45)
+    );
+}
+
+
+/* =========================================================
+   CONTENT CONTAINER
+========================================================= */
+
+.lawyer-hero__container {
+  position: relative;
+
+  z-index: 10;
+
+  width: 100%;
+
+  max-width: 1500px;
+
+  height: 100%;
+
+  margin: 0 auto;
+
+  padding: 0 50px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   QUOTE
+========================================================= */
+
+.lawyer-quote {
+  position: absolute;
+
+  left: 5%;
+
+  top: 145px;
+
+  width: 185px;
+
+  z-index: 15;
+}
+
+
+.lawyer-quote p {
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 21px;
+
+  line-height: 1.58;
+
+  font-style: italic;
+
+  color: rgba(255, 255, 255, 0.91);
+
+  text-shadow:
+    0 3px 12px rgba(0, 0, 0, 0.5);
+}
+
+
+.lawyer-quote__line {
+  width: 63px;
+
+  height: 3px;
+
+  margin-top: 24px;
+
+  background: #d4a447;
+}
+
+
+/* =========================================================
+   INFORMATION
+========================================================= */
+
+.lawyer-information {
+  position: absolute;
+
+  top: 92px;
+
+  left: 44%;
+
+  width: 460px;
+
+  z-index: 20;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.lawyer-information__label {
+  margin-bottom: 13px;
+
+  color: #d5a44a;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   NAME
+========================================================= */
+
+.lawyer-information__name {
+  margin: 0;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: 54px;
+
+  line-height: 1.05;
+
+  font-weight: 700;
+
+  letter-spacing: -1px;
+
+  color: #fff;
+
+  text-shadow:
+    0 4px 18px rgba(0, 0, 0, 0.5);
+}
+
+
+/* =========================================================
+   POSITION
+========================================================= */
+
+.lawyer-information__position {
+  margin: 14px 0 0;
+
+  font-size: 24px;
+
+  line-height: 1.3;
+
+  font-weight: 600;
+
+  color: #fff;
+}
+
+
+/* =========================================================
+   DETAILS
+========================================================= */
+
+.lawyer-information__details {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 17px;
+
+  margin-top: 31px;
+}
+
+
+.lawyer-detail {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 15px;
+}
+
+
+.lawyer-detail__icon {
+  width: 30px;
+
+  min-width: 30px;
+
+  padding-top: 2px;
+
+  font-size: 20px;
+
+  color: #d5b06a;
+
+  text-align: center;
+}
+
+
+.lawyer-detail__text {
+  font-size: 16px;
+
+  line-height: 1.5;
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+
+.lawyer-detail__text span {
+  display: block;
+}
+
+
+/* =========================================================
+   BUTTON AREA
+========================================================= */
+
+.lawyer-information__actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  margin-top: 33px;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.lawyer-btn {
+  height: 55px;
+
+  padding: 0 23px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 11px;
+
+  border-radius: 10px;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    all 0.25s ease;
+}
+
+
+/* =========================================================
+   PRIMARY
+========================================================= */
+
+.lawyer-btn--primary {
+  min-width: 190px;
+
+  border: 1px solid #d5a344;
+
+  background:
+    linear-gradient(
+      135deg,
+      #d9a642,
+      #b77c22
+    );
+
+  color: #fff;
+
+  box-shadow:
+    0 7px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.lawyer-btn--primary:hover {
+  transform: translateY(-2px);
+
+  background:
+    linear-gradient(
+      135deg,
+      #e6b454,
+      #c48b2d
+    );
+
+  box-shadow:
+    0 10px 26px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================================
+   OUTLINE
+========================================================= */
+
+.lawyer-btn--outline {
+  min-width: 185px;
+
+  border:
+    1px solid rgba(226, 218, 202, 0.65);
+
+  background:
+    rgba(16, 23, 30, 0.3);
+
+  color: #fff;
+
+  backdrop-filter: blur(5px);
+}
+
+
+.lawyer-btn--outline:hover {
+  transform: translateY(-2px);
+
+  border-color: #d5a344;
+
+  background:
+    rgba(212, 164, 71, 0.12);
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.lawyer-btn__arrow {
+  transition:
+    transform 0.25s ease;
+}
+
+
+.lawyer-btn--primary:hover
+.lawyer-btn__arrow {
+  transform: translateX(5px);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .lawyer-hero__lawyer {
+    left: 10%;
+
+    width: 360px;
+  }
+
+
+  .lawyer-information {
+    left: 43%;
+
+    width: 410px;
+  }
+
+
+  .lawyer-information__name {
+    font-size: 48px;
+  }
+
+
+  .lawyer-information__position {
+    font-size: 21px;
+  }
+
+
+  .lawyer-quote {
+    left: 2%;
+
+    width: 155px;
+  }
+
+
+  .lawyer-quote p {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .lawyer-hero {
+    height: auto;
+
+    min-height: 900px;
+  }
+
+
+  .lawyer-hero__container {
+    height: auto;
+
+    min-height: 900px;
+
+    padding:
+      50px 25px 60px;
+  }
+
+
+  .lawyer-quote {
+    position: relative;
+
+    left: auto;
+    top: auto;
+
+    width: 100%;
+
+    text-align: center;
+  }
+
+
+  .lawyer-quote__line {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .lawyer-hero__lawyer {
+    position: relative;
+
+    left: auto;
+    bottom: auto;
+
+    width: 320px;
+
+    height: 430px;
+
+    margin: 20px auto 0;
+  }
+
+
+  .lawyer-information {
+    position: relative;
+
+    left: auto;
+    top: auto;
+
+    width: 100%;
+
+    max-width: 500px;
+
+    margin: 20px auto 0;
+
+    text-align: center;
+  }
+
+
+  .lawyer-information__details {
+    text-align: left;
+
+    max-width: 390px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .lawyer-information__actions {
+    justify-content: center;
+
+    flex-wrap: wrap;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 550px) {
+
+  .lawyer-hero {
+    min-height: 850px;
+  }
+
+
+  .lawyer-hero__container {
+    min-height: 850px;
+
+    padding:
+      40px 20px 50px;
+  }
+
+
+  .lawyer-hero__lawyer {
+    width: 280px;
+
+    height: 370px;
+  }
+
+
+  .lawyer-information__name {
+    font-size: 38px;
+  }
+
+
+  .lawyer-information__position {
+    font-size: 19px;
+  }
+
+
+  .lawyer-information__actions {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+
+  .lawyer-btn {
+    width: 100%;
+
+    max-width: 320px;
+  }
+}

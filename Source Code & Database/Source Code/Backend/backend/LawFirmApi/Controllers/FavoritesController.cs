@@ -1,0 +1,7 @@
+using System.Security.Claims; using LawFirmApi.Data; using LawFirmApi.Models; using Microsoft.AspNetCore.Authorization; using Microsoft.AspNetCore.Mvc; using Microsoft.EntityFrameworkCore;
+namespace LawFirmApi.Controllers;
+[ApiController][Route("api/favorites")][Authorize(Roles="client")]
+public class FavoritesController:ControllerBase{private readonly AppDbContext _db;public FavoritesController(AppDbContext db)=>_db=db;private Guid U=>Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+[HttpGet] public async Task<IActionResult> Get(){var x=await _db.FavoriteLawyers.Include(f=>f.Lawyer).ThenInclude(l=>l.User).Where(f=>f.ClientId==U).Select(f=>new{id=f.LawyerId,name=f.Lawyer.User.FullName,title=f.Lawyer.Title,avatarUrl=f.Lawyer.User.AvatarUrl,ratingAvg=f.Lawyer.RatingAvg,yearsExp=f.Lawyer.YearsExp}).ToListAsync();return Ok(x);}
+[HttpPost("{lawyerId:guid}")] public async Task<IActionResult> Add(Guid lawyerId){if(!await _db.Lawyers.AnyAsync(l=>l.Id==lawyerId))return NotFound();if(!await _db.FavoriteLawyers.AnyAsync(f=>f.ClientId==U&&f.LawyerId==lawyerId)){_db.FavoriteLawyers.Add(new FavoriteLawyer{ClientId=U,LawyerId=lawyerId});await _db.SaveChangesAsync();}return Ok();}
+[HttpDelete("{lawyerId:guid}")] public async Task<IActionResult> Remove(Guid lawyerId){var x=await _db.FavoriteLawyers.FindAsync(U,lawyerId);if(x is null)return NotFound();_db.FavoriteLawyers.Remove(x);await _db.SaveChangesAsync();return NoContent();}}

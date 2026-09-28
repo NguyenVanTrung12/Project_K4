@@ -1,0 +1,320 @@
+/* =================================
+   HOW IT WORKS SECTION
+================================= */
+
+.how-it-works-section {
+  max-width: 100%;
+
+  padding: 70px 8%;
+
+  background: #f8fafc;
+
+  overflow: hidden;
+}
+
+
+/* =================================
+   CONTAINER
+================================= */
+
+.how-it-works-container {
+  width: 100%;
+  max-width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(260px, 1.5fr)
+    minmax(0, 2fr);
+
+  align-items: center;
+
+  gap: 70px;
+}
+
+
+/* =================================
+   LEFT INTRO
+================================= */
+
+.how-it-works-intro {
+  width: 100%;
+}
+
+
+.how-it-works-label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #48617c;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+.how-it-works-intro h2 {
+  margin: 0 0 15px;
+
+  color: #1e3550;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: 36px;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+
+.how-it-works-intro p {
+  margin: 0;
+
+  max-width: 600px;
+
+  color: #64748b;
+
+  font-size: 18px;
+
+  line-height: 1.8;
+}
+
+
+/* =================================
+   START BUTTON
+================================= */
+
+.start-now-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 28px;
+
+  padding: 14px 28px;
+
+  border-radius: 12px;
+
+  color: #ffffff;
+
+  background: #c99818;
+
+  text-decoration: none;
+
+  font-size: 25px;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 8px 20px
+    rgba(201, 152, 24, 0.25);
+
+  transition: 0.3s;
+}
+
+
+.start-now-button:hover {
+  background: #ae8010;
+
+  transform: translateY(-2px);
+}
+
+
+/* =================================
+   STEPS
+================================= */
+
+.steps-container {
+  width: 100%;
+
+  min-width: 0;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(7, auto);
+
+  align-items: start;
+
+  justify-content: space-between;
+
+  gap: 18px;
+}
+
+
+.step-wrapper {
+  display: contents;
+}
+
+
+.step-item {
+  min-width: 0;
+
+  width: 100%;
+
+  max-width: 180px;
+
+  text-align: center;
+}
+
+
+/* =================================
+   STEP ICON
+================================= */
+
+.step-icon {
+  width: 78px;
+  height: 78px;
+
+  margin: 0 auto 16px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  border:
+    1px solid #cbd5e1;
+
+  background: #ffffff;
+
+  color: #173b63;
+
+  font-size: 28px;
+
+  box-shadow:
+    0 5px 15px
+    rgba(15, 23, 42, 0.05);
+}
+
+
+/* =================================
+   STEP TEXT
+================================= */
+
+.step-item h3 {
+  margin: 0 0 12px;
+
+  color: #26384d;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  line-height: 1.5;
+}
+
+
+.step-item p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* =================================
+   ARROW
+================================= */
+
+.step-arrow {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding-top: 35px;
+
+  color: #94a3b8;
+
+  font-size: 18px;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 1200px) {
+
+  .how-it-works-container {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+
+  .steps-container {
+    grid-template-columns:
+      repeat(4, minmax(0, 1fr));
+  }
+
+
+  .step-wrapper {
+    display: block;
+  }
+
+
+  .step-arrow {
+    display: none;
+  }
+
+
+  .step-item {
+    max-width: none;
+  }
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 768px) {
+
+  .how-it-works-section {
+    padding: 50px 20px;
+  }
+
+
+  .how-it-works-intro h2 {
+    font-size: 28px;
+  }
+
+
+  .steps-container {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 35px 20px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .steps-container {
+    grid-template-columns: 1fr;
+  }
+
+
+  .step-icon {
+    width: 70px;
+    height: 70px;
+
+    font-size: 24px;
+  }
+}

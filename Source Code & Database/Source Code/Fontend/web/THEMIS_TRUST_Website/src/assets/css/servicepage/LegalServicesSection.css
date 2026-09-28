@@ -1,0 +1,620 @@
+/* =========================================================
+   LEGAL SERVICES
+   THEMIS TRUST
+========================================================= */
+
+.legal-services {
+  width: 100%;
+  background: #ffffff;
+  padding: 70px 0 80px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.legal-services-container {
+  width: 100%;
+  max-width: 1320px;
+
+  margin: 0 auto;
+
+  padding: 0 30px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.services-header {
+  margin-bottom: 40px;
+}
+
+.services-heading {
+  width: 100%;
+}
+
+.services-label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #c99420;
+}
+
+.services-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.services-title-row h2 {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 700;
+  color: #172033;
+  line-height: 1.2;
+}
+
+.view-all-services {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 0;
+
+  border: none;
+  background: transparent;
+
+  color: #c99420;
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.view-all-services svg {
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
+
+.view-all-services:hover svg {
+  transform: translateX(5px);
+}
+
+.services-heading p {
+  max-width: 750px;
+  margin: 16px 0 0;
+
+  font-size: 18px;
+  line-height: 1.7;
+  color: #6b7280;
+}
+
+
+/* =========================================================
+   VIEW ALL
+========================================================= */
+
+.view-all-services {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 5px;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #15558a;
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  font-family: inherit;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.view-all-services:hover {
+  color: #c89622;
+
+  transform: translateX(3px);
+}
+
+
+.view-all-services svg {
+  font-size: 20px;
+}
+
+
+/* =========================================================
+   SERVICES GRID
+========================================================= */
+
+.services-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 16px;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.service-card {
+  position: relative;
+
+  min-width: 0;
+
+  min-height: 276px;
+
+  padding: 22px 30px 24px;
+
+  box-sizing: border-box;
+
+  border:
+    1px solid #e8edf2;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 2px 8px rgba(20, 45, 70, 0.035);
+
+  display: flex;
+
+  flex-direction: column;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+.service-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #dce4eb;
+
+  box-shadow:
+    0 12px 30px rgba(20, 45, 70, 0.10);
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.service-icon {
+  width: 72px;
+  height: 72px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 17px;
+
+  border-radius: 50%;
+
+  font-size: 29px;
+}
+
+
+/* GOLD */
+
+.service-icon.gold {
+  color: #946a16;
+
+  background:
+    linear-gradient(145deg,
+      #fff8e9,
+      #fdf0d5);
+}
+
+
+/* RED */
+
+.service-icon.red {
+  color: #9d3d42;
+
+  background:
+    linear-gradient(145deg,
+      #fff0f0,
+      #fbe1e2);
+}
+
+
+/* ORANGE */
+
+.service-icon.orange {
+  color: #a36a28;
+
+  background:
+    linear-gradient(145deg,
+      #fff2e6,
+      #fde3cd);
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.service-card h3 {
+  margin: 0 0 9px;
+
+  color: #0b2239;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+  line-height: 1.25;
+}
+
+
+/* =========================================================
+   CARD DESCRIPTION
+========================================================= */
+
+.service-card p {
+  margin: 0;
+
+  color: #718096;
+
+  font-size: 14px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   DETAIL BUTTON
+========================================================= */
+
+.service-detail {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  margin-top: auto;
+  padding-top: 20px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #15558a;
+
+  font-family: inherit;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+  text-decoration: unset;
+  transition:
+    color 0.2s ease,
+    gap 0.2s ease;
+}
+
+
+.service-detail:hover {
+  color: #c89622;
+
+  gap: 15px;
+}
+
+
+.service-detail svg {
+  font-size: 18px;
+}
+
+
+/* =========================================================
+   DESKTOP LARGE
+========================================================= */
+
+@media (min-width: 1500px) {
+
+  .legal-services-container {
+    max-width: 1400px;
+  }
+
+
+  .services-grid {
+    gap: 18px;
+  }
+
+
+  .service-card {
+    min-height: 285px;
+
+    padding:
+      25px 31px 25px;
+  }
+}
+
+
+/* =========================================================
+   TABLET / LAPTOP
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .legal-services {
+    padding:
+      60px 0 65px;
+  }
+
+
+  .legal-services-container {
+    padding:
+      0 25px;
+  }
+
+
+  .services-header {
+    align-items: flex-start;
+
+    gap: 25px;
+  }
+
+
+  .services-heading h2 {
+    font-size: 37px;
+  }
+
+
+  .services-heading p {
+    font-size: 15px;
+  }
+
+
+  .services-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+  }
+
+
+  .service-card {
+    min-height: 255px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .legal-services {
+    padding:
+      55px 0 60px;
+  }
+
+
+  .legal-services-container {
+    padding:
+      0 20px;
+  }
+
+
+  .services-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    margin-bottom: 28px;
+  }
+
+
+  .services-heading {
+    max-width: 100%;
+  }
+
+
+  .services-label {
+    font-size: 12px;
+  }
+
+
+  .services-heading h2 {
+    font-size: 34px;
+
+    line-height: 1.2;
+  }
+
+
+  .services-heading p {
+    font-size: 14px;
+
+    line-height: 1.6;
+  }
+
+
+  .view-all-services {
+    margin-bottom: 0;
+  }
+
+
+  .services-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+  }
+
+
+  .service-card {
+    min-height: 260px;
+
+    padding:
+      21px 22px 22px;
+  }
+
+
+  .service-icon {
+    width: 62px;
+    height: 62px;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+  }
+
+
+  .service-card h3 {
+    font-size: 20px;
+  }
+
+
+  .service-card p {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 560px) {
+
+  .legal-services {
+    padding:
+      45px 0 50px;
+  }
+
+
+  .legal-services-container {
+    padding:
+      0 16px;
+  }
+
+
+  .services-heading h2 {
+    font-size: 30px;
+  }
+
+
+  .services-heading p {
+    font-size: 14px;
+  }
+
+
+  .services-grid {
+    grid-template-columns:
+      1fr;
+
+    gap: 14px;
+  }
+
+
+  .service-card {
+    min-height: 240px;
+
+    padding:
+      22px 24px;
+  }
+
+
+  .service-icon {
+    width: 60px;
+    height: 60px;
+
+    margin-bottom: 14px;
+  }
+
+
+  .service-card h3 {
+    font-size: 21px;
+  }
+
+
+  .service-card p {
+    font-size: 14px;
+
+    max-width: 500px;
+  }
+
+
+  .service-detail {
+    padding-top: 18px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .legal-services-container {
+    padding:
+      0 14px;
+  }
+
+
+  .services-heading h2 {
+    font-size: 27px;
+  }
+
+
+  .service-card {
+    padding:
+      20px;
+  }
+
+
+  .service-icon {
+    width: 56px;
+    height: 56px;
+
+    font-size: 23px;
+  }
+}

@@ -1,0 +1,100 @@
+/* =========================================================
+   PROFILE LAYOUT
+========================================================= */
+
+.profile-layout {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  background: #f5f7f9;
+}
+
+
+/* =========================================================
+   PROFILE CONTENT
+========================================================= */
+
+.profile-layout__content {
+  width: calc(100% - 214px);
+
+  min-height: 100vh;
+
+  padding: 7px 15px 16px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1600px) {
+
+  .profile-layout__content {
+    width: calc(100% - 230px);
+
+
+    padding:
+      8px 18px 18px;
+  }
+
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .profile-layout__content {
+    width: calc(100% - 190px);
+
+
+    padding:
+      7px 10px 15px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .profile-layout__content {
+    width: calc(100% - 72px);
+
+    margin-left: 72px;
+
+    padding:
+      8px 10px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .profile-layout__content {
+    width: 100%;
+
+    margin-left: 0;
+
+    padding:
+      8px;
+  }
+
+}

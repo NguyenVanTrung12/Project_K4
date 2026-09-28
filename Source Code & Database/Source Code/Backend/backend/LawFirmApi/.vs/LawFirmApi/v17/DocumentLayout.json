@@ -1,0 +1,379 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|d:\\code\\project_cuoi_ki\\themis_trust_completed\\backend\\lawfirmapi\\controllers\\lawyerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|solutionrelative:controllers\\lawyerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|d:\\code\\project_cuoi_ki\\themis_trust_completed\\backend\\lawfirmapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|d:\\code\\project_cuoi_ki\\themis_trust_completed\\backend\\lawfirmapi\\controllers\\casescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|solutionrelative:controllers\\casescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|d:\\code\\project_cuoi_ki\\themis_trust_completed\\backend\\lawfirmapi\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|solutionrelative:controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|d:\\code\\project_cuoi_ki\\themis_trust_completed\\backend\\lawfirmapi\\dtos\\operationsdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|solutionrelative:dtos\\operationsdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|d:\\code\\project_cuoi_ki\\themis_trust_completed\\backend\\lawfirmapi\\dtos\\notificationdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|solutionrelative:dtos\\notificationdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|d:\\code\\project_cuoi_ki\\themis_trust_completed\\backend\\lawfirmapi\\dtos\\lawyerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|solutionrelative:dtos\\lawyerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|d:\\code\\project_cuoi_ki\\themis_trust_completed\\backend\\lawfirmapi\\dtos\\casedtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|solutionrelative:dtos\\casedtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|d:\\code\\project_cuoi_ki\\themis_trust_completed\\backend\\lawfirmapi\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|solutionrelative:dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|d:\\code\\project_cuoi_ki\\themis_trust_completed\\backend\\lawfirmapi\\controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|solutionrelative:controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|d:\\code\\project_cuoi_ki\\themis_trust_completed\\backend\\lawfirmapi\\models\\entities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|solutionrelative:models\\entities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|d:\\code\\project_cuoi_ki\\themis_trust_completed\\backend\\lawfirmapi\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|solutionrelative:controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|d:\\code\\project_cuoi_ki\\themis_trust_completed\\backend\\lawfirmapi\\dtos\\useradmindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|solutionrelative:dtos\\useradmindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|d:\\code\\project_cuoi_ki\\themis_trust_completed\\backend\\lawfirmapi\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|solutionrelative:controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|d:\\code\\project_cuoi_ki\\themis_trust_completed\\backend\\lawfirmapi\\dtos\\consultationrequestdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|solutionrelative:dtos\\consultationrequestdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|d:\\code\\project_cuoi_ki\\themis_trust_completed\\backend\\lawfirmapi\\dtos\\servicedtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|solutionrelative:dtos\\servicedtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|d:\\code\\project_cuoi_ki\\themis_trust_completed\\backend\\lawfirmapi\\controllers\\notificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|solutionrelative:controllers\\notificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|d:\\code\\project_cuoi_ki\\themis_trust_completed\\backend\\lawfirmapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|d:\\code\\project_cuoi_ki\\themis_trust_completed\\backend\\lawfirmapi\\controllers\\consultationrequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|solutionrelative:controllers\\consultationrequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|d:\\code\\project_cuoi_ki\\themis_trust_completed\\backend\\lawfirmapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|d:\\code\\project_cuoi_ki\\themis_trust_completed\\backend\\lawfirmapi\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24900D5A-AF2B-4746-B504-5081430308C4}|LawFirmApi.csproj|solutionrelative:controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DashboardController.cs",
+              "ToolTip": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Controllers\\DashboardController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-09T07:53:22.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LawyersController.cs",
+              "DocumentMoniker": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Controllers\\LawyersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LawyersController.cs",
+              "ToolTip": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Controllers\\LawyersController.cs",
+              "RelativeToolTip": "Controllers\\LawyersController.cs",
+              "ViewState": "AQIAAKoCAAAAAAAAAAAQwOcCAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T07:06:23.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppointmentsController.cs",
+              "DocumentMoniker": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Controllers\\AppointmentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AppointmentsController.cs",
+              "ToolTip": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Controllers\\AppointmentsController.cs",
+              "RelativeToolTip": "Controllers\\AppointmentsController.cs",
+              "ViewState": "AQIAAD0DAAAAAAAAAAAgwEsDAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T08:05:25.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MessagesController.cs",
+              "DocumentMoniker": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Controllers\\MessagesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MessagesController.cs",
+              "ToolTip": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Controllers\\MessagesController.cs",
+              "RelativeToolTip": "Controllers\\MessagesController.cs",
+              "ViewState": "AQIAAOQDAAAAAAAAAAAgwAQEAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T08:30:14.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CaseDtos.cs",
+              "DocumentMoniker": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\DTOs\\CaseDtos.cs",
+              "RelativeDocumentMoniker": "DTOs\\CaseDtos.cs",
+              "ToolTip": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\DTOs\\CaseDtos.cs",
+              "RelativeToolTip": "DTOs\\CaseDtos.cs",
+              "ViewState": "AQIAAPUAAAAAAAAAAAAiwAQBAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-11T07:34:04.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LawyerDtos.cs",
+              "DocumentMoniker": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\DTOs\\LawyerDtos.cs",
+              "RelativeDocumentMoniker": "DTOs\\LawyerDtos.cs",
+              "ToolTip": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\DTOs\\LawyerDtos.cs",
+              "RelativeToolTip": "DTOs\\LawyerDtos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-18T08:53:17.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NotificationDtos.cs",
+              "DocumentMoniker": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\DTOs\\NotificationDtos.cs",
+              "RelativeDocumentMoniker": "DTOs\\NotificationDtos.cs",
+              "ToolTip": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\DTOs\\NotificationDtos.cs",
+              "RelativeToolTip": "DTOs\\NotificationDtos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T14:18:44.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OperationsDtos.cs",
+              "DocumentMoniker": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\DTOs\\OperationsDtos.cs",
+              "RelativeDocumentMoniker": "DTOs\\OperationsDtos.cs",
+              "ToolTip": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\DTOs\\OperationsDtos.cs",
+              "RelativeToolTip": "DTOs\\OperationsDtos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T08:39:08.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CasesController.cs",
+              "DocumentMoniker": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Controllers\\CasesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CasesController.cs",
+              "ToolTip": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Controllers\\CasesController.cs",
+              "RelativeToolTip": "Controllers\\CasesController.cs",
+              "ViewState": "AQIAAGMHAAAAAAAAAAAQwHYHAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-11T03:15:53.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-11T03:15:08.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthDtos.cs",
+              "DocumentMoniker": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\DTOs\\AuthDtos.cs",
+              "RelativeDocumentMoniker": "DTOs\\AuthDtos.cs",
+              "ToolTip": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\DTOs\\AuthDtos.cs",
+              "RelativeToolTip": "DTOs\\AuthDtos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T08:35:44.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserAdminDto.cs",
+              "DocumentMoniker": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\DTOs\\UserAdminDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\UserAdminDto.cs",
+              "ToolTip": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\DTOs\\UserAdminDto.cs",
+              "RelativeToolTip": "DTOs\\UserAdminDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-11T07:34:48.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Entities.cs",
+              "DocumentMoniker": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Models\\Entities.cs",
+              "RelativeDocumentMoniker": "Models\\Entities.cs",
+              "ToolTip": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Models\\Entities.cs",
+              "RelativeToolTip": "Models\\Entities.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T04:10:20.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ClientsController.cs",
+              "DocumentMoniker": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Controllers\\ClientsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClientsController.cs",
+              "ToolTip": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Controllers\\ClientsController.cs",
+              "RelativeToolTip": "Controllers\\ClientsController.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAuwHgAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-11T07:36:52.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ConsultationRequestDtos.cs",
+              "DocumentMoniker": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\DTOs\\ConsultationRequestDtos.cs",
+              "RelativeDocumentMoniker": "DTOs\\ConsultationRequestDtos.cs",
+              "ToolTip": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\DTOs\\ConsultationRequestDtos.cs",
+              "RelativeToolTip": "DTOs\\ConsultationRequestDtos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T08:53:20.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ServiceDtos.cs",
+              "DocumentMoniker": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\DTOs\\ServiceDtos.cs",
+              "RelativeDocumentMoniker": "DTOs\\ServiceDtos.cs",
+              "ToolTip": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\DTOs\\ServiceDtos.cs",
+              "RelativeToolTip": "DTOs\\ServiceDtos.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAqwCwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T08:59:06.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AQIAALgAAAAAAAAAAAAiwMgAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T08:54:02.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "NotificationsController.cs",
+              "DocumentMoniker": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Controllers\\NotificationsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NotificationsController.cs",
+              "ToolTip": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Controllers\\NotificationsController.cs",
+              "RelativeToolTip": "Controllers\\NotificationsController.cs",
+              "ViewState": "AQIAAPEAAAAAAAAAAAAqwAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T13:31:41.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAADgBAAAAAAAAAAAkwFcBAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-11T07:37:21.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ConsultationRequestsController.cs",
+              "DocumentMoniker": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Controllers\\ConsultationRequestsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ConsultationRequestsController.cs",
+              "ToolTip": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Controllers\\ConsultationRequestsController.cs",
+              "RelativeToolTip": "Controllers\\ConsultationRequestsController.cs",
+              "ViewState": "AQIAADsFAAAAAAAAAAAUwEgFAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T08:54:38.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ReviewsController.cs",
+              "DocumentMoniker": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Controllers\\ReviewsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReviewsController.cs",
+              "ToolTip": "D:\\Code\\Project_Cuoi_ki\\THEMIS_TRUST_Completed\\backend\\LawFirmApi\\Controllers\\ReviewsController.cs",
+              "RelativeToolTip": "Controllers\\ReviewsController.cs",
+              "ViewState": "AQIAANsAAAAAAAAAAAAwwPwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T07:47:54.139Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
